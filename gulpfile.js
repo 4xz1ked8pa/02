@@ -11,14 +11,11 @@ var lost = require('lost');
 var autoprefixer = require('autoprefixer');
 var postcss_nested = require('postcss-nested');
 
-gulp.task('default', ['css','start','watcher']);
+gulp.task('default', ['css','jsx','start','watcher','watcher2']);
 
 gulp.task('start', shell.task(['./bin/www']));
 
 gulp.task('css', function() {
-//	var processors = [
-//		autoprefixer
-//	]
 	return gulp.src('source/styles/*.css')
 		.pipe(watch('source/styles/*.css'))
 		.pipe(postcss([lost(),autoprefixer(),postcss_nested()]))
@@ -26,10 +23,25 @@ gulp.task('css', function() {
 		.pipe(gulp.dest('public/styles'));
 });
 
+gulp.task('jsx', function() {
+	return gulp.src('source/js/**/*.jsx')
+		.pipe(watch('source/js/**/*.jsx'))
+		.pipe(babel())
+		.pipe(gulp.dest('public/js'));
+});
+
 gulp.task('watcher', function(cb) {
 	watch('source/styles/*.css', function() {
 		gulp.src('source/styles/*.css')
 			.pipe(watch('source/styles/*.css'))
+			.on('end',cb);
+	});
+});
+
+gulp.task('watcher2', function(cb) {
+	watch('source/js/**/*.jsx', function() {
+		gulp.src('source/js/**/*.jsx')
+			.pipe(watch('source/js/**/*.jsx'))
 			.on('end',cb);
 	});
 });
