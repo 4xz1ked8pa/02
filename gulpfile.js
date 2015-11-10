@@ -10,9 +10,9 @@ gulp.task('start', shell.task(['./bin/www']));
 
 gulp.task('css', function() {
 	var processors = [
-		autoprefixer,
+		autoprefixer
 	]
-	
+
 	return gulp.src('/source/styles/*.css')
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('public/styles'));
