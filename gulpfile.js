@@ -4,6 +4,7 @@ var rucksack = require('gulp-rucksack');
 var postcss = require('gulp-postcss');
 var livereload = require('gulp-livereload');
 var watch = require('gulp-watch');
+var babel = require('gulp-babel');
 var lr = require('tiny-lr');
 
 var lost = require('lost');
