@@ -8,6 +8,7 @@ var lr = require('tiny-lr');
 
 var lost = require('lost');
 var autoprefixer = require('autoprefixer');
+var postcss_nested = require('postcss-nested');
 
 gulp.task('default', ['css','start','watcher']);
 
@@ -19,7 +20,7 @@ gulp.task('css', function() {
 //	]
 	return gulp.src('source/styles/*.css')
 		.pipe(watch('source/styles/*.css'))
-		.pipe(postcss([lost(),autoprefixer()]))
+		.pipe(postcss([lost(),autoprefixer(),postcss_nested()]))
 		.pipe(rucksack())
 		.pipe(gulp.dest('public/styles'));
 });
