@@ -11,9 +11,6 @@ gulp.task('default', ['css','start','watcher']);
 gulp.task('start', shell.task(['./bin/www']));
 
 gulp.task('css', function() {
-	var processors = [
-		autoprefixer
-	]
 //	var processors = [
 //		autoprefixer
 //	]
