@@ -1,10 +1,12 @@
 var gulp = require('gulp');
 var shell = require('gulp-shell');
-var postcss = require('gulp-postcss');
+var rucksack = require('gulp-rucksack');
 var autoprefixer = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
+var watch = require('gulp-watch');
+var lr = require('tiny-lr');
 
-gulp.task('default', ['css','start','watch']);
+gulp.task('default', ['css','start','watcher']);
 
 gulp.task('start', shell.task(['./bin/www']));
 
@@ -12,13 +14,19 @@ gulp.task('css', function() {
 	var processors = [
 		autoprefixer
 	]
-
-	return gulp.src('/source/styles/*.css')
-		.pipe(postcss(processors))
+//	var processors = [
+//		autoprefixer
+//	]
+	return gulp.src('source/styles/*.css')
+		.pipe(watch('source/styles/*.css'))
+		.pipe(rucksack())
 		.pipe(gulp.dest('public/styles'));
 });
 
-gulp.task('watch', function(){
-	livereload.listen({start: true});
-	gulp.watch('/source/styles/*.css',['css']);
+gulp.task('watcher', function(cb) {
+	watch('source/styles/*.css', function() {
+		gulp.src('source/styles/*.css')
+			.pipe(watch('source/styles/*.css'))
+			.on('end',cb);
+	});
 });
