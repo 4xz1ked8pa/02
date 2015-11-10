@@ -1,10 +1,13 @@
 var gulp = require('gulp');
 var shell = require('gulp-shell');
 var rucksack = require('gulp-rucksack');
-var autoprefixer = require('gulp-autoprefixer');
+var postcss = require('gulp-postcss');
 var livereload = require('gulp-livereload');
 var watch = require('gulp-watch');
 var lr = require('tiny-lr');
+
+var lost = require('lost');
+var autoprefixer = require('autoprefixer');
 
 gulp.task('default', ['css','start','watcher']);
 
@@ -16,6 +19,7 @@ gulp.task('css', function() {
 //	]
 	return gulp.src('source/styles/*.css')
 		.pipe(watch('source/styles/*.css'))
+		.pipe(postcss([lost(),autoprefixer()]))
 		.pipe(rucksack())
 		.pipe(gulp.dest('public/styles'));
 });
