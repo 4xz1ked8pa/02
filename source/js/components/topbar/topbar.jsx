@@ -1,6 +1,5 @@
 var React = require('react');
-//var AppActions = require('actions');
-//var AppStore = require('actions');
+var ReactDOM = require('react-dom');
 
 // Topbar component
 var Topbar = React.createClass({
