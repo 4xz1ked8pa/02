@@ -6,12 +6,15 @@ var livereload = require('gulp-livereload');
 var watch = require('gulp-watch');
 var babel = require('gulp-babel');
 var lr = require('tiny-lr');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+var reactify = require('reactify');
 
 var lost = require('lost');
 var autoprefixer = require('autoprefixer');
 var postcss_nested = require('postcss-nested');
 
-gulp.task('default', ['css','jsx','start','watcher','watcher2']);
+gulp.task('default', ['css','jsbundling','start','watcher','watcher2']);
 
 gulp.task('start', shell.task(['./bin/www']));
 
@@ -23,10 +26,21 @@ gulp.task('css', function() {
 		.pipe(gulp.dest('public/styles'));
 });
 
-gulp.task('jsx', function() {
-	return gulp.src('source/js/**/*.jsx')
-		.pipe(watch('source/js/**/*.jsx'))
-		.pipe(babel())
+//gulp.task('jsx', function() {
+//	return gulp.src('source/js/**/*.jsx')
+//		.pipe(watch('source/js/**/*.jsx'))
+//		.pipe(babel({
+//			presets: ['es2015']
+//		}))
+//		.pipe(gulp.dest('public/js'));
+//});
+
+gulp.task('jsbundling', function() {
+	b = browserify();
+	b.transform(reactify);
+	b.add('source/js/frontend.js');
+	return b.bundle()
+		.pipe(source('frontend.js'))
 		.pipe(gulp.dest('public/js'));
 });
 
@@ -38,10 +52,8 @@ gulp.task('watcher', function(cb) {
 	});
 });
 
-gulp.task('watcher2', function(cb) {
+gulp.task('watcher2', function() {
 	watch('source/js/**/*.jsx', function() {
-		gulp.src('source/js/**/*.jsx')
-			.pipe(watch('source/js/**/*.jsx'))
-			.on('end',cb);
+		gulp.start('jsbundling');
 	});
 });
