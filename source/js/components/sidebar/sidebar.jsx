@@ -1,15 +1,12 @@
 var React = require('react');
+var Thumb =
 
 var SideBar = React.createClass({
   render: function () {
     return (
         <div className="sideBar">
           <div className="access-module">
-            <div className="thumb">
-              <span className="icon fa fa-calendar"></span>
-              <span className="title">Events</span>
-              <span className="capsule">9</span>
-            </div>
+            <Thumb title="Events" />
             <div className="thumb">
               <span className="icon fa fa-calendar"></span>
               <span className="title">Groups</span>

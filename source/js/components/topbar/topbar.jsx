@@ -10,7 +10,7 @@ var TopBar = React.createClass({
         <div className="identify">
           <a className="thumb" href="#">
             <img className="image" src="http://placehold.it/16x16" />
-            <span className="title">Charles</span>
+            <span className="title"> </span>
           </a>
         </div>
         <div className="notify">

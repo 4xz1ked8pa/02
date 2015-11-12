@@ -19079,11 +19079,7 @@ var SideBar = React.createClass({displayName: "SideBar",
     return (
         React.createElement("div", {className: "sideBar"}, 
           React.createElement("div", {className: "access-module"}, 
-            React.createElement("div", {className: "thumb"}, 
-              React.createElement("span", {className: "icon fa fa-calendar"}), 
-              React.createElement("span", {className: "title"}, "Events"), 
-              React.createElement("span", {className: "capsule"}, "9")
-            ), 
+            React.createElement(Thumb, {title: "Events"}), 
             React.createElement("div", {className: "thumb"}, 
               React.createElement("span", {className: "icon fa fa-calendar"}), 
               React.createElement("span", {className: "title"}, "Groups"), 
@@ -19156,7 +19152,7 @@ var TopBar = React.createClass({displayName: "TopBar",
         React.createElement("div", {className: "identify"}, 
           React.createElement("a", {className: "thumb", href: "#"}, 
             React.createElement("img", {className: "image", src: "http://placehold.it/16x16"}), 
-            React.createElement("span", {className: "title"}, "Charles")
+            React.createElement("span", {className: "title"}, " ")
           )
         ), 
         React.createElement("div", {className: "notify"}, 
