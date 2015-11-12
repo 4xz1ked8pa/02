@@ -6,12 +6,7 @@ var SideBar = React.createClass({
     return (
         <div className="sideBar">
           <div className="access-module">
-            <Thumb title="Events" />
-            <div className="thumb">
-              <span className="icon fa fa-calendar"></span>
-              <span className="title">Groups</span>
-              <span className="capsule">3</span>
-            </div>
+            <Thumb title="Events" finename="placeholder.jpg" notify-count="2" />
             <div className="thumb">
               <span className="icon fa fa-calendar"></span>
               <span className="title">People</span>

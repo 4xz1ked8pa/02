@@ -11,8 +11,10 @@ var Thumb = React.createClass({
           (this.props.icon):
             <span className='icon fa fa' + {this.props.iconname}></span>
           ?;
+          (this.props.capsule):
+            <span className="capsule">{this.props.notify.count}</span>
+          ?;
           <span className="title">{this.props.title}</span>
-
         </div>
     );
   }
