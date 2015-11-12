@@ -2,7 +2,6 @@ var SideBar = React.createClass({
   render: function () {
     return (
         <div class="sideBar">
-          <!-- Suggested -->
           <div class="access-module">
             <!-- Events -->
             <div class="thumb">
@@ -23,7 +22,6 @@ var SideBar = React.createClass({
               <span class="capsule">6</span>
             </div>
           </div>
-          <!-- Stacks -->
           <div class="access-module">
             <div class="thumb">
               <span class="title">McGill Students Association</span>
@@ -40,14 +38,12 @@ var SideBar = React.createClass({
               <span class="capsule">6</span>
             </div>
           </div>
-          <!-- Filters -->
           <div class="manage-filters">
             <div class="thumb">
               <span class="title">Charles Gaudreau Jackson</span>
               <span class="close fa fa-close"></span>
             </div>
           </div>
-          <!-- Calendar -->
           <div class="jump-calendar monthly">
             <div class="header">
               <span class="fa fa-chevron-left"></span>
@@ -61,7 +57,6 @@ var SideBar = React.createClass({
 
             </ul>
           </div>
-          <!-- Interact -->
           <ul class="interact">
             <span class="option add-event"></span>
             <span class="option add-filter"></span>
