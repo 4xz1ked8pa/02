@@ -8,6 +8,4 @@ var dropdown =
     </Menu>
   </Dropdown>;
 
-render(dropdown);
-
 module.export = dropdown;
