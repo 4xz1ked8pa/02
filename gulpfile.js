@@ -38,7 +38,7 @@ gulp.task('css', function() {
 gulp.task('jsbundling', function() {
 	b = browserify();
 	b.transform(reactify);
-	b.add('source/js/frontend.js');
+	b.add('source/js/frontend.jsx');
 	return b.bundle()
 		.pipe(source('frontend.js'))
 		.pipe(gulp.dest('public/js'));
