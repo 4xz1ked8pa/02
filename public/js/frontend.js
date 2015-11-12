@@ -19014,19 +19014,51 @@ module.exports = warning;
 module.exports = require('./lib/React');
 
 },{"./lib/React":26}],159:[function(require,module,exports){
+var React = require('react');
+
+var ChatBar = React.createClass({displayName: "ChatBar",
+  render: function () {
+    return (
+      React.createElement("div", {className: "chatBar"}, 
+		"Chat Bar"
+      )
+    );
+  }
+});
+
+module.exports = ChatBar;
+
+},{"react":158}],160:[function(require,module,exports){
+var React = require('react');
+
+var Main = React.createClass({displayName: "Main",
+  render: function () {
+    return (
+      React.createElement("div", {className: "Main"}, 
+		"Main"
+      )
+    );
+  }
+});
+
+module.exports = Main;
+
+},{"react":158}],161:[function(require,module,exports){
 // Root component of UI
 var React = require('react');
 var TopBar = require('./topbar/topbar.jsx');
-//var ChatBar = require('./chatbar/chatbar.jsx');
+var ChatBar = require('./chatbar/chatbar.jsx');
 var SideBar = require('./sidebar/sidebar.jsx');
-//var Main = require('./main/main.jsx');
+var Main = require('./main/main.jsx');
 
 
 var Root = React.createClass({displayName: 'Root',
 	render: function() {
 		return React.createElement("div", {className: "root"}, 
 			React.createElement(TopBar, null), 
-			React.createElement(SideBar, null)
+			React.createElement(SideBar, null), 
+			React.createElement(Main, null), 
+			React.createElement(ChatBar, null)
 		);
 	}
 });
@@ -19039,7 +19071,7 @@ module.exports = Root;
 			<ChatBar />
 */
 
-},{"./sidebar/sidebar.jsx":160,"./topbar/topbar.jsx":161,"react":158}],160:[function(require,module,exports){
+},{"./chatbar/chatbar.jsx":159,"./main/main.jsx":160,"./sidebar/sidebar.jsx":162,"./topbar/topbar.jsx":163,"react":158}],162:[function(require,module,exports){
 var React = require('react');
 
 var SideBar = React.createClass({displayName: "SideBar",
@@ -19111,7 +19143,7 @@ var SideBar = React.createClass({displayName: "SideBar",
 
 module.exports = SideBar;
 
-},{"react":158}],161:[function(require,module,exports){
+},{"react":158}],163:[function(require,module,exports){
 var React = require('react');
 
 var TopBar = React.createClass({displayName: "TopBar",
@@ -19157,7 +19189,7 @@ var TopBar = React.createClass({displayName: "TopBar",
 
 module.exports = TopBar;
 
-},{"react":158}],162:[function(require,module,exports){
+},{"react":158}],164:[function(require,module,exports){
 var ReactDOM = require('react-dom');
 var React = require('react');
 
@@ -19175,4 +19207,4 @@ ReactDOM.render(React.createElement(Root, null), document.getElementById('cursuu
 // To be commented out or erased in production.
 //var dropdown = require('./test.jsx');
 
-},{"./components/root.jsx":159,"react":158,"react-dom":2}]},{},[162]);
+},{"./components/root.jsx":161,"react":158,"react-dom":2}]},{},[164]);
