@@ -19018,14 +19018,15 @@ module.exports = require('./lib/React');
 var React = require('react');
 var TopBar = require('./topbar/topbar.jsx');
 //var ChatBar = require('./chatbar/chatbar.jsx');
-//var Sidebar = require('./sidebar/sidebar.jsx');
+var SideBar = require('./sidebar/sidebar.jsx');
 //var Main = require('./main/main.jsx');
 
 
 var Root = React.createClass({displayName: 'Root',
 	render: function() {
-		return React.createElement("div", null, 
-			React.createElement(TopBar, null)
+		return React.createElement("div", {className: "root"}, 
+			React.createElement(TopBar, null), 
+			React.createElement(SideBar, null)
 		);
 	}
 });
@@ -19038,43 +19039,115 @@ module.exports = Root;
 			<ChatBar />
 */
 
-},{"./topbar/topbar.jsx":160,"react":158}],160:[function(require,module,exports){
+},{"./sidebar/sidebar.jsx":160,"./topbar/topbar.jsx":161,"react":158}],160:[function(require,module,exports){
+var React = require('react');
+
+var SideBar = React.createClass({displayName: "SideBar",
+  render: function () {
+    return (
+        React.createElement("div", {className: "sideBar"}, 
+          React.createElement("div", {className: "access-module"}, 
+            React.createElement("div", {className: "thumb"}, 
+              React.createElement("span", {className: "icon fa fa-calendar"}), 
+              React.createElement("span", {className: "title"}, "Events"), 
+              React.createElement("span", {className: "capsule"}, "9")
+            ), 
+            React.createElement("div", {className: "thumb"}, 
+              React.createElement("span", {className: "icon fa fa-calendar"}), 
+              React.createElement("span", {className: "title"}, "Groups"), 
+              React.createElement("span", {className: "capsule"}, "3")
+            ), 
+            React.createElement("div", {className: "thumb"}, 
+              React.createElement("span", {className: "icon fa fa-calendar"}), 
+              React.createElement("span", {className: "title"}, "People"), 
+              React.createElement("span", {className: "capsule"}, "6")
+            )
+          ), 
+          React.createElement("div", {className: "access-module"}, 
+            React.createElement("div", {className: "thumb"}, 
+              React.createElement("span", {className: "title"}, "McGill Students Association"), 
+              React.createElement("span", {className: "capsule"}, "6")
+            ), 
+            React.createElement("div", {className: "thumb"}, 
+              React.createElement("span", {className: "icon fa fa-calendar"}), 
+              React.createElement("span", {className: "title"}, "Code jams"), 
+              React.createElement("span", {className: "capsule"}, "6")
+            ), 
+            React.createElement("div", {className: "thumb"}, 
+              React.createElement("span", {className: "icon fa fa-calendar"}), 
+              React.createElement("span", {className: "title"}, "Montreal couch surfing"), 
+              React.createElement("span", {className: "capsule"}, "6")
+            )
+          ), 
+          React.createElement("div", {className: "manage-filters"}, 
+            React.createElement("div", {className: "thumb"}, 
+              React.createElement("span", {className: "title"}, "Charles Gaudreau Jackson"), 
+              React.createElement("span", {className: "close fa fa-close"})
+            )
+          ), 
+          React.createElement("div", {className: "jump-calendar monthly"}, 
+            React.createElement("div", {className: "header"}, 
+              React.createElement("span", {className: "fa fa-chevron-left"}), 
+              React.createElement("div", {className: "title"}, 
+                React.createElement("span", {className: "month"}, "November"), 
+                React.createElement("span", {className: "year"}, "2015")
+              ), 
+              React.createElement("span", {className: "fa fa-chevron-right"})
+            ), 
+            React.createElement("ul", {className: "jump-grid"}
+
+            )
+          ), 
+          React.createElement("ul", {className: "interact"}, 
+            React.createElement("span", {className: "option add-event"}), 
+            React.createElement("span", {className: "option add-filter"}), 
+            React.createElement("span", {className: "option add-stack"}), 
+            React.createElement("span", {className: "access-settings"})
+          )
+        )
+    );
+  }
+});
+
+module.exports = SideBar;
+
+},{"react":158}],161:[function(require,module,exports){
 var React = require('react');
 
 var TopBar = React.createClass({displayName: "TopBar",
   render: function () {
     return (
-      React.createElement("div", {class: "topBar"}, 
-        React.createElement("div", {class: "logo"}, 
+      React.createElement("div", {className: "topBar"}, 
+        React.createElement("div", {className: "logo"}, 
           "cursuum"
         ), 
-        React.createElement("div", {class: "identify"}, 
-          React.createElement("a", {class: "thumb", href: "#"}, 
-            React.createElement("img", {class: "image", src: "http://placehold.it/16x16"}), 
-            React.createElement("span", {class: "title"}, "Charles")
+        React.createElement("div", {className: "identify"}, 
+          React.createElement("a", {className: "thumb", href: "#"}, 
+            React.createElement("img", {className: "image", src: "http://placehold.it/16x16"}), 
+            React.createElement("span", {className: "title"}, "Charles")
           )
         ), 
-        React.createElement("div", {class: "notify"}, 
-          React.createElement("span", {class: "icon fa fa-globe"}), 
-          React.createElement("div", {class: "pane"}, 
-            React.createElement("ul", {class: "tabs"}, 
-              React.createElement("li", {class: "tab"}, "Requests"), 
-              React.createElement("li", {class: "tab"}, "Feed"), 
-              React.createElement("li", {class: "tab"}, "Messages")
+        React.createElement("div", {className: "notify"}, 
+          React.createElement("span", {className: "icon fa fa-globe"}), 
+          React.createElement("div", {className: "pane"}, 
+            React.createElement("ul", {className: "tabs"}, 
+              React.createElement("li", {className: "tab"}, "Requests"), 
+              React.createElement("li", {className: "tab"}, "Feed"), 
+              React.createElement("li", {className: "tab"}, "Messages")
             ), 
-            React.createElement("ul", {class: "shown"}
+            React.createElement("ul", {className: "shown"}
 
             ), 
-            React.createElement("div", {class: "more"}, "See more")
+            React.createElement("div", {className: "more"}, "See more")
           )
         ), 
-        React.createElement("div", {class: "search"}, 
-          React.createElement("input", {class: "form-text", placeholder: "Search for people, schedules, events and more", type: "text"}), 
-          React.createElement("div", {class: "pane"}, 
-            React.createElement("ul", {class: "shown"}
+        React.createElement("div", {className: "search"}, 
+          React.createElement("input", {className: "form-text", placeholder: "Search for people, schedules, events and more", type: "text"}), 
+          React.createElement("div", {className: "pane"}, 
+            React.createElement("ul", {className: "shown"}
 
             ), 
-            React.createElement("div", {class: "more"}, "See more")
+            React.createElement("div", {className: "more"}, "See more")
           )
         )
       )
@@ -19084,7 +19157,7 @@ var TopBar = React.createClass({displayName: "TopBar",
 
 module.exports = TopBar;
 
-},{"react":158}],161:[function(require,module,exports){
+},{"react":158}],162:[function(require,module,exports){
 var ReactDOM = require('react-dom');
 var React = require('react');
 
@@ -19102,4 +19175,4 @@ ReactDOM.render(React.createElement(Root, null), document.getElementById('cursuu
 // To be commented out or erased in production.
 //var dropdown = require('./test.jsx');
 
-},{"./components/root.jsx":159,"react":158,"react-dom":2}]},{},[161]);
+},{"./components/root.jsx":159,"react":158,"react-dom":2}]},{},[162]);

@@ -3,37 +3,37 @@ var React = require('react');
 var TopBar = React.createClass({
   render: function () {
     return (
-      <div class="topBar">
-        <div class="logo">
+      <div className="topBar">
+        <div className="logo">
           cursuum
         </div>
-        <div class="identify">
-          <a class="thumb" href="#">
-            <img class="image" src="http://placehold.it/16x16" />
-            <span class="title">Charles</span>
+        <div className="identify">
+          <a className="thumb" href="#">
+            <img className="image" src="http://placehold.it/16x16" />
+            <span className="title">Charles</span>
           </a>
         </div>
-        <div class="notify">
-          <span class="icon fa fa-globe"></span>
-          <div class="pane">
-            <ul class="tabs">
-              <li class="tab">Requests</li>
-              <li class="tab">Feed</li>
-              <li class="tab">Messages</li>
+        <div className="notify">
+          <span className="icon fa fa-globe"></span>
+          <div className="pane">
+            <ul className="tabs">
+              <li className="tab">Requests</li>
+              <li className="tab">Feed</li>
+              <li className="tab">Messages</li>
             </ul>
-            <ul class="shown">
+            <ul className="shown">
 
             </ul>
-            <div class="more">See more</div>
+            <div className="more">See more</div>
           </div>
         </div>
-        <div class="search">
-          <input class="form-text" placeholder="Search for people, schedules, events and more" type="text" />
-          <div class="pane">
-            <ul class="shown">
+        <div className="search">
+          <input className="form-text" placeholder="Search for people, schedules, events and more" type="text" />
+          <div className="pane">
+            <ul className="shown">
 
             </ul>
-            <div class="more">See more</div>
+            <div className="more">See more</div>
           </div>
         </div>
       </div>

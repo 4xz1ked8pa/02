@@ -2,13 +2,13 @@
 var React = require('react');
 var TopBar = require('./topbar/topbar.jsx');
 //var ChatBar = require('./chatbar/chatbar.jsx');
-var Sidebar = require('./sidebar/sidebar.jsx');
+var SideBar = require('./sidebar/sidebar.jsx');
 //var Main = require('./main/main.jsx');
 
 
 var Root = React.createClass({displayName: 'Root',
 	render: function() {
-		return <div>
+		return <div className="root">
 			<TopBar />
 			<SideBar/>
 		</div>;
