@@ -9,5 +9,5 @@ var dropdown =
   </Dropdown>;
 
 render(dropdown);
-var lol = 0;
+
 module.export = dropdown;
