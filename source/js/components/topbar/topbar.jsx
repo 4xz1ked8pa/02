@@ -41,4 +41,4 @@ var TopBar = React.createClass({
   }
 });
 
-module.export = TopBar;
+module.exports = TopBar;
