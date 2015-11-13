@@ -1,23 +1,17 @@
 var React = require('react');
-var Thumb =
+var Thumb = require('./../shared/thumb.jsx');
 
 var SideBar = React.createClass({
   render: function () {
     return (
         <div className="sideBar">
           <div className="access-module">
-            <Thumb title="Events" finename="placeholder.jpg" notify-count="2" />
-            <div className="thumb">
-              <span className="icon fa fa-calendar"></span>
-              <span className="title">People</span>
-              <span className="capsule">6</span>
-            </div>
+            <Thumb title="Events" iconname="calendar" notify-count="2" />
+            <Thumb title="Stacks" iconname="team" notify-count="2" />
+            <Thumb title="People" iconname="bubble" notify-count="2" />
           </div>
           <div className="access-module">
-            <div className="thumb">
-              <span className="title">McGill Students Association</span>
-              <span className="capsule">6</span>
-            </div>
+              <Thumb title="McGill University Association" iconname="calendar" notify-count="2" />
             <div className="thumb">
               <span className="icon fa fa-calendar"></span>
               <span className="title">Code jams</span>
