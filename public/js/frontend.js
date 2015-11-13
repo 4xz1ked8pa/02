@@ -19206,14 +19206,6 @@ Root = require('./components/root.jsx');
 //var Dispatcher = require('./dispatchers/dispatcher.jsx');
 //var Store = require('./stores/store.jsx');
 
-
-var element = React.createElement('div',null,'LOL');
 ReactDOM.render(React.createElement(Root, null), document.getElementById('cursuum'));
-
-//React.render(<Root />, document.body);
-
-// Below is only dev/testing things.
-// To be commented out or erased in production.
-//var dropdown = require('./test.jsx');
 
 },{"./components/root.jsx":161,"react":158,"react-dom":2}]},{},[165]);
