@@ -19044,7 +19044,7 @@ var Main = React.createClass({displayName: "Main",
 module.exports = Main;
 
 },{"react":158}],161:[function(require,module,exports){
-// Root component of UI
+// Root components of UI
 var React = require('react');
 var TopBar = require('./topbar/topbar.jsx');
 var ChatBar = require('./chatbar/chatbar.jsx');
@@ -19065,37 +19065,49 @@ var Root = React.createClass({displayName: 'Root',
 
 module.exports = Root;
 
-/* 			<TopBar />
-			<SideBar />
-			<Main />
-			<ChatBar />
-*/
-
-},{"./chatbar/chatbar.jsx":159,"./main/main.jsx":160,"./sidebar/sidebar.jsx":162,"./topbar/topbar.jsx":163,"react":158}],162:[function(require,module,exports){
+},{"./chatbar/chatbar.jsx":159,"./main/main.jsx":160,"./sidebar/sidebar.jsx":163,"./topbar/topbar.jsx":164,"react":158}],162:[function(require,module,exports){
 var React = require('react');
+
+var Thumb = React.createClass({displayName: "Thumb",
+ render: function () {
+    if (this.props.image) {
+		 var image = React.createElement("img", {className: "image", src: 'cursuum.com/img/' + this.props.filename});
+    }
+	if (this.props.icon) {
+		 var icon = React.createElement("span", {className: 'icon fa fa' + this.props.iconname});
+	}
+	if (this.props.capsule) {
+		 var capsule = React.createElement("span", {className: "capsule"}, this.props.notifycount);
+	}
+   	return (
+       React.createElement("div", {className: "thumb"}, 
+         React.createElement("span", {className: "icon fa fa-calendar"}), 
+	   image, 
+       icon, 
+       capsule, 
+         React.createElement("span", {className: "title"}, this.props.title)
+       )
+   );
+ }
+});
+
+module.exports = Thumb;
+
+},{"react":158}],163:[function(require,module,exports){
+var React = require('react');
+var Thumb = require('./../shared/thumb.jsx');
 
 var SideBar = React.createClass({displayName: "SideBar",
   render: function () {
     return (
         React.createElement("div", {className: "sideBar"}, 
           React.createElement("div", {className: "access-module"}, 
-            React.createElement(Thumb, {title: "Events"}), 
-            React.createElement("div", {className: "thumb"}, 
-              React.createElement("span", {className: "icon fa fa-calendar"}), 
-              React.createElement("span", {className: "title"}, "Groups"), 
-              React.createElement("span", {className: "capsule"}, "3")
-            ), 
-            React.createElement("div", {className: "thumb"}, 
-              React.createElement("span", {className: "icon fa fa-calendar"}), 
-              React.createElement("span", {className: "title"}, "People"), 
-              React.createElement("span", {className: "capsule"}, "6")
-            )
+            React.createElement(Thumb, {title: "Events", iconname: "calendar", notifycount: "1", capsule: "True"}), 
+            React.createElement(Thumb, {title: "Stacks", iconname: "team", notifycount: "2", capsule: "True"}), 
+            React.createElement(Thumb, {title: "People", iconname: "bubble", notifycount: "3", capsule: "True"})
           ), 
           React.createElement("div", {className: "access-module"}, 
-            React.createElement("div", {className: "thumb"}, 
-              React.createElement("span", {className: "title"}, "McGill Students Association"), 
-              React.createElement("span", {className: "capsule"}, "6")
-            ), 
+              React.createElement(Thumb, {title: "McGill University Association", iconname: "calendar", "notify-count": "2"}), 
             React.createElement("div", {className: "thumb"}, 
               React.createElement("span", {className: "icon fa fa-calendar"}), 
               React.createElement("span", {className: "title"}, "Code jams"), 
@@ -19139,7 +19151,7 @@ var SideBar = React.createClass({displayName: "SideBar",
 
 module.exports = SideBar;
 
-},{"react":158}],163:[function(require,module,exports){
+},{"./../shared/thumb.jsx":162,"react":158}],164:[function(require,module,exports){
 var React = require('react');
 
 var TopBar = React.createClass({displayName: "TopBar",
@@ -19185,7 +19197,7 @@ var TopBar = React.createClass({displayName: "TopBar",
 
 module.exports = TopBar;
 
-},{"react":158}],164:[function(require,module,exports){
+},{"react":158}],165:[function(require,module,exports){
 var ReactDOM = require('react-dom');
 var React = require('react');
 
@@ -19203,4 +19215,4 @@ ReactDOM.render(React.createElement(Root, null), document.getElementById('cursuu
 // To be commented out or erased in production.
 //var dropdown = require('./test.jsx');
 
-},{"./components/root.jsx":161,"react":158,"react-dom":2}]},{},[164]);
+},{"./components/root.jsx":161,"react":158,"react-dom":2}]},{},[165]);
