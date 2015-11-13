@@ -11,7 +11,8 @@ var SideBar = React.createClass({
             <Thumb title="People" iconname="bubble" notifycount="3" capsule="True"/>
           </div>
           <div className="access-module">
-              <Thumb title="McGill University Association" iconname="calendar" notify-count="2" />
+            <Thumb title="McGill University Association" iconname="calendar" notifycount="2" />
+            <Thumb title="Code Jams" iconname="calendar" notifycount="6" />
             <div className="thumb">
               <span className="icon fa fa-calendar"></span>
               <span className="title">Code jams</span>

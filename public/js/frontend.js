@@ -19070,13 +19070,13 @@ var React = require('react');
 
 var Thumb = React.createClass({displayName: "Thumb",
  render: function () {
-    if (this.props.image) {
+    if (this.props.filename) {
 		 var image = React.createElement("img", {className: "image", src: 'cursuum.com/img/' + this.props.filename});
     }
-	if (this.props.icon) {
+	if (this.props.iconname) {
 		 var icon = React.createElement("span", {className: 'icon fa fa' + this.props.iconname});
 	}
-	if (this.props.capsule) {
+	if (this.props.notifycount) {
 		 var capsule = React.createElement("span", {className: "capsule"}, this.props.notifycount);
 	}
    	return (
@@ -19107,7 +19107,8 @@ var SideBar = React.createClass({displayName: "SideBar",
             React.createElement(Thumb, {title: "People", iconname: "bubble", notifycount: "3", capsule: "True"})
           ), 
           React.createElement("div", {className: "access-module"}, 
-              React.createElement(Thumb, {title: "McGill University Association", iconname: "calendar", "notify-count": "2"}), 
+            React.createElement(Thumb, {title: "McGill University Association", iconname: "calendar", notifycount: "2"}), 
+            React.createElement(Thumb, {title: "Code Jams", iconname: "calendar", notifycount: "6"}), 
             React.createElement("div", {className: "thumb"}, 
               React.createElement("span", {className: "icon fa fa-calendar"}), 
               React.createElement("span", {className: "title"}, "Code jams"), 

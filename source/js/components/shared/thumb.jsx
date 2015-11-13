@@ -2,13 +2,13 @@ var React = require('react');
 
 var Thumb = React.createClass({
  render: function () {
-    if (this.props.image) {
+    if (this.props.filename) {
 		 var image = <img className="image" src={'cursuum.com/img/' + this.props.filename} />;
     }
-	if (this.props.icon) {
+	if (this.props.iconname) {
 		 var icon = <span className={'icon fa fa' + this.props.iconname}></span>;
 	}
-	if (this.props.capsule) {
+	if (this.props.notifycount) {
 		 var capsule = <span className="capsule">{this.props.notifycount}</span>;
 	}
    	return (
