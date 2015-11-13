@@ -6,9 +6,9 @@ var SideBar = React.createClass({
     return (
         <div className="sideBar">
           <div className="access-module">
-            <Thumb title="Events" iconname="calendar" notify-count="2" />
-            <Thumb title="Stacks" iconname="team" notify-count="2" />
-            <Thumb title="People" iconname="bubble" notify-count="2" />
+            <Thumb title="Events" iconname="calendar" notifycount="1" capsule="True"/>
+            <Thumb title="Stacks" iconname="team" notifycount="2" capsule="True"/>
+            <Thumb title="People" iconname="bubble" notifycount="3" capsule="True"/>
           </div>
           <div className="access-module">
               <Thumb title="McGill University Association" iconname="calendar" notify-count="2" />
