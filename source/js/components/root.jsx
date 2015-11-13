@@ -1,4 +1,4 @@
-// Root component of UI
+// Root components of UI
 var React = require('react');
 var TopBar = require('./topbar/topbar.jsx');
 var ChatBar = require('./chatbar/chatbar.jsx');
@@ -18,9 +18,3 @@ var Root = React.createClass({displayName: 'Root',
 });
 
 module.exports = Root;
-
-/* 			<TopBar />
-			<SideBar />
-			<Main />
-			<ChatBar />
-*/

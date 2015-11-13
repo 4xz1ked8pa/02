@@ -19044,7 +19044,7 @@ var Main = React.createClass({displayName: "Main",
 module.exports = Main;
 
 },{"react":158}],161:[function(require,module,exports){
-// Root component of UI
+// Root components of UI
 var React = require('react');
 var TopBar = require('./topbar/topbar.jsx');
 var ChatBar = require('./chatbar/chatbar.jsx');
@@ -19065,12 +19065,6 @@ var Root = React.createClass({displayName: 'Root',
 
 module.exports = Root;
 
-/* 			<TopBar />
-			<SideBar />
-			<Main />
-			<ChatBar />
-*/
-
 },{"./chatbar/chatbar.jsx":159,"./main/main.jsx":160,"./sidebar/sidebar.jsx":163,"./topbar/topbar.jsx":164,"react":158}],162:[function(require,module,exports){
 var React = require('react');
 
@@ -19085,7 +19079,6 @@ var Thumb = React.createClass({displayName: "Thumb",
 	if (this.props.capsule) {
 		 var capsule = React.createElement("span", {className: "capsule"}, this.props.notifycount);
 	}
-	console.log(this.props.notifycount);
    	return (
        React.createElement("div", {className: "thumb"}, 
          React.createElement("span", {className: "icon fa fa-calendar"}), 

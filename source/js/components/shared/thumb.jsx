@@ -11,7 +11,6 @@ var Thumb = React.createClass({
 	if (this.props.capsule) {
 		 var capsule = <span className="capsule">{this.props.notifycount}</span>;
 	}
-	console.log(this.props.notifycount);
    	return (
        <div className="thumb">
          <span className="icon fa fa-calendar"></span>
