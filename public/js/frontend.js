@@ -19079,13 +19079,16 @@ var Thumb = React.createClass({displayName: "Thumb",
 	if (this.props.notifycount) {
 		 var capsule = React.createElement("span", {className: "capsule"}, this.props.notifycount);
 	}
+   if (this.props.canRemove) {
+     var canRemove = React.createElement("span", {className: "close"}, "[x]");
+   }
    	return (
        React.createElement("div", {className: "thumb"}, 
-         React.createElement("span", {className: "icon fa fa-calendar"}), 
-	   image, 
-       icon, 
-       capsule, 
-         React.createElement("span", {className: "title"}, this.props.title)
+         image, 
+         icon, 
+         React.createElement("span", {className: "title"}, this.props.title), 
+         capsule, 
+         canRemove
        )
    );
  }
@@ -19109,22 +19112,11 @@ var SideBar = React.createClass({displayName: "SideBar",
           React.createElement("div", {className: "access-module"}, 
             React.createElement(Thumb, {title: "McGill University Association", iconname: "calendar", notifycount: "2"}), 
             React.createElement(Thumb, {title: "Code Jams", iconname: "calendar", notifycount: "6"}), 
-            React.createElement("div", {className: "thumb"}, 
-              React.createElement("span", {className: "icon fa fa-calendar"}), 
-              React.createElement("span", {className: "title"}, "Code jams"), 
-              React.createElement("span", {className: "capsule"}, "6")
-            ), 
-            React.createElement("div", {className: "thumb"}, 
-              React.createElement("span", {className: "icon fa fa-calendar"}), 
-              React.createElement("span", {className: "title"}, "Montreal couch surfing"), 
-              React.createElement("span", {className: "capsule"}, "6")
-            )
+            React.createElement(Thumb, {title: "2600 The Hacker Quartely", iconname: "calendar", notifycount: "6"}), 
+            React.createElement(Thumb, {title: "Web Cats Community", iconname: "calendar", notifycount: "6"})
           ), 
           React.createElement("div", {className: "manage-filters"}, 
-            React.createElement("div", {className: "thumb"}, 
-              React.createElement("span", {className: "title"}, "Charles Gaudreau Jackson"), 
-              React.createElement("span", {className: "close fa fa-close"})
-            )
+            React.createElement(Thumb, {title: "Charles Gaudreau Jackson", canRemove: true})
           ), 
           React.createElement("div", {className: "jump-calendar monthly"}, 
             React.createElement("div", {className: "header"}, 

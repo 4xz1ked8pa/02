@@ -11,13 +11,16 @@ var Thumb = React.createClass({
 	if (this.props.notifycount) {
 		 var capsule = <span className="capsule">{this.props.notifycount}</span>;
 	}
+   if (this.props.canRemove) {
+     var canRemove = <span className="close">[x]</span>;
+   }
    	return (
        <div className="thumb">
-         <span className="icon fa fa-calendar"></span>
-	   {image}
-       {icon}
-       {capsule}
+         {image}
+         {icon}
          <span className="title">{this.props.title}</span>
+         {capsule}
+         {canRemove}
        </div>
    );
  }

@@ -13,22 +13,11 @@ var SideBar = React.createClass({
           <div className="access-module">
             <Thumb title="McGill University Association" iconname="calendar" notifycount="2" />
             <Thumb title="Code Jams" iconname="calendar" notifycount="6" />
-            <div className="thumb">
-              <span className="icon fa fa-calendar"></span>
-              <span className="title">Code jams</span>
-              <span className="capsule">6</span>
-            </div>
-            <div className="thumb">
-              <span className="icon fa fa-calendar"></span>
-              <span className="title">Montreal couch surfing</span>
-              <span className="capsule">6</span>
-            </div>
+            <Thumb title="2600 The Hacker Quartely" iconname="calendar" notifycount="6" />
+            <Thumb title="Web Cats Community" iconname="calendar" notifycount="6" />
           </div>
           <div className="manage-filters">
-            <div className="thumb">
-              <span className="title">Charles Gaudreau Jackson</span>
-              <span className="close fa fa-close"></span>
-            </div>
+            <Thumb title="Charles Gaudreau Jackson" canRemove />
           </div>
           <div className="jump-calendar monthly">
             <div className="header">
