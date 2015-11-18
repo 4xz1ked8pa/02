@@ -30,6 +30,7 @@
     "gulp-shell": "^0.5.1",
     "gulp-watch": "^4.3.5",
     "lost": "^6.6.2",
+    "postcss-advanced-variables": "^1.2.2",
     "postcss-nested": "^1.0.0",
     "reactify": "^1.1.1",
     "tiny-lr": "^0.2.1",
