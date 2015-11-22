@@ -1,3 +1,6 @@
+.thumb {
+    background:forestgreen;
+}
 .thumb .image, .thumb .title {
     float:left;
 }

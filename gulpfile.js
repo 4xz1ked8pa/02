@@ -16,17 +16,25 @@ var postcss_simple_vars = require('postcss-simple-vars');
 var postcss_nested = require('postcss-nested');
 var postcss_hexrgba = require('postcss-hexrgba');
 var postcss_import = require('postcss-import');
+var cssnext = require('gulp-cssnext');
 
-
+//variables: function() {
+//	return require('./source/styles/settings/variables');
+//}
 
 gulp.task('default', ['css','jsbundling','start','watcher3','watcher2']);
 
 gulp.task('start', shell.task(['./bin/www']));
 
 gulp.task('css', function() {
+	//var vars = require('./source/styles/settings/variables');
 	return gulp.src('source/styles/**/*.css')
-		//.pipe(watch('source/styles/**/*.css'))
-		.pipe(postcss([lost(),autoprefixer(),postcss_simple_vars(),postcss_hexrgba(),postcss_import(),postcss_nested()]))
+		.pipe(cssnext())
+		.pipe(postcss([postcss_simple_vars({
+				variables: function(){
+					return require('./source/styles/settings/variables');
+				}
+		}),lost(),autoprefixer(),postcss_hexrgba(),postcss_import(),postcss_nested()]))
 		.pipe(rucksack())
 		.pipe(gulp.dest('public/styles'));
 });

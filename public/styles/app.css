@@ -53,23 +53,13 @@ table {
 
 /* Fonts */
 body {
-<<<<<<< HEAD
   color:purple;
-=======
-  background:red !important;
->>>>>>> 9081d986aecc5ac52ab3c30f753b379dcc64ef39
 }
 
-/* Variables */
-/* Top Bar */
-
-
-/* Side Bar */
-
-
-/* Chat Bar */
-
 /* Components */
+.thumb {
+    background:forestgreen;
+}
 .thumb .image, .thumb .title {
     float:left;
 }
@@ -117,7 +107,7 @@ body {
 .chatBar {
     position:absolute;
     top:0; right:0;
-    width:220px;
+    width:$chatBarWidth;
     height:100%;
     background:#F5F5F5;
     border-left:1px solid #E6E6E6;
@@ -128,6 +118,5 @@ body {
     top:0;left:0;
     width:100%;
     height:100%;
-    background:blue;
     font-family:'Arial';
 }
