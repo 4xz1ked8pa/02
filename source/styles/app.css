@@ -1,12 +1,11 @@
-@import "reset.css";
-
 /* Settings */
-@import "settings.scss";
+@import "settings/settings.css";
 
 /* Components */
-@import "thumb.css";
+@import "components/thumb.css";
 
 /* Core */
 @import "topbar.css";
 @import "sidebar.css";
 @import "chatbar.css";
+@import "main.css";

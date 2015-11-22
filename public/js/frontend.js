@@ -19069,29 +19069,29 @@ module.exports = Root;
 var React = require('react');
 
 var Thumb = React.createClass({displayName: "Thumb",
- render: function () {
+  render: function () {
     if (this.props.filename) {
-		 var image = React.createElement("img", {className: "image", src: 'cursuum.com/img/' + this.props.filename});
+      var image = React.createElement("img", {className: "image", src: 'http://placehold.it/100x100'});
     }
-	if (this.props.iconname) {
-		 var icon = React.createElement("span", {className: 'icon fa fa' + this.props.iconname});
-	}
-	if (this.props.notifycount) {
-		 var capsule = React.createElement("span", {className: "capsule"}, this.props.notifycount);
-	}
-   if (this.props.canRemove) {
-     var canRemove = React.createElement("span", {className: "close"}, "[x]");
-   }
-   	return (
-       React.createElement("div", {className: "thumb"}, 
-         image, 
-         icon, 
-         React.createElement("span", {className: "title"}, this.props.title), 
-         capsule, 
-         canRemove
-       )
-   );
- }
+    if (this.props.iconname) {
+      var icon = React.createElement("span", {className: 'icon fa fa' + this.props.iconname});
+    }
+    if (this.props.notifycount) {
+      var capsule = React.createElement("span", {className: "capsule"}, this.props.notifycount);
+    }
+    if (this.props.canRemove) {
+      var canRemove = React.createElement("span", {className: "close"}, "[x]");
+    }
+    return (
+        React.createElement("div", {className: "thumb"}, 
+          image, 
+          icon, 
+          React.createElement("span", {className: "title"}, this.props.title), 
+          capsule, 
+          canRemove
+        )
+    );
+  }
 });
 
 module.exports = Thumb;
@@ -19146,6 +19146,7 @@ module.exports = SideBar;
 
 },{"./../shared/thumb.jsx":162,"react":158}],164:[function(require,module,exports){
 var React = require('react');
+var Thumb = require('./../shared/thumb.jsx');
 
 var TopBar = React.createClass({displayName: "TopBar",
   render: function () {
@@ -19155,10 +19156,7 @@ var TopBar = React.createClass({displayName: "TopBar",
           "cursuum"
         ), 
         React.createElement("div", {className: "identify"}, 
-          React.createElement("a", {className: "thumb", href: "#"}, 
-            React.createElement("img", {className: "image", src: "http://placehold.it/16x16"}), 
-            React.createElement("span", {className: "title"}, " ")
-          )
+          React.createElement(Thumb, {title: "Charles", filename: "profile1.jpg"})
         ), 
         React.createElement("div", {className: "notify"}, 
           React.createElement("span", {className: "icon fa fa-globe"}), 
@@ -19190,7 +19188,7 @@ var TopBar = React.createClass({displayName: "TopBar",
 
 module.exports = TopBar;
 
-},{"react":158}],165:[function(require,module,exports){
+},{"./../shared/thumb.jsx":162,"react":158}],165:[function(require,module,exports){
 var ReactDOM = require('react-dom');
 var React = require('react');
 

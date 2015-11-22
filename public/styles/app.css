@@ -1,12 +1,126 @@
-@import "reset.css";
-
 /* Settings */
-@import "settings.scss";
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Aliases */
+
+/* Fonts */
+
+/* Variables */
+/* Top Bar */
+
+
+/* Side Bar */
+
+
+/* Chat Bar */
 
 /* Components */
-@import "thumb.css";
+.thumb .image, .thumb .title {
+    float:left;
+}
+.thumb .image {
+    width:28px;
+    border-radius: 1px;
+    margin-right:7px;
+}
+.thumb .title {
+    margin-top:7px;
+}
 
 /* Core */
-@import "topbar.css";
-@import "sidebar.css";
-@import "chatbar.css";
+.topBar {
+    position: absolute;
+    top:0; left:0;
+    width:100%;
+    height:45px;
+    background-color: #354F37;
+    z-index:3;
+}
+.topBar .logo, .topBar .identify {
+    float:left;
+    margin-top:8px;
+}
+.topBar .notify, .topBar .search {
+    float:right;
+}
+.topBar .logo {
+    background-color: rgba(0,0,0,.2);
+    color: rgba(255,255,255,.4);
+    padding:6px 8px;
+    margin-right:15px;
+    border-radius: 1px;
+}
+.sideBar {
+    position:absolute;
+    top:0; left:0;
+    width:185px;
+    height:100%;
+    background:#F5F5F5;
+    border-right:1px solid #E6E6E6;
+    z-index:2;
+}
+.chatBar {
+    position:absolute;
+    top:0; right:0;
+    width:200px;
+    height:100%;
+    background:#F5F5F5;
+    border-left:1px solid #E6E6E6;
+    z-index:2;
+}
+body {
+    position:absolute;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    background:white;
+    font-family:'Arial';
+}

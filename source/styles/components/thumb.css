@@ -1,0 +1,13 @@
+.thumb {
+    .image, .title {
+        float:left;
+    }
+    .image {
+        width:28px;
+        br:1px;
+        margin-right:7px;
+    }
+    .title {
+        margin-top:7px;
+    }
+}

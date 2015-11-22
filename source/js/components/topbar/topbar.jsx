@@ -1,4 +1,5 @@
 var React = require('react');
+var Thumb = require('./../shared/thumb.jsx');
 
 var TopBar = React.createClass({
   render: function () {
@@ -8,10 +9,7 @@ var TopBar = React.createClass({
           cursuum
         </div>
         <div className="identify">
-          <a className="thumb" href="#">
-            <img className="image" src="http://placehold.it/16x16" />
-            <span className="title"> </span>
-          </a>
+          <Thumb title="Charles" filename="profile1.jpg"/>
         </div>
         <div className="notify">
           <span className="icon fa fa-globe"></span>

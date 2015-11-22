@@ -12,8 +12,12 @@ var reactify = require('reactify');
 
 var lost = require('lost');
 var autoprefixer = require('autoprefixer');
+var postcss_simple_vars = require('postcss-simple-vars');
 var postcss_nested = require('postcss-nested');
-var postcss_advanced_variables = require('postcss-advanced-variables');
+var postcss_hexrgba = require('postcss-hexrgba');
+var postcss_import = require('postcss-import');
+
+
 
 gulp.task('default', ['css','jsbundling','start','watcher','watcher2']);
 
@@ -22,7 +26,7 @@ gulp.task('start', shell.task(['./bin/www']));
 gulp.task('css', function() {
 	return gulp.src('source/styles/*.css')
 		.pipe(watch('source/styles/*.css'))
-		.pipe(postcss([lost(),autoprefixer(),postcss_nested(),postcss_advanced_variables()]))
+		.pipe(postcss([lost(),autoprefixer(),postcss_simple_vars(),postcss_hexrgba(),postcss_import(),postcss_nested()]))
 		.pipe(rucksack())
 		.pipe(gulp.dest('public/styles'));
 });
