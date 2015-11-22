@@ -19,13 +19,13 @@ var postcss_import = require('postcss-import');
 
 
 
-gulp.task('default', ['css','jsbundling','start','watcher','watcher2']);
+gulp.task('default', ['css','jsbundling','start','watcher3','watcher2']);
 
 gulp.task('start', shell.task(['./bin/www']));
 
 gulp.task('css', function() {
 	return gulp.src('source/styles/**/*.css')
-		.pipe(watch('source/styles/**/*.css'))
+		//.pipe(watch('source/styles/**/*.css'))
 		.pipe(postcss([lost(),autoprefixer(),postcss_simple_vars(),postcss_hexrgba(),postcss_import(),postcss_nested()]))
 		.pipe(rucksack())
 		.pipe(gulp.dest('public/styles'));
@@ -33,7 +33,7 @@ gulp.task('css', function() {
 
 //gulp.task('jsx', function() {
 //	return gulp.src('source/js/**/*.jsx')
-//		.pipe(watch('source/js/**/*.jsx'))
+//		.pipe(watch('source/js/**/*.jsx')
 //		.pipe(babel({
 //			presets: ['es2015']
 //		}))
@@ -49,11 +49,17 @@ gulp.task('jsbundling', function() {
 		.pipe(gulp.dest('public/js'));
 });
 
-gulp.task('watcher', function(cb) {
+//gulp.task('watcher', function(cb) {
+//	watch('source/styles/**/*.css', function() {
+//		gulp.src('source/styles/**/*.css')
+//			.pipe(watch('source/styles/**/*.css'))
+//			.on('end',cb);
+//	});
+//});
+
+gulp.task('watcher3', function(){
 	watch('source/styles/**/*.css', function() {
-		gulp.src('source/styles/**/*.css')
-			.pipe(watch('source/styles/**/*.css'))
-			.on('end',cb);
+		gulp.start('css');
 	});
 });
 
