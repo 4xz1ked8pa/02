@@ -1,0 +1,11 @@
+.thumb .image, .thumb .title {
+    float:left;
+}
+.thumb .image {
+    width:28px;
+    br:1px;
+    margin-right:7px;
+}
+.thumb .title {
+    margin-top:7px;
+}
