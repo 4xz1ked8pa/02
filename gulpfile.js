@@ -50,7 +50,7 @@ gulp.task('jsbundling', function() {
 });
 
 gulp.task('watcher', function(cb) {
-	watch('source/styles/*.css', function() {
+	watch('source/styles/**/*.css', function() {
 		gulp.src('source/styles/*.css')
 			.pipe(watch('source/styles/*.css'))
 			.on('end',cb);
