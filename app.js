@@ -10,6 +10,16 @@ var users = require('./routes/users');
 
 var app = express();
 
+// Configuring OrientDB database
+var oriento = require('oriento');
+
+var DBserver = oriento({
+	host: 'localhost',
+	port: 2424,
+	username: 'cursuum',
+	password: 'H(jjdss[dds6HFns63a7(@dasL32h6rw23r9f9w'
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

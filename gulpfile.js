@@ -24,8 +24,8 @@ gulp.task('default', ['css','jsbundling','start','watcher','watcher2']);
 gulp.task('start', shell.task(['./bin/www']));
 
 gulp.task('css', function() {
-	return gulp.src('source/styles/*.css')
-		.pipe(watch('source/styles/*.css'))
+	return gulp.src('source/styles/**/*.css')
+		.pipe(watch('source/styles/**/*.css'))
 		.pipe(postcss([lost(),autoprefixer(),postcss_simple_vars(),postcss_hexrgba(),postcss_import(),postcss_nested()]))
 		.pipe(rucksack())
 		.pipe(gulp.dest('public/styles'));
