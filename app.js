@@ -20,6 +20,11 @@ var DBserver = oriento({
 	password: 'H(jjdss[dds6HFns63a7(@dasL32h6rw23r9f9w'
 });
 
+car db = DBserver.use('Cusruum');
+
+// Configuring passport
+var passport = require('passport');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
