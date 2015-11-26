@@ -20,12 +20,25 @@ var DBserver = oriento({
 	password: 'H(jjdss[dds6HFns63a7(@dasL32h6rw23r9f9w'
 });
 
-// view engine setup
+var db = DBserver.use('Cusruum');
+
+// Configuring passport
+var passport = require('passport');
+var expressSession = require('express-session');
+
+app.use(expressSession({secret: 'JFD83*.de232e3eSFwd$2w'}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Initialize Passport
+var initPassport = require('./passport/init');
+initPassport(passport,db);
+
+// To be used in dev to render error page of express
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
