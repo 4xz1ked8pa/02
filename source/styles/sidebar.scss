@@ -1,0 +1,162 @@
+.sideBar {
+    position:absolute;
+    top:0; left:0;
+    width:$sidebar-width; height:100%;
+    background:$global-gray-background;
+    padding-top:$topbar-height + 20px;
+    padding-bottom:270px;
+    border-right:$global-gray-border;
+    overflow-y: auto;
+    z-index:2;
+    .jump-calendar {
+      position:absolute;
+      bottom:35px; left:0;
+      .header, .labels, .grid {
+        float:left;
+        width:100%;
+        height:auto;
+      }
+      .labels .label, .grid .block {
+        float:left;
+        width:percentage(1/7);
+        font-size:13px;
+        text-align: center;
+      }
+      .labels {
+        padding-top:7px;
+        padding-bottom:7px;
+        .label {
+          color:darken(white,75%);
+          font-weight:100;
+        }
+      }
+      .grid {
+        border-top:$global-gray-border;
+        .week {
+          &:hover {
+            background:darken(white,4%);
+            cursor:default;
+          }
+          .block {
+            background: rgba(black,.03);
+            color:#333333;
+            font-weight:200;
+            padding-top:10px;
+            padding-bottom:9px;
+            border:1px solid transparent;
+            &:hover {
+              color:darken(#333333,7%);
+              font-weight:400;
+            }
+            &.offset {
+              background:transparent;
+              color:lighten(#333333,50%);
+            }
+          }
+          &.current {
+            background:lighten(#AAB5AA,24%);
+            @include transition(.2s all ease-in-out);
+            &:hover {
+              background:lighten(#AAB5AA,22%);
+              .block {
+                color:darken(white,85%);
+              }
+            }
+          }
+          &:first-child {
+            margin-top:0;
+          }
+        }
+      }
+      .header {
+        position: relative;
+        text-align: center;
+        margin-bottom:10px;
+        .back, .next {
+          position: absolute;
+          top:2px;
+          color:#939398;
+          font-size:12px;
+          font-weight:200;
+        }
+        .back {
+          left:$global-gutter;
+        }
+        .title {
+          display: inline-block;
+          color:#333333;
+          .year {
+            margin-left:5px;
+          }
+        }
+        .next {
+          right:$global-gutter;
+        }
+      }
+    }
+    .access-module, .manage-filters, .jump-calendar, .interact {
+      width:100%;
+    }
+    .access-module, .manage-filters {
+      float:left;
+      margin-top:36px;
+      &:first-child {
+        margin-top:0;
+      }
+      .access-header {
+        color:$list-header-color;
+        font-size:$list-header-fontsize;
+        font-weight:$list-header-fontweight;
+        text-transform:uppercase;
+        padding:0 $global-gutter $list-header-paddingbottom $global-gutter;
+        margin-bottom:$list-header-marginbottom;
+        border-bottom:$global-gray-border;
+      }
+      .thumb {
+        float:left;
+        width:100%;
+        padding-left:$global-gutter;
+        padding-right:$global-gutter;
+        margin-bottom:0px;
+        &:hover {
+          background:darken(white,7%);
+          cursor: pointer;
+        }
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        .title {
+          @include ellipsis(85%);
+        }
+      }
+    }
+    .interact {
+      position: absolute;
+      bottom:0; left:0;
+      height:35px;
+      background: lighten($global-gray-background, 4%);
+      border-top:$global-gray-border;
+      .option {
+        height:100%;
+        &.add-event, &.add-filter, &.access-settings {
+          color:darken(white,65%);
+          padding-top:10px;
+          padding-left:10px;
+          padding-right:8px;
+          &:hover {
+            background: darken(white,3%);
+            color:darken(white,84%);
+            cursor:pointer;
+          }
+        }
+        &.add-event, &.add-filter {
+          float:right;
+          border-left:$global-gray-border;
+        }
+        &.access-settings {
+          float:left;
+          padding-left:$global-gutter;
+        }
+      }
+    }
+}

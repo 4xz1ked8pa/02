@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600,400italic,700,600italic,700italic,800,800italic);
+
+body {
+    position:absolute;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    font-size:14px;
+    font-family:'Open Sans';
+    font-smoothing:antialiased;
+    text-rendering: optimizeLegibility;
+    * {
+      box-sizing: border-box;
+    }
+    .root {
+      position: absolute;
+      top:0; left:0;
+      width:100%;
+      height:100%;
+      padding-top:$topbar-height;
+      padding-left:$sidebar-width;
+      padding-right:$chatbar-width;
+    }
+}
+
+.row {
+  float: left;
+  width:100%;
+}

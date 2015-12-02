@@ -19015,12 +19015,42 @@ module.exports = require('./lib/React');
 
 },{"./lib/React":26}],159:[function(require,module,exports){
 var React = require('react');
+var Thumb = require('./../shared/thumb.jsx');
 
 var ChatBar = React.createClass({displayName: "ChatBar",
   render: function () {
     return (
       React.createElement("div", {className: "chatBar"}, 
-		"Chat Bar"
+        React.createElement("div", {className: "online"}, 
+          React.createElement(Thumb, {title: "Nathan Holt", filename: "http://placehold.it/500?text=PICTURE", notifycount: "8"}), 
+          React.createElement(Thumb, {title: "Deborah Miller", filename: "http://placehold.it/500?text=PICTURE"}), 
+          React.createElement(Thumb, {title: "Julian Dennis", filename: "http://placehold.it/500?text=PICTURE", notifycount: "12"}), 
+          React.createElement(Thumb, {title: "Jean Klein", filename: "http://placehold.it/500?text=PICTURE", notifycount: "3"}), 
+          React.createElement(Thumb, {title: "Christie Duncan", filename: "http://placehold.it/500?text=PICTURE"}), 
+          React.createElement(Thumb, {title: "Angelo Foster", filename: "http://placehold.it/500?text=PICTURE"}), 
+          React.createElement(Thumb, {title: "Jonathan Brown", filename: "http://placehold.it/500?text=PICTURE", notifycount: "6"}), 
+          React.createElement(Thumb, {title: "Harry Hill", filename: "http://placehold.it/500?text=PICTURE", notifycount: "14"}), 
+          React.createElement(Thumb, {title: "Jesse Smith", filename: "http://placehold.it/500?text=PICTURE"}), 
+          React.createElement(Thumb, {title: "Howard Foster", filename: "http://placehold.it/500?text=PICTURE"})
+        ), 
+        React.createElement("div", {className: "offline"}, 
+          React.createElement(Thumb, {title: "Jason Craig", filename: "http://placehold.it/500?text=PICTURE", notifycount: "9"}), 
+          React.createElement(Thumb, {title: "Terrell Carpenter", filename: "http://placehold.it/500?text=PICTURE", notifycount: "17"}), 
+          React.createElement(Thumb, {title: "Caleb Freeman", filename: "http://placehold.it/500?text=PICTURE"}), 
+          React.createElement(Thumb, {title: "Norma Shelton", filename: "http://placehold.it/500?text=PICTURE", notifycount: "4"}), 
+          React.createElement(Thumb, {title: "Wesley Harris", filename: "http://placehold.it/500?text=PICTURE"}), 
+          React.createElement(Thumb, {title: "Lena Murray", filename: "http://placehold.it/500?text=PICTURE", notifycount: "1"}), 
+          React.createElement(Thumb, {title: "Mack Wong", filename: "http://placehold.it/500?text=PICTURE", notifycount: "9"}), 
+          React.createElement(Thumb, {title: "Alvin Swanson", filename: "http://placehold.it/500?text=PICTURE"}), 
+          React.createElement(Thumb, {title: "Barry Clarke", filename: "http://placehold.it/500?text=PICTURE", notifycount: "6"})
+        ), 
+        React.createElement("div", {className: "interact"}, 
+          React.createElement("div", {className: "search"}, 
+            React.createElement("input", {className: "form-text", placeholder: "Search members", type: "text"})
+          ), 
+          React.createElement("div", {className: "option compose fa fa-pencil"}), 
+          React.createElement("div", {className: "option status available fa fa-circle"})
+        )
       )
     );
   }
@@ -19028,14 +19058,390 @@ var ChatBar = React.createClass({displayName: "ChatBar",
 
 module.exports = ChatBar;
 
-},{"react":158}],160:[function(require,module,exports){
+},{"./../shared/thumb.jsx":162,"react":158}],160:[function(require,module,exports){
 var React = require('react');
 
 var Main = React.createClass({displayName: "Main",
   render: function () {
     return (
       React.createElement("div", {className: "Main"}, 
-		"Main"
+        React.createElement("div", {className: "main-header"}, 
+          React.createElement("h1", {className: "title"}, "Charles Gaudreau Jackson"), 
+          React.createElement("h2", {className: "subtitle"}, "November 2015")
+        ), 
+        React.createElement("div", {className: "main-view"}, 
+            React.createElement("div", {className: "calendar-month"}, 
+              React.createElement("div", {className: "calendar-labels"}, 
+                React.createElement("div", {className: "label"}, "Sunday"), 
+                React.createElement("div", {className: "label"}, "Monday"), 
+                React.createElement("div", {className: "label"}, "Tuesday"), 
+                React.createElement("div", {className: "label"}, "Wednesday"), 
+                React.createElement("div", {className: "label"}, "Thursday"), 
+                React.createElement("div", {className: "label"}, "Friday"), 
+                React.createElement("div", {className: "label"}, "Saturday")
+              ), 
+              React.createElement("div", {className: "calendar-blocks"}, 
+                React.createElement("div", {className: "week"}, 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "1"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "2"), 
+                      React.createElement("span", {className: "weather fa fa-sun-o"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "3"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "4"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "5"), 
+                      React.createElement("span", {className: "weather fa fa-sun-o"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "6"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "7"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week"}, 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "8"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "9"), 
+                      React.createElement("span", {className: "weather fa fa-sun-o"})
+                    ), 
+                    React.createElement("div", {className: "block-events"}, 
+                      React.createElement("div", {className: "block-event"}, 
+                        React.createElement("span", {className: "title"}, "Patrick's birthday party"), 
+                        React.createElement("span", {className: "time"}, "3pm")
+                      ), 
+                      React.createElement("div", {className: "block-event"}, 
+                        React.createElement("span", {className: "title"}, "TFS launch party"), 
+                        React.createElement("span", {className: "time"}, "5pm")
+                      )
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "10"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "11"), 
+                      React.createElement("span", {className: "weather fa fa-sun-o"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "12"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "13"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    ), 
+                    React.createElement("div", {className: "block-events"}, 
+                      React.createElement("div", {className: "block-event"}, 
+                        React.createElement("span", {className: "title"}, "Scatman celebration"), 
+                        React.createElement("span", {className: "time"}, "3pm")
+                      )
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "14"), 
+                      React.createElement("span", {className: "weather fa fa-sun-o"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week"}, 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "15"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "16"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "17"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "18"), 
+                      React.createElement("span", {className: "weather fa fa-sun-o"})
+                    ), 
+                    React.createElement("div", {className: "block-events"}, 
+                      React.createElement("div", {className: "block-event"}, 
+                        React.createElement("span", {className: "title"}, "Development team meeting"), 
+                        React.createElement("span", {className: "time"}, "3pm")
+                      )
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "19"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "20"), 
+                      React.createElement("span", {className: "weather fa fa-sun-o"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "21"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week"}, 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "22"), 
+                      React.createElement("span", {className: "weather fa fa-sun-o"})
+                    ), 
+                    React.createElement("div", {className: "block-events"}, 
+                      React.createElement("div", {className: "block-event"}, 
+                        React.createElement("span", {className: "title"}, "Isabel's exposition at"), 
+                        React.createElement("span", {className: "time"}, "9pm")
+                      )
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "23"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "24"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "25"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "26"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "27"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    ), 
+                    React.createElement("div", {className: "block-events"}, 
+                      React.createElement("div", {className: "block-event"}, 
+                        React.createElement("span", {className: "title"}, "Watch Django with Dexter"), 
+                        React.createElement("span", {className: "time"}, "3pm")
+                      ), 
+                      React.createElement("div", {className: "block-event"}, 
+                        React.createElement("span", {className: "title"}, "Meeting for Internet Culture related subjects"), 
+                        React.createElement("span", {className: "time"}, "5pm")
+                      )
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("div", {className: "date"}, "28"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week"}, 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "29"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "30"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "1"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    ), 
+                    React.createElement("div", {className: "block-events"}, 
+                      React.createElement("div", {className: "block-event"}, 
+                        React.createElement("span", {className: "title"}, "Cursuum explanatory meeting"), 
+                        React.createElement("span", {className: "time"}, "11am")
+                      )
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "2"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "3"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "4"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "5"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week"}, 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "6"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    ), 
+                    React.createElement("div", {className: "block-events"}, 
+                      React.createElement("div", {className: "block-event"}, 
+                        React.createElement("span", {className: "title"}, "Dota lan party with Jon"), 
+                        React.createElement("span", {className: "time"}, "2pm")
+                      )
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "7"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "8"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "9"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "10"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "11"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "12"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week"}, 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "13"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "14"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "15"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "16"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "17"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "18"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "block offset"}, 
+                    React.createElement("div", {className: "block-header"}, 
+                      React.createElement("span", {className: "date"}, "19"), 
+                      React.createElement("span", {className: "weather fa fa-cloud"})
+                    )
+                  )
+                )
+              )
+            )
+        )
       )
     );
   }
@@ -19071,7 +19477,7 @@ var React = require('react');
 var Thumb = React.createClass({displayName: "Thumb",
   render: function () {
     if (this.props.filename) {
-      var image = React.createElement("img", {className: "image", src: 'http://placehold.it/100x100'});
+      var image = React.createElement("div", {className: "image"}, React.createElement("img", {src: this.props.filename}));
     }
     if (this.props.iconname) {
       var icon = React.createElement("span", {className: 'icon fa fa' + this.props.iconname});
@@ -19080,7 +19486,7 @@ var Thumb = React.createClass({displayName: "Thumb",
       var capsule = React.createElement("span", {className: "capsule"}, this.props.notifycount);
     }
     if (this.props.canRemove) {
-      var canRemove = React.createElement("span", {className: "close"}, "[x]");
+      var canRemove = React.createElement("span", {className: "close"}, "-");
     }
     return (
         React.createElement("div", {className: "thumb"}, 
@@ -19105,37 +19511,94 @@ var SideBar = React.createClass({displayName: "SideBar",
     return (
         React.createElement("div", {className: "sideBar"}, 
           React.createElement("div", {className: "access-module"}, 
+            React.createElement("div", {className: "access-header"}, "Suggested"), 
             React.createElement(Thumb, {title: "Events", iconname: "calendar", notifycount: "1", capsule: "True"}), 
-            React.createElement(Thumb, {title: "Stacks", iconname: "team", notifycount: "2", capsule: "True"}), 
-            React.createElement(Thumb, {title: "People", iconname: "bubble", notifycount: "3", capsule: "True"})
+            React.createElement(Thumb, {title: "People", iconname: "bubble", notifycount: "3", capsule: "True"}), 
+            React.createElement(Thumb, {title: "Groups", iconname: "team", notifycount: "2", capsule: "True"})
           ), 
           React.createElement("div", {className: "access-module"}, 
+            React.createElement("div", {className: "access-header"}, "Groups"), 
             React.createElement(Thumb, {title: "McGill University Association", iconname: "calendar", notifycount: "2"}), 
-            React.createElement(Thumb, {title: "Code Jams", iconname: "calendar", notifycount: "6"}), 
-            React.createElement(Thumb, {title: "2600 The Hacker Quartely", iconname: "calendar", notifycount: "6"}), 
-            React.createElement(Thumb, {title: "Web Cats Community", iconname: "calendar", notifycount: "6"})
+            React.createElement(Thumb, {title: "Code Jams", iconname: "calendar"}), 
+            React.createElement(Thumb, {title: "2600 The Hacker Quartely", iconname: "calendar", notifycount: "1"}), 
+            React.createElement(Thumb, {title: "Web Cats Community", iconname: "calendar", notifycount: "7"})
           ), 
           React.createElement("div", {className: "manage-filters"}, 
-            React.createElement(Thumb, {title: "Charles Gaudreau Jackson", canRemove: true})
+            React.createElement("div", {className: "access-header"}, "Filters"), 
+            React.createElement(Thumb, {title: "Charles Gaudreau Jackson", canRemove: true}), 
+            React.createElement(Thumb, {title: "Technology", canRemove: true}), 
+            React.createElement(Thumb, {title: "Rainy weather", canRemove: true})
           ), 
           React.createElement("div", {className: "jump-calendar monthly"}, 
             React.createElement("div", {className: "header"}, 
-              React.createElement("span", {className: "fa fa-chevron-left"}), 
+              React.createElement("span", {className: "back fa fa-chevron-left"}), 
               React.createElement("div", {className: "title"}, 
                 React.createElement("span", {className: "month"}, "November"), 
                 React.createElement("span", {className: "year"}, "2015")
               ), 
-              React.createElement("span", {className: "fa fa-chevron-right"})
+              React.createElement("span", {className: "next fa fa-chevron-right"})
             ), 
-            React.createElement("ul", {className: "jump-grid"}
-
+            React.createElement("ul", {className: "labels"}, 
+              React.createElement("li", {className: "label"}, "S"), 
+              React.createElement("li", {className: "label"}, "M"), 
+              React.createElement("li", {className: "label"}, "T"), 
+              React.createElement("li", {className: "label"}, "W"), 
+              React.createElement("li", {className: "label"}, "T"), 
+              React.createElement("li", {className: "label"}, "F"), 
+              React.createElement("li", {className: "label"}, "S")
+            ), 
+            React.createElement("div", {className: "grid"}, 
+              React.createElement("ul", {className: "week row"}, 
+                React.createElement("li", {className: "block"}, "1"), 
+                React.createElement("li", {className: "block"}, "2"), 
+                React.createElement("li", {className: "block"}, "3"), 
+                React.createElement("li", {className: "block"}, "4"), 
+                React.createElement("li", {className: "block"}, "5"), 
+                React.createElement("li", {className: "block"}, "6"), 
+                React.createElement("li", {className: "block"}, "7")
+              ), 
+              React.createElement("ul", {className: "week row"}, 
+                React.createElement("li", {className: "block"}, "8"), 
+                React.createElement("li", {className: "block"}, "9"), 
+                React.createElement("li", {className: "block"}, "10"), 
+                React.createElement("li", {className: "block"}, "11"), 
+                React.createElement("li", {className: "block"}, "12"), 
+                React.createElement("li", {className: "block"}, "13"), 
+                React.createElement("li", {className: "block"}, "14")
+              ), 
+              React.createElement("ul", {className: "week row current"}, 
+                React.createElement("li", {className: "block"}, "15"), 
+                React.createElement("li", {className: "block"}, "16"), 
+                React.createElement("li", {className: "block"}, "17"), 
+                React.createElement("li", {className: "block"}, "18"), 
+                React.createElement("li", {className: "block"}, "19"), 
+                React.createElement("li", {className: "block"}, "20"), 
+                React.createElement("li", {className: "block"}, "21")
+              ), 
+              React.createElement("ul", {className: "week row"}, 
+                React.createElement("li", {className: "block"}, "22"), 
+                React.createElement("li", {className: "block"}, "23"), 
+                React.createElement("li", {className: "block"}, "24"), 
+                React.createElement("li", {className: "block"}, "25"), 
+                React.createElement("li", {className: "block"}, "26"), 
+                React.createElement("li", {className: "block"}, "27"), 
+                React.createElement("li", {className: "block"}, "28")
+              ), 
+              React.createElement("ul", {className: "week row"}, 
+                React.createElement("li", {className: "block"}, "29"), 
+                React.createElement("li", {className: "block"}, "30"), 
+                React.createElement("li", {className: "block offset"}, "1"), 
+                React.createElement("li", {className: "block offset"}, "2"), 
+                React.createElement("li", {className: "block offset"}, "3"), 
+                React.createElement("li", {className: "block offset"}, "4"), 
+                React.createElement("li", {className: "block offset"}, "5")
+              )
             )
           ), 
           React.createElement("ul", {className: "interact"}, 
-            React.createElement("span", {className: "option add-event"}), 
-            React.createElement("span", {className: "option add-filter"}), 
-            React.createElement("span", {className: "option add-stack"}), 
-            React.createElement("span", {className: "access-settings"})
+            React.createElement("span", {className: "option add-event fa fa-calendar-plus-o"}), 
+            React.createElement("span", {className: "option add-filter fa fa-clone"}), 
+            React.createElement("span", {className: "option access-settings fa fa-cog"})
           )
         )
     );
@@ -19152,29 +19615,70 @@ var TopBar = React.createClass({displayName: "TopBar",
   render: function () {
     return (
       React.createElement("div", {className: "topBar"}, 
-        React.createElement("div", {className: "logo"}, 
-          "cursuum"
-        ), 
+        React.createElement("div", {className: "logo"}, "cursuum"), 
         React.createElement("div", {className: "identify"}, 
-          React.createElement(Thumb, {title: "Charles", filename: "profile1.jpg"})
+          React.createElement("div", {className: "thumb"}, 
+            React.createElement("div", {className: "image"}, 
+              React.createElement("div", {className: "mask"}), 
+              React.createElement("img", {src: "https://avatars3.githubusercontent.com/u/3092838?v=3&s=460"})
+            ), 
+            React.createElement("div", {className: "title"}, "Charles Gaudreau Jackson")
+          )
+        ), 
+        React.createElement("div", {className: "search active"}, 
+          React.createElement("input", {className: "form-text", placeholder: "Search for people, schedules, events and more", type: "text"}), 
+          React.createElement("div", {className: "pane"}, 
+            React.createElement("ul", {className: "shown"}, 
+              React.createElement("div", {className: "pane-header"}, 
+                React.createElement("span", null, "People")
+              ), 
+              React.createElement("div", {className: "pane-list"}, 
+                React.createElement("div", {className: "pane-item"}, 
+                  React.createElement("div", {className: "pane-picture"}), 
+                  React.createElement("div", {className: "pane-infos"}, 
+                    React.createElement("div", {className: "row"}, 
+                      React.createElement("div", {className: "title"}, "Charles Gaudreau Jackson")
+                    ), 
+                    React.createElement("div", {className: "row"}, 
+                      React.createElement("div", {className: "subtitle"}, "Concordia University")
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "pane-item"}, 
+                  React.createElement("div", {className: "pane-picture"}), 
+                  React.createElement("div", {className: "pane-infos"}, 
+                    React.createElement("div", {className: "row"}, 
+                      React.createElement("div", {className: "title"}, "Geoffroy Bergeron")
+                    ), 
+                    React.createElement("div", {className: "row"}, 
+                      React.createElement("div", {className: "subtitle"}, "University of Montreal")
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "pane-item"}, 
+                  React.createElement("div", {className: "pane-picture"}), 
+                  React.createElement("div", {className: "pane-infos"}, 
+                    React.createElement("div", {className: "row"}, 
+                      React.createElement("div", {className: "title"}, "Harris Robin Kalash")
+                    ), 
+                    React.createElement("div", {className: "row"}, 
+                      React.createElement("div", {className: "subtitle"}, "Thirdshelf")
+                    )
+                  )
+                )
+              )
+            ), 
+            React.createElement("div", {className: "more"}, "See more")
+          )
         ), 
         React.createElement("div", {className: "notify"}, 
-          React.createElement("span", {className: "icon fa fa-globe"}), 
+          React.createElement("a", {href: "#", className: "trigger fa fa-globe"}), 
           React.createElement("div", {className: "pane"}, 
             React.createElement("ul", {className: "tabs"}, 
               React.createElement("li", {className: "tab"}, "Requests"), 
               React.createElement("li", {className: "tab"}, "Feed"), 
               React.createElement("li", {className: "tab"}, "Messages")
             ), 
-            React.createElement("ul", {className: "shown"}
-
-            ), 
-            React.createElement("div", {className: "more"}, "See more")
-          )
-        ), 
-        React.createElement("div", {className: "search"}, 
-          React.createElement("input", {className: "form-text", placeholder: "Search for people, schedules, events and more", type: "text"}), 
-          React.createElement("div", {className: "pane"}, 
             React.createElement("ul", {className: "shown"}
 
             ), 

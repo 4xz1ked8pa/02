@@ -1,9 +1,0 @@
-.chatBar {
-    position:absolute;
-    top:0; right:0;
-    width:$chatBarWidth;
-    height:100%;
-    background:#F5F5F5;
-    border-left:1px solid #E6E6E6;
-    z-index:2;
-}

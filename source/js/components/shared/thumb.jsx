@@ -3,7 +3,7 @@ var React = require('react');
 var Thumb = React.createClass({
   render: function () {
     if (this.props.filename) {
-      var image = <img className="image" src={'http://placehold.it/100x100'}/>;
+      var image = <div className="image"><img src={this.props.filename} /></div>;
     }
     if (this.props.iconname) {
       var icon = <span className={'icon fa fa' + this.props.iconname}></span>;
@@ -12,7 +12,7 @@ var Thumb = React.createClass({
       var capsule = <span className="capsule">{this.props.notifycount}</span>;
     }
     if (this.props.canRemove) {
-      var canRemove = <span className="close">[x]</span>;
+      var canRemove = <span className="close">-</span>;
     }
     return (
         <div className="thumb">

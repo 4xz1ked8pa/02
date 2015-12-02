@@ -1,0 +1,29 @@
+// Global
+$primary-color:#344F35;
+$secondary-color: #777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$global-gray-border:1px solid #D9D9D9;
+$global-gray-border-pale:1px solid lighten(#D9D9D9, 4%);
+$global-gray-background:lighten(#F5F5F5,1.8%);
+
+$global-fontsize:13px;
+$global-radius:1px;
+$global-gutter:7px;
+
+// List
+$list-header-color:darken(#444444,10%);
+$list-header-fontsize:14px;
+$list-header-fontweight:400;
+$list-header-paddingbottom:5px;
+$list-header-marginbottom:6px;
+
+// Top Bar
+$topbar-height:42px;
+
+// Side Bar
+$sidebar-width:190px;
+
+// Chat Bar
+$chatbar-width:200px;

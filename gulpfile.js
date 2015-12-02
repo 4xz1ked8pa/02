@@ -30,7 +30,9 @@ gulp.task('start', shell.task(['./bin/www']));
 
 gulp.task('css', function() {
 	gulp.src('./source/styles/**/*.scss')
-		.pipe(sass().on('error', sass.logError))
+		.pipe(sass({
+			includePaths: require('node-bourbon').includePaths
+		}).on('error', sass.logError))
 		.pipe(gulp.dest('public/styles'));
 });
 
