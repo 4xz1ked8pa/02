@@ -1,4 +1,5 @@
 var React = require('react');
+var ChatBox = require('./chatbar/chatbox.jsx');
 
 var Main = React.createClass({
   render: function () {
@@ -382,6 +383,7 @@ var Main = React.createClass({
             </div>
         </div>
       </div>
+      <ChatBox />
     );
   }
 });

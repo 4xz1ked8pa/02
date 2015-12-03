@@ -239,6 +239,14 @@ body {
             font-size: 13px;
             font-weight: 400; }
 
+.chatBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  background: gray; }
+
 /* Core */
 .topBar {
   position: absolute;
@@ -391,6 +399,8 @@ body {
     position: absolute;
     bottom: 35px;
     left: 0; }
+    .sideBar .jump-calendar .header, .sideBar .jump-calendar .labels {
+      background: #FAFAFA; }
     .sideBar .jump-calendar .header, .sideBar .jump-calendar .labels, .sideBar .jump-calendar .grid {
       float: left;
       width: 100%;
@@ -407,6 +417,7 @@ body {
         color: #404040;
         font-weight: 100; }
     .sideBar .jump-calendar .grid {
+      background: #F3F3F3;
       border-top: 1px solid #D9D9D9; }
       .sideBar .jump-calendar .grid .week:hover {
         background: whitesmoke;
@@ -438,10 +449,11 @@ body {
     .sideBar .jump-calendar .header {
       position: relative;
       text-align: center;
-      margin-bottom: 10px; }
+      padding-top: 8px;
+      padding-bottom: 10px; }
       .sideBar .jump-calendar .header .back, .sideBar .jump-calendar .header .next {
         position: absolute;
-        top: 2px;
+        top: 9px;
         color: #939398;
         font-size: 12px;
         font-weight: 200; }

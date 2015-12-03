@@ -11,6 +11,9 @@
     .jump-calendar {
       position:absolute;
       bottom:35px; left:0;
+      .header, .labels {
+        background: #FAFAFA;
+      }
       .header, .labels, .grid {
         float:left;
         width:100%;
@@ -31,6 +34,7 @@
         }
       }
       .grid {
+        background: #F3F3F3;
         border-top:$global-gray-border;
         .week {
           &:hover {
@@ -71,10 +75,11 @@
       .header {
         position: relative;
         text-align: center;
-        margin-bottom:10px;
+        padding-top:8px;
+        padding-bottom:10px;
         .back, .next {
           position: absolute;
-          top:2px;
+          top:9px;
           color:#939398;
           font-size:12px;
           font-weight:200;
