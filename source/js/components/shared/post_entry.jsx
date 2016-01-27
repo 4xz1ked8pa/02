@@ -4,11 +4,22 @@ var ProfileFeedPost = require('./../main/profile_feed_post.jsx');
 
 var ProfileUserFeed = React.createClass({
   render: function () {
+    var headerClass = "post-entry";
+    var inputPlaceholder = "What's on your mind?";
+    if (this.props.mode) {
+      if (this.props.mode = "reply") {
+        var headerClass = "post-entry entry-reply";
+        var inputPlaceholder = "Write a reply...";
+      }
+    }
     return (
-      <div className="post-entry">
+      <div className={headerClass}>
         <div className="input-row entry-value">
           <div className="entry-submit">
-            <textarea className="input-field" placeholder="What's on your mind?"></textarea>
+            <textarea className="input-field" placeholder={inputPlaceholder}></textarea>
+            <div className="post-emoji">
+              <a className="emoji-trigger fa fa-smile-o" href="#"></a>
+            </div>
           </div>
         </div>
         <div className="input-row entry-interact">

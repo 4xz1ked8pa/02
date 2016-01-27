@@ -1,15 +1,14 @@
 .post-reply-entry {
   position: relative;
   float:left;
+  width:100%;
   min-height:$post-reply-picture-width;
-  margin-top:12px;
   margin-bottom:23px;
   .reply-details {
     float:left;
     width:100%;
     line-height:1.5;
     padding-left:$profile-list-item-picture-width + $post-reply-picture-width + $profile-list-item-picture-marginright + 8px;
-    margin-top:-6px;
     .reply-body {
       color:darken(white,70%);
       font-size:13px;

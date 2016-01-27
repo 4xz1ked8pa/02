@@ -19361,9 +19361,10 @@ var ProfileTabs = React.createClass({displayName: "ProfileTabs",
     return (
       React.createElement("div", {className: "profile-tabs"}, 
         React.createElement("div", {className: "tab section-feed"}, "Feed"), 
+        React.createElement("div", {className: "tab section-schedule"}, "Schedule"), 
         React.createElement("div", {className: "tab section-about"}, "About"), 
         React.createElement("div", {className: "tab section-friends active"}, "Friends"), 
-        React.createElement("div", {className: "tab section-schedule"}, "Schedule"), 
+        React.createElement("div", {className: "tab section-photos hide"}, "Photos"), 
         React.createElement("div", {className: "tab sections-more"}, "More", React.createElement("span", {className: "caret fa fa-caret-down"}))
       )
     );
@@ -21772,11 +21773,22 @@ var ProfileFeedPost = require('./../main/profile_feed_post.jsx');
 
 var ProfileUserFeed = React.createClass({displayName: "ProfileUserFeed",
   render: function () {
+    var headerClass = "post-entry";
+    var inputPlaceholder = "What's on your mind?";
+    if (this.props.mode) {
+      if (this.props.mode = "reply") {
+        var headerClass = "post-entry entry-reply";
+        var inputPlaceholder = "Write a reply...";
+      }
+    }
     return (
-      React.createElement("div", {className: "post-entry"}, 
+      React.createElement("div", {className: headerClass}, 
         React.createElement("div", {className: "input-row entry-value"}, 
           React.createElement("div", {className: "entry-submit"}, 
-            React.createElement("textarea", {className: "input-field", placeholder: "What's on your mind?"})
+            React.createElement("textarea", {className: "input-field", placeholder: inputPlaceholder}), 
+            React.createElement("div", {className: "post-emoji"}, 
+              React.createElement("a", {className: "emoji-trigger fa fa-smile-o", href: "#"})
+            )
           )
         ), 
         React.createElement("div", {className: "input-row entry-interact"}, 
@@ -21812,10 +21824,10 @@ var PostEntry = require('./../shared/post_entry.jsx');
 var PostReplyEntry = React.createClass({displayName: "PostReplyEntry",
   render: function () {
     return (
-      React.createElement("div", {className: "post-reply-entry hide"}, 
+      React.createElement("div", {className: "post-reply-entry"}, 
         React.createElement("div", {className: "author-picture"}), 
         React.createElement("div", {className: "reply-details"}, 
-          React.createElement(PostEntry, null)
+          React.createElement(PostEntry, {mode: "reply"})
         )
       )
     );

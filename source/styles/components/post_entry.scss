@@ -2,11 +2,12 @@
   float:left;
   width:100%;
   background: darken(white,3%);
-  box-shadow:0 1px 0 rgba(black,.035);
+  box-shadow:0 1px 0 rgba(black,.030);
   .input-row {
     float:left;
     width:100%;
     &.entry-interact {
+      height:28.44px;
       border-bottom:1px solid darken(white,30%);
       border-left:1px solid darken(white,24%);
       border-right:1px solid darken(white,24%);
@@ -20,8 +21,8 @@
             background: transparent;
             padding-top:8.45px;
             padding-bottom:7px;
-            //border:1px solid lighten(#D6D6D6,9%);
             border:none;
+            box-shadow: none;
             .trigger-icon {
               padding-top:0;
             }
@@ -86,6 +87,20 @@
       }
     }
     &.entry-value {
+      .post-emoji {
+        display: none;
+        position: absolute;
+        top:7px; right:6px;
+        .emoji-trigger {
+          float:left;
+          color:darken(white,15%);
+          font-size:16px;
+          @include transition(.15s color ease-in-out);
+          &:hover {
+            color:darken(white,60%);
+          }
+        }
+      }
       .input-field {
         float:left;
         width:100%;
@@ -104,6 +119,51 @@
         @include placeholder {
           color:darken(white,50%);
           font-weight:300;
+        }
+      }
+    }
+  }
+  &.entry-reply {
+    .input-row {
+      &.entry-interact {
+        display: none;
+        height:25px;
+        .entry-asset {
+          padding-top:7px;
+          padding-bottom:6px;
+          padding-left:9px;
+          padding-right:9px;
+          .asset-icon {
+            font-size:10px;
+          }
+          &.scale-down {
+            padding-top:6.3px;
+            padding-bottom:6px;
+            .asset-icon {
+              font-size:9px;
+            }
+          }
+        }
+      }
+      &.entry-value {
+        .entry-submit {
+          .post-emoji {
+            display: block;
+          }
+          .input-field {
+            float:left;
+            width:100%;
+            height:56px;
+            background: darken(white,1%);
+            font-size:13px;
+            padding-right:25px;
+            border-top:1px solid darken(white,20%);
+            border-bottom:1px solid darken(white,22%);
+            border-left:1px solid darken(white,20%);
+            border-right:1px solid darken(white,20%);
+            border-radius:1px;
+            box-shadow:0 1px 0 rgba(black,.01);
+          }
         }
       }
     }
