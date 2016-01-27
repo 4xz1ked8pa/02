@@ -1,16 +1,23 @@
+@import "settings";
+@import "bourbon";
+
 .sideBar {
-    position:absolute;
+    position:fixed;
     top:0; left:0;
     width:$sidebar-width; height:100%;
     background:$global-gray-background;
-    padding-top:$topbar-height + 20px;
+    padding-top:$topbar-height + 15px;
     padding-bottom:270px;
     border-right:$global-gray-border;
     overflow-y: auto;
     z-index:2;
     .jump-calendar {
+      display: none;
       position:absolute;
       bottom:35px; left:0;
+      &.folded {
+        bottom:-160px;
+      }
       .header, .labels {
         background: #FAFAFA;
       }
@@ -22,7 +29,7 @@
       .labels .label, .grid .block {
         float:left;
         width:percentage(1/7);
-        font-size:13px;
+        font-size:12px;
         text-align: center;
       }
       .labels {
@@ -77,6 +84,11 @@
         text-align: center;
         padding-top:8px;
         padding-bottom:10px;
+        .back, .next, .title  {
+          &:hover {
+            cursor:pointer;
+          }
+        }
         .back, .next {
           position: absolute;
           top:9px;
@@ -105,6 +117,7 @@
     .access-module, .manage-filters {
       float:left;
       margin-top:36px;
+
       &:first-child {
         margin-top:0;
       }
@@ -113,27 +126,41 @@
         font-size:$list-header-fontsize;
         font-weight:$list-header-fontweight;
         text-transform:uppercase;
-        padding:0 $global-gutter $list-header-paddingbottom $global-gutter;
+        padding:0 $sidebar-gutter $list-header-paddingbottom $sidebar-gutter;
         margin-bottom:$list-header-marginbottom;
         border-bottom:$global-gray-border;
+        &:hover {
+          .list-all {
+            color:darken(white,40%);
+          }
+        }
+        .list-all {
+          float:right;
+          color:transparent;
+          &:hover {
+            color:darken(white,60%);
+            cursor:pointer;
+          }
+        }
       }
       .thumb {
         float:left;
         width:100%;
-        padding-left:$global-gutter;
-        padding-right:$global-gutter;
+        padding-left:$sidebar-gutter;
+        padding-right:$sidebar-gutter * .5;
         margin-bottom:0px;
         &:hover {
-          background:darken(white,7%);
+          background:darken(white,3%);
           cursor: pointer;
         }
         &:last-of-type {
           margin-bottom: 0;
         }
         .title {
-          @include ellipsis(85%);
+          @include ellipsis(87%);
         }
       }
+
     }
     .interact {
       position: absolute;
@@ -160,7 +187,7 @@
         }
         &.access-settings {
           float:left;
-          padding-left:$global-gutter;
+          padding-left:$sidebar-gutter;
         }
       }
     }

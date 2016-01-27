@@ -1,0 +1,108 @@
+.event-list-date {
+  position: relative;
+  float: left;
+  width:100%;
+  color:darken(white,77%);
+  font-size:12px;
+  font-weight:300;
+  padding-top:8px;
+  padding-bottom:7px;
+  padding-left:$modal-wrap-gutter;
+  .primary, .secondary {
+    float:left;
+    width:100%;
+    margin-top:9px;
+    &:first-of-type {
+      margin-top:0;
+    }
+  }
+  .primary {
+    font-weight:200;
+    .date-interact {
+      position: absolute;
+      top:0; right:0;
+      height:100%;
+      .options-trigger, .options-current {
+        float:left;
+        height:100%;
+      }
+      .options-current {
+        margin-right:3px;
+        .option {
+          float:left;
+          height:100%;
+          color:darken(white,35%);
+          font-size:9px;
+          padding:9px 6px 0 7px;
+          &:hover {
+            background: rgba(black,.03);
+            color:darken(white,70%);
+            opacity:1;
+          }
+        }
+      }
+      .options-trigger {
+        float:left;
+        height:100%;
+        color:darken(white,75%);
+        font-size:13px;
+        padding:8px $modal-wrap-gutter 0 $modal-wrap-gutter * 1.15;
+        &:hover {
+          background: rgba(black,.04);
+          color:darken(white,70%);
+          opacity:1;
+        }
+      }
+    }
+    .month-day {
+      color:darken(white,80%);
+      font-weight:500;
+    }
+  }
+  .secondary {
+    position: relative;
+    color:darken(white,50%);
+    font-weight:200;
+    .hour {
+      display: inline-block;
+      color:darken(white,74%);
+      font-size:11px;
+      font-weight:500;
+    }
+    .price {
+      position: absolute;
+      top:0;
+      right:0;
+      //color:#72b823;
+      color:darken(white,60%);
+      .icon, .count-value {
+        float:left;
+      }
+      .count-value {
+        font-size:10px;
+      }
+      .icon {
+        float:left;
+        font-size:9px;
+        margin-top:1px;
+        margin-right:1px;
+      }
+    }
+  }
+  &.folded {
+    .secondary {
+      display: none;
+    }
+  }
+  &:nth-child(odd) {
+    //background: rgba($primary-color,.032);
+  }
+  &:hover {
+    .options {
+      opacity:1;
+    }
+  }
+  &:first-child {
+    margin-top:0;
+  }
+}

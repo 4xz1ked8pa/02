@@ -1,0 +1,23 @@
+.profile-user-friends {
+  float:left;
+  width:100%;
+  height:auto;
+  .friends-col {
+    float:left;
+    width:percentage(1/3);
+    padding-right:20px;
+    &:last-child {
+      padding-right:0;
+    }
+    /* remove this later on */
+    &:nth-child(1) {
+      .profile-list-friend {
+        &:nth-child(1) {
+          .dropdown-content {
+            //display: block;
+          }
+        }
+      }
+    }
+  }
+}

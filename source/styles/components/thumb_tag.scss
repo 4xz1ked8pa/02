@@ -1,0 +1,49 @@
+.thumbTag {
+  float:left;
+  width:100%;
+  height:$thumb-file-height;
+  .tag-title, .tag-count {
+    color:$thumb-file-title-color;
+    font-size:$thumb-file-title-fontsize;
+    padding-top:$thumb-file-title-paddingtop;
+    padding-bottom:$thumb-file-title-paddingbottom;
+  }
+  .tag-count {
+    float:right;
+    color:darken(white,65%);
+    font-weight:300;
+  }
+  .tag-title {
+    float:left;
+    color:$thumb-file-title-color;
+    font-size:$thumb-file-title-fontsize;
+    padding-top:$thumb-file-title-paddingtop;
+    padding-bottom:$thumb-file-title-paddingbottom;
+    @include ellipsis(60%);
+  }
+  .tag-remove {
+    display: none;
+    float:right;
+    background: $remove-background;
+    color:$remove-color;
+    font-size:$remove-fontsize;
+    font-weight:$remove-fontweight;
+    line-height:$remove-lineheight;
+    padding:$remove-padding;
+    margin-top:$thumb-file-remove-margintop;
+    &:hover {
+      background-color: $remove-background-mouseover;
+      cursor: pointer;
+    }
+  }
+  &:hover {
+    background: darken(white,3.4%);
+    cursor:default;
+    .tag-count {
+      display: none;
+    }
+    .tag-remove {
+      display: block;
+    }
+  }
+}

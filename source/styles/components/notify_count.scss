@@ -1,0 +1,9 @@
+.notify-count {
+  color: $notify-count-color;
+  font-size:$notify-count-fontsize;
+  font-weight:$notify-count-fontweight;
+  padding: $notify-count-padding;
+  border-radius: 1px;
+  box-shadow: $notify-count-boxshadow;
+  @include linear-gradient($notify-count-background-top, $notify-count-background-bottom);
+}

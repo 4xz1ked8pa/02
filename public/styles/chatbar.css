@@ -1,9 +1,74 @@
 .chatBar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 200px;
   height: 100%;
-  background: #F5F5F5;
-  border-left: 1px solid #E6E6E6;
-  z-index: 2; }
+  background: #fafafa;
+  padding-top: 41px;
+  border-left: 1px solid #D9D9D9; }
+  .chatBar .wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; }
+    .chatBar .wrap .offline .thumb {
+      opacity: .6; }
+    .chatBar .wrap .online, .chatBar .wrap .offline {
+      float: left;
+      width: 100%;
+      margin-top: 6px; }
+      .chatBar .wrap .online .header, .chatBar .wrap .online .thumb, .chatBar .wrap .offline .header, .chatBar .wrap .offline .thumb {
+        float: left;
+        width: 100%; }
+      .chatBar .wrap .online .header, .chatBar .wrap .offline .header {
+        font-size: 13px;
+        font-weight: 400;
+        padding-bottom: 5px;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-bottom: 1px solid #D9D9D9;
+        margin-bottom: 5px; }
+      .chatBar .wrap .online .thumb, .chatBar .wrap .offline .thumb {
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-top: 7px; }
+        .chatBar .wrap .online .thumb:hover, .chatBar .wrap .offline .thumb:hover {
+          background: whitesmoke;
+          cursor: pointer; }
+        .chatBar .wrap .online .thumb:first-of-type, .chatBar .wrap .offline .thumb:first-of-type {
+          margin-top: 0; }
+    .chatBar .wrap .interact {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 35px;
+      background: white;
+      border-top: 1px solid #D9D9D9; }
+      .chatBar .wrap .interact .search {
+        float: left;
+        width: 137px;
+        height: 34px; }
+        .chatBar .wrap .interact .search input {
+          width: 100%;
+          height: 34px; }
+      .chatBar .wrap .interact .option {
+        width: 31px;
+        height: 100%; }
+        .chatBar .wrap .interact .option.status, .chatBar .wrap .interact .option.compose {
+          float: right;
+          border-left: 1px solid #D9D9D9;
+          color: #595959;
+          padding-top: 10px;
+          padding-left: 10px;
+          padding-right: 8px; }
+          .chatBar .wrap .interact .option.status:hover, .chatBar .wrap .interact .option.compose:hover {
+            background: #f7f7f7;
+            color: #292929;
+            cursor: pointer; }
+        .chatBar .wrap .interact .option.status {
+          font-size: 11px;
+          padding-top: 13px; }
+          .chatBar .wrap .interact .option.status.available {
+            color: rgba(62, 106, 65, 0.8); }

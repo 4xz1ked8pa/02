@@ -1,0 +1,150 @@
+.button {
+  font-size:$global-fontsize;
+  font-weight:400;
+  padding:3px 5px;
+  padding-bottom:2px;
+  border-radius:$global-radius;
+  box-shadow:0 1px 0 rgba(black,.1);
+  &.upload {
+    background: darken(white,47%);
+    color:white;
+    box-shadow:none;
+    opacity:.2;
+    &:hover {
+      background: darken(white,65%);
+      opacity:1;
+    }
+  }
+  &.message-user {
+    width:auto;
+    color:rgba(white,.92);
+    font-weight:$button-save-fontweight;
+    padding:7px 5px 5px 6px;
+    border-top:1px solid darken(white,57%);
+    border-bottom:1px solid darken(white,70%);
+    border-left:1px solid darken(white,57%);
+    border-right:1px solid darken(white,57%);
+    box-shadow:$button-save-boxshadow;
+    opacity:.80;
+    @include linear-gradient(darken(white,50%) 85%,darken(white,53%));
+    &:hover {
+      background: darken(white,54%);
+      cursor: pointer;
+    }
+  }
+  &.cancel {
+    width:auto;
+    color:$button-cancel-color;
+    font-weight:$button-cancel-fontweight;
+    padding:$button-cancel-padding;
+    border-top:$button-cancel-bordertop;
+    border-bottom:$button-cancel-borderbottom;
+    border-left:$button-cancel-borderleft;
+    border-right:$button-cancel-borderright;
+    box-shadow:$button-cancel-boxshadow;
+    @include linear-gradient($button-cancel-background-bottom 85%,$button-cancel-background-top);
+  }
+  &.save {
+    width:auto;
+    color:$button-save-color;
+    font-weight:$button-save-fontweight;
+    padding:$button-save-padding;
+    border-top:$button-save-bordertop;
+    border-bottom:$button-save-borderbottom;
+    border-left:$button-save-borderleft;
+    border-right:$button-save-borderright;
+    box-shadow:$button-save-boxshadow;
+    opacity:.85;
+    @include linear-gradient($button-save-background-bottom 85%,$button-save-background-top);
+  }
+  &.add-friend {
+    width:auto;
+    color:rgba(white,.92);
+    font-weight:$button-save-fontweight;
+    padding:$button-padding;
+    border-top:$button-save-bordertop;
+    border-bottom:$button-save-borderbottom;
+    border-left:$button-save-borderleft;
+    border-right:$button-save-borderright;
+    box-shadow:$button-save-boxshadow;
+    opacity:.80;
+    @include linear-gradient($button-save-background-bottom 85%,$button-save-background-top);
+    &:hover {
+      top:0;
+      background: darken(#6B766B,3.3%);
+      color:rgba(white,.925);
+      border:1px solid darken(#616A61,2%);
+      border-top-color:darken(#616A61,2%);
+      border-bottom:1px solid darken(#616A61,12%);
+      box-shadow:0 1px 0 rgba(black,.14);
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+  &.create-event {
+    width:auto;
+    color:rgba(white,.92);
+    font-weight:$button-save-fontweight;
+    padding:$button-create-event-padding;
+    border-top:$button-save-bordertop;
+    border-bottom:$button-save-borderbottom;
+    border-left:$button-save-borderleft;
+    border-right:$button-save-borderright;
+    box-shadow:$button-save-boxshadow;
+    opacity:.82;
+    @include linear-gradient($button-save-background-bottom 94%,darken($button-save-background-top,3%));
+    &:hover {
+      top:0;
+      background: darken(#6B766B,3.3%);
+      color:rgba(white,.925);
+      border:1px solid darken(#616A61,2%);
+      border-top-color:darken(#616A61,2%);
+      border-bottom:1px solid darken(#616A61,12%);
+      box-shadow:0 1px 0 rgba(black,.14);
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+  &.accept {
+    background: darken(rgba($primary-color,.65),10%);
+    color:white;
+    border-top:1px solid rgba(black,.1);
+    border-bottom:1px solid rgba(black,.2);
+    border-left:1px solid rgba(black,.2);
+    border-right:1px solid rgba(black,.1);
+    &:hover {
+      background: darken(rgba($primary-color,.68),12%);
+    }
+  }
+  &.decline {
+    background: darken(white,40%);
+    color:white;
+    border-top:1px solid rgba(black,.1);
+    border-bottom:1px solid rgba(black,.2);
+    border-left:1px solid rgba(black,.2);
+    border-right:1px solid rgba(black,.1);
+    &:hover {
+      background: darken(white,50%);
+    }
+  }
+  &.with-icon {
+    position: relative;
+    padding-left:18px;
+    .fa {
+      position: absolute;
+      top:0px; left:0;
+      color:rgba(white,.9);
+      font-size:$global-fontsize * .8;
+      height:17.5px;
+      padding-top:$global-fontsize * .38;
+      padding-left:3px;
+      padding-right:3px;
+      border-top-left-radius: $global-radius;
+      border-bottom-left-radius: $global-radius;
+      z-index: 0;
+    }
+  }
+  &:hover {
+    box-shadow:0 1px 0 rgba(black,.2);
+  }
+}

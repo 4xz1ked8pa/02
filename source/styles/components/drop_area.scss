@@ -1,0 +1,45 @@
+.drop-area {
+  float:left;
+  width:100%;
+  padding:$modal-wrap-gutter;
+  opacity:.55;
+  .area-wrap {
+    float:left;
+    width:100%;
+    background: rgba($primary-color,.025);
+    padding:$modal-wrap-gutter;
+    padding-top:13px;
+    padding-bottom:13px;
+    border:1px dashed rgba(#6B766B,.72);
+    border-radius:2px;
+    .center {
+      .drop-title, .drop-statement {
+        float:left;
+        width:100%;
+        text-align: center;
+        margin-top:3px;
+        &:first-of-type {
+          margin-top:0;
+        }
+      }
+      .drop-title {
+        color:#626B62;
+        font-size:14px;
+        font-weight:400;
+        margin-right:-1px;
+      }
+      .drop-statement {
+        color:#6B766B;
+        font-size:9px;
+        font-weight:400;
+      }
+    }
+  }
+  &:hover {
+    opacity:1;
+    cursor: default;
+    .area-wrap {
+      background: rgba($primary-color,.045);
+    }
+  }
+}

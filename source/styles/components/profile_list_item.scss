@@ -1,0 +1,85 @@
+.profile-list-item {
+  float:left;
+  .item-picture, .item-details {
+    float:left;
+  }
+  .item-picture {
+    width:$profile-list-item-picture-width;
+    height:$profile-list-item-picture-width;
+    background: darken(#999999,0);
+    margin-right:$profile-list-item-picture-marginright;
+  }
+  .item-details {
+    .item-detail {
+      position: relative;
+      float:left;
+      margin-left:18px;
+      padding-top:2px;
+      .dot {
+        position: absolute;
+        top:7px; left:-12px;
+        color:darken(white,55%);
+        font-size:18px;
+        line-height: .3;
+      }
+      &.item-subtitle, &.item-location, &.item-time, &.item-since {
+        color:$profile-list-item-subtitle-color;
+        font-size:$profile-list-item-subtitle-fontsize;
+        font-weight:$profile-list-item-subtitle-fontweight;
+      }
+      &.item-since {
+        color:darken(white,55%);
+        font-weight:300;
+        margin-left:5px;
+      }
+      &.item-title {
+        font-size:$profile-list-item-title-fontsize;
+        font-weight:$profile-list-item-title-fontweight;
+      }
+      &.item-subtitle {
+
+      }
+      &.item-location {
+
+      }
+      &:first-of-type {
+        margin-left:0;
+        .dot {
+          display: none;
+        }
+      }
+    }
+    .details-row {
+      float:left;
+      clear:both;
+      &:nth-child(2) {
+        margin-top:$profile-list-item-row-margintop;
+      }
+    }
+  }
+  &:hover {
+    cursor: default;
+  }
+  &.relationship, &.family-item {
+    padding:5px 5px;
+    padding-right:9px;
+  }
+  &.relationship {
+    background: rgba($primary-color,.06);
+    border:1px solid rgba($primary-color,.2);
+    box-shadow:0 1px 0 rgba(black,.032);
+    &:hover {
+      background: rgba($primary-color,.13);
+      border-color:rgba($primary-color,.32);
+    }
+  }
+  &.family-item {
+    background: rgba($primary-color,.06);
+    border:1px solid rgba($primary-color,.2);
+    box-shadow:0 1px 0 rgba(black,.032);
+    &:hover {
+      background: rgba($primary-color,.13);
+      border-color:rgba($primary-color,.32);
+    }
+  }
+}

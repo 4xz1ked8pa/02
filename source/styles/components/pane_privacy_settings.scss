@@ -1,0 +1,42 @@
+.pane-privacy-settings {
+  width:auto;
+  .other-options {
+    display: none;
+    float:left;
+    width:auto;
+    height:auto;
+    .option {
+      color:darken(white,40%);
+      margin-left:20px;
+    }
+    &:hover {
+      .option {
+        &:hover {
+          color:darken(white,60%);
+        }
+      }
+    }
+  }
+  .dropdown-trigger {
+    float:left;
+    color:darken(white,60%);
+    .trigger-icon, .trigger-label {
+      float:left;
+      font-size:13px;
+    }
+    .trigger-icon {
+      margin-right:4px;
+    }
+    .trigger-label {
+      font-weight:400;
+    }
+    &:hover {
+      color:darken(white,80%);
+    }
+  }
+  &.active {
+    .other-options {
+      display: block;
+    }
+  }
+}

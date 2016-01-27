@@ -1,0 +1,38 @@
+.profile-list-friend {
+  float:left;
+  margin-top:38px;
+  .friend-picture, .friend-details {
+    float:left;
+  }
+  .friend-picture {
+    width:$profile-list-friend-picture-width;
+    height:$profile-list-friend-picture-width;
+    background: #999999;
+    margin-right:8px;
+  }
+  .friend-details {
+    .details-row {
+      float:left;
+      margin-top:$profile-list-item-row-margintop;
+      clear:both;
+      .detail {
+        float:left;
+        &.friend-title {
+          color:$profile-list-item-title-color;
+          font-size:$profile-list-item-title-fontsize;
+          font-weight:$profile-list-item-title-fontweight;
+        }
+        &.mutual-friends {
+          font-size:$global-fontsize;
+          font-weight:200;
+        }
+      }
+      &:first-child {
+        margin-top:0;
+      }
+    }
+  }
+  &:first-child {
+    margin-top:0;
+  }
+}

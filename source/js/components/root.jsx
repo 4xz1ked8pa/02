@@ -4,7 +4,7 @@ var TopBar = require('./topbar/topbar.jsx');
 var ChatBar = require('./chatbar/chatbar.jsx');
 var SideBar = require('./sidebar/sidebar.jsx');
 var Main = require('./main/main.jsx');
-
+var CreateEvent = require('./shared/create_event.jsx');
 
 var Root = React.createClass({displayName: 'Root',
 	render: function() {
@@ -13,6 +13,7 @@ var Root = React.createClass({displayName: 'Root',
 			<SideBar/>
 			<Main />
 			<ChatBar />
+			<CreateEvent mode="absolute" />
 		</div>;
 	}
 });

@@ -6,20 +6,26 @@ var SideBar = React.createClass({
     return (
         <div className="sideBar">
           <div className="access-module">
-            <div className="access-header">Suggested</div>
+            <div className="access-header">
+              Suggested<span className="list-all fa fa-caret-down"></span>
+            </div>
             <Thumb title="Events" iconname="calendar" notifycount="1" capsule="True"/>
             <Thumb title="People" iconname="bubble" notifycount="3" capsule="True"/>
             <Thumb title="Groups" iconname="team" notifycount="2" capsule="True"/>
           </div>
           <div className="access-module">
-            <div className="access-header">Groups</div>
+            <div className="access-header">
+              Groups<span className="list-all fa fa-caret-down"></span>
+            </div>
             <Thumb title="McGill University Association" iconname="calendar" notifycount="2" />
             <Thumb title="Code Jams" iconname="calendar" />
             <Thumb title="2600 The Hacker Quartely" iconname="calendar" notifycount="1" />
             <Thumb title="Web Cats Community" iconname="calendar" notifycount="7" />
           </div>
           <div className="manage-filters">
-            <div className="access-header">Filters</div>
+            <div className="access-header">
+              Filters<span className="list-all fa fa-caret-down"></span>
+            </div>
             <Thumb title="Charles Gaudreau Jackson" canRemove />
             <Thumb title="Technology" canRemove />
             <Thumb title="Rainy weather" canRemove />

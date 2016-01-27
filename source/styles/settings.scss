@@ -7,23 +7,169 @@ $alert-color: #ec5840;
 $global-gray-border:1px solid #D9D9D9;
 $global-gray-border-pale:1px solid lighten(#D9D9D9, 4%);
 $global-gray-background:lighten(#F5F5F5,1.8%);
-
-$global-fontsize:13px;
+$global-fontsize:12px;
 $global-radius:1px;
-$global-gutter:7px;
+$global-gutter:6px;
 
 // List
 $list-header-color:darken(#444444,10%);
-$list-header-fontsize:14px;
+$list-header-fontsize:13px;
 $list-header-fontweight:400;
 $list-header-paddingbottom:5px;
-$list-header-marginbottom:6px;
+$list-header-marginbottom:5px;
+
+// Pane
+$pane-background: darken(white,1%);
+$pane-bordercolor:rgba(black,.2);
+$pane-border:1px solid $pane-bordercolor;
+$pane-border-pale:1px solid lighten($pane-bordercolor,57%);
+
+// Modal
+$modal-wrap-gutter:7px;
+$modal-wrap-background:darken(white,4%);
+$modal-wrap-border:1px solid darken(white,58%);
+$modal-wrap-border-pale:1px solid darken(white,20%);
+$modal-wrap-boxshadow:0 1px 0 rgba(black,.15);
+
+// Remove
+$remove-background:rgba(#999999,.3);
+$remove-background-mouseover:darken(#999999,15%);
+$remove-color:white;
+$remove-fontsize:9px;
+$remove-fontweight:400;
+$remove-lineheight:1.4;
+$remove-padding:1px 3px 0px 3px;
+
+// Dropdown
+$dropdown-trigger-background-top:darken(white,7%);
+$dropdown-trigger-background-bottom:darken(white,8%);
+$dropdown-trigger-gutter:7px;
+$dropdown-trigger-bordertop:1px solid darken(white,10%);
+$dropdown-trigger-borderbottom:1px solid darken(white,16%);
+$dropdown-trigger-borderleft:1px solid darken(white,11%);
+$dropdown-trigger-borderright:1px solid darken(white,11%);
+
+$dropdown-content-background-top:darken(white,5%);
+$dropdown-content-background-bottom:darken(white,6%);
+$dropdown-content-boxshadow:1px 1px 1px rgba(black,.05);
+$dropdown-content-bordertop:1px solid darken(white,17%);
+$dropdown-content-borderbottom:1px solid darken(white,25%);
+$dropdown-content-borderleft:1px solid darken(white,20%);
+$dropdown-content-borderright:1px solid darken(white,20%);
+$dropdown-content-row-bordertop:1px solid darken(white,12%);
+
+$dropdown-content-option-paddingtop:8px;
+$dropdown-content-option-paddingbottom:8px;
+
+// Button
+$button-fontweight:500;
+$button-padding:7px 5px 5px 6px;
+
+// Button Create Event
+$button-create-event-padding:5px 4px 3px 4px;
+
+// Button Save
+$button-save-background-top:darken(#778077, 4%);
+$button-save-background-bottom:darken(#798279,2%);
+$button-save-color:rgba(white,1);
+$button-save-fontweight:400;
+$button-save-padding:4px 4px;
+$button-save-bordertop:1px solid darken(#616A61,.6%);
+$button-save-borderbottom:1px solid darken(#616A61,13%);
+$button-save-borderleft:1px solid darken(#616A61,2%);
+$button-save-borderright:$button-save-borderleft;
+$button-save-boxshadow:0 1px 0 rgba(black,.14);
+
+// Button Cancel
+$button-cancel-background-top:darken(white, 33%);
+$button-cancel-background-bottom:darken(white,30%);
+$button-cancel-color:rgba(white,1);
+$button-cancel-fontweight:400;
+$button-cancel-padding:$button-save-padding;
+$button-cancel-bordertop:1px solid darken(white,33%);
+$button-cancel-borderbottom:1px solid darken(white,42%);
+$button-cancel-borderleft:1px solid darken(white,35%);
+$button-cancel-borderright:$button-cancel-borderleft;
+$button-cancel-boxshadow:0 1px 0 rgba(black,.065);
+
+// Thumb File
+$thumb-file-height:25px;
+$thumb-file-title-color:darken(white,66%);
+$thumb-file-title-fontsize:12px;
+$thumb-file-title-paddingtop:7px;
+$thumb-file-title-paddingbottom:6px;
+$thumb-file-remove-margintop:6px;
+
+// Tab
+$tab-background:darken(white,1.6%);
+$tab-color:darken(white,70%);
+$tab-padding:8px 0 5px 0;
+$tab-background-pale:darken(white,.5%);
+$tab-color-pale:darken(white,20%);
+$tab-border-color-pale:darken(white,2%);
+
+// Notify Count
+$notify-count-background-top:lighten(#152115,23%);
+$notify-count-background-bottom:lighten(#152115,23%);
+$notify-count-color:lighten($primary-color,65%);
+$notify-count-fontsize:10px;
+$notify-count-fontweight:400;
+$notify-count-padding:3px 2px 1px 2px;
+$notify-count-boxshadow:0 0 1px rgba(black,.35);
+
+// Post
+$post-reply-picture-width:31.5px;
+
+// Profile Cover
+$profile-cover-border:none;
+
+// Profile Tab
+$profile-tab-color:darken(white,70%);
+$profile-tab-fontsize:14px;
+$profile-tab-fontweight:400;
+$profile-tab-height:40px;
+$profile-tab-padding:12px 12px 12px 11px;
+$profile-tab-border:1px solid darken(white,10%);
+
+// Profile Navigation
+$profile-navigation-width:174px;
+
+// Profile View
+$profile-user-margin-bottom:80px;
+$profile-user-paddingtop:10px;
+$profile-user-paddingleft:30px;
+
+// Profile List item
+$profile-list-item-picture-width:40px;
+$profile-list-item-picture-marginright:7px;
+
+$profile-list-item-row-margintop:8px;
+$profile-list-item-title-color:darken(white,88%);
+$profile-list-item-title-fontsize:14px;
+$profile-list-item-title-fontweight:500;
+
+$profile-list-item-subtitle-color:darken(white,77%);
+$profile-list-item-subtitle-fontsize:13px;
+$profile-list-item-subtitle-fontweight:300;
+
+// Profile List Friend
+$profile-list-friend-picture-width:69px;
+
+// Create Event
+$create-event-width:868px;
+$create-event-height:613px;
+
+// Calendar Agile
+$calendar-agile-week-hours-background:lighten($global-gray-background,1.2%);
+$calendar-agile-week-hours-width:40px;
+$calendar-agile-week-hour-height:42px;
 
 // Top Bar
-$topbar-height:42px;
+$topbar-height:40px;
 
 // Side Bar
-$sidebar-width:190px;
+$sidebar-width:180px;
+$sidebar-gutter:7px;
 
 // Chat Bar
 $chatbar-width:200px;

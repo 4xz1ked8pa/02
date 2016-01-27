@@ -1,7 +1,180 @@
-.chatBox {
-    position:absolute;
-    bottom:0; right:0;
-    width:200px;
-    height:100px;
-    background:darken(white,50%);
+.chat-boxes {
+  position:fixed;
+  bottom:0; right:$chatbar-width + 26px;
+  z-index:4;
+  .chatBox {
+      float:right;
+      width:260px;
+      height:auto;
+      background:white;
+      border-top-left-radius: $global-radius;
+      border-top-right-radius: $global-radius;
+      margin-left:10px;
+      box-shadow:0 -1px 0 rgba(black,.025);
+      .header, .thread, .interact {
+        float:left;
+        width:100%;
+      }
+      .thread, .interact {
+        border:$global-gray-border-pale;
+        border-top:none;
+      }
+      .header {
+        height:30px;
+        background: lighten($primary-color,15%);
+        border:1px solid rgba(darken($primary-color,5%),.13);
+        border-top-left-radius:$global-radius;
+        border-top-right-radius:$global-radius;
+        .add-member, .close {
+          float:right;
+        }
+        .close {
+          height:100%;
+          color:rgba(black,.1);
+          font-size:14px;
+          padding-top:8px;
+          padding-left:$global-gutter;
+          padding-right:$global-gutter;
+          &:hover {
+            color:rgba(black,.4);
+            cursor:pointer;
+          }
+        }
+        .add-member {
+          display:block;
+          color:rgba(black,.12);
+          font-size:13px;
+          padding-top:8px;
+        }
+        .title {
+          float:left;
+          color:rgba(darken($primary-color,5%),.7);
+          font-size:$global-fontsize;
+          font-weight:600;
+          padding-top:9px;
+          padding-left:$global-gutter;
+        }
+        &:hover {
+          background: rgba($primary-color,.35);
+          border:1px solid rgba(darken($primary-color,5%),.24);
+          cursor:pointer;
+          .status {
+            color:rgba(darken($primary-color,5%),.2);
+          }
+          .close {
+            color:rgba(black,.14);
+            &:hover {
+              color:rgba(black,.3);
+            }
+          }
+          .title {
+            color:rgba(darken($primary-color,5%),.8);
+          }
+        }
+      }
+      .thread {
+        height:260px;
+        background:$global-gray-background;
+        padding-top:9px;
+        border-bottom:$global-gray-border-pale;
+        .message {
+          float:left;
+          width:100%;
+          padding-left:$global-gutter;
+          padding-right:$global-gutter;
+          margin-bottom:9px;
+          .thumb {
+            float:left;
+            width:100%;
+            .title {
+              width:210px;
+              color:#444444;
+              font-weight:300;
+              line-height:1.6;
+              padding-top:5px;
+              padding-bottom:0;
+            }
+          }
+          &.lifted {
+            .title {
+              padding-top:0;
+              margin-top:-4px;
+            }
+          }
+          &.own {
+            background:rgba(white,.222);
+          }
+        }
+      }
+      .interact {
+        height:34px;
+        background: white;
+        border-bottom:none;
+        .add-file {
+          float:right;
+          height:100%;
+          color:darken(white,25%);
+          padding-top:11px;
+          padding-left:8px;
+          padding-right:7px;
+          &:hover {
+            background:darken(white,1.3%);
+            color:darken(white,45%);
+            cursor:pointer;
+          }
+        }
+        .form-text {
+          float:left;
+          width:227px;
+          height:100%;
+          background:transparent;
+          border-radius:0;
+        }
+      }
+      &.folded {
+        width:180px;
+        .header {
+          .add-member {
+            display: none;
+          }
+        }
+        .thread, .interact {
+          display:none;
+        }
+      }
+      &.online {
+        .header {
+          background: rgba($primary-color,.2);
+        }
+      }
+      &.offline {
+        box-shadow:none;
+        .header {
+          background: darken(white,7%);
+          border:1px solid darken(white,23%);
+          &:hover {
+            background:darken(white,15%);
+            border:1px solid darken(white,28%);
+            .title {
+              color:darken(white,75%);
+            }
+            .close {
+              color:darken(white,30%);
+            }
+          }
+          .title {
+            color: darken(white,60%);
+          }
+          .close {
+            color:darken(white,18%);
+            &:hover {
+              color:darken(white,50%)
+            }
+          }
+        }
+      }
+      &:last-of-type {
+        margin-left:0;
+      }
+  }
 }

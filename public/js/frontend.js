@@ -19021,35 +19021,37 @@ var ChatBar = React.createClass({displayName: "ChatBar",
   render: function () {
     return (
       React.createElement("div", {className: "chatBar"}, 
-        React.createElement("div", {className: "online"}, 
-          React.createElement(Thumb, {title: "Nathan Holt", filename: "http://placehold.it/500?text=PICTURE", notifycount: "8"}), 
-          React.createElement(Thumb, {title: "Deborah Miller", filename: "http://placehold.it/500?text=PICTURE"}), 
-          React.createElement(Thumb, {title: "Julian Dennis", filename: "http://placehold.it/500?text=PICTURE", notifycount: "12"}), 
-          React.createElement(Thumb, {title: "Jean Klein", filename: "http://placehold.it/500?text=PICTURE", notifycount: "3"}), 
-          React.createElement(Thumb, {title: "Christie Duncan", filename: "http://placehold.it/500?text=PICTURE"}), 
-          React.createElement(Thumb, {title: "Angelo Foster", filename: "http://placehold.it/500?text=PICTURE"}), 
-          React.createElement(Thumb, {title: "Jonathan Brown", filename: "http://placehold.it/500?text=PICTURE", notifycount: "6"}), 
-          React.createElement(Thumb, {title: "Harry Hill", filename: "http://placehold.it/500?text=PICTURE", notifycount: "14"}), 
-          React.createElement(Thumb, {title: "Jesse Smith", filename: "http://placehold.it/500?text=PICTURE"}), 
-          React.createElement(Thumb, {title: "Howard Foster", filename: "http://placehold.it/500?text=PICTURE"})
-        ), 
-        React.createElement("div", {className: "offline"}, 
-          React.createElement(Thumb, {title: "Jason Craig", filename: "http://placehold.it/500?text=PICTURE", notifycount: "9"}), 
-          React.createElement(Thumb, {title: "Terrell Carpenter", filename: "http://placehold.it/500?text=PICTURE", notifycount: "17"}), 
-          React.createElement(Thumb, {title: "Caleb Freeman", filename: "http://placehold.it/500?text=PICTURE"}), 
-          React.createElement(Thumb, {title: "Norma Shelton", filename: "http://placehold.it/500?text=PICTURE", notifycount: "4"}), 
-          React.createElement(Thumb, {title: "Wesley Harris", filename: "http://placehold.it/500?text=PICTURE"}), 
-          React.createElement(Thumb, {title: "Lena Murray", filename: "http://placehold.it/500?text=PICTURE", notifycount: "1"}), 
-          React.createElement(Thumb, {title: "Mack Wong", filename: "http://placehold.it/500?text=PICTURE", notifycount: "9"}), 
-          React.createElement(Thumb, {title: "Alvin Swanson", filename: "http://placehold.it/500?text=PICTURE"}), 
-          React.createElement(Thumb, {title: "Barry Clarke", filename: "http://placehold.it/500?text=PICTURE", notifycount: "6"})
-        ), 
-        React.createElement("div", {className: "interact"}, 
-          React.createElement("div", {className: "search"}, 
-            React.createElement("input", {className: "form-text", placeholder: "Search members", type: "text"})
+        React.createElement("div", {className: "wrap"}, 
+          React.createElement("div", {className: "online"}, 
+            React.createElement(Thumb, {title: "Nathan Holt", filename: "http://placehold.it/500?text=PICTURE", notifycount: "8"}), 
+            React.createElement(Thumb, {title: "Deborah Miller", filename: "http://placehold.it/500?text=PICTURE"}), 
+            React.createElement(Thumb, {title: "Julian Dennis", filename: "http://placehold.it/500?text=PICTURE", notifycount: "12"}), 
+            React.createElement(Thumb, {title: "Jean Klein", filename: "http://placehold.it/500?text=PICTURE", notifycount: "3"}), 
+            React.createElement(Thumb, {title: "Christie Duncan", filename: "http://placehold.it/500?text=PICTURE"}), 
+            React.createElement(Thumb, {title: "Angelo Foster", filename: "http://placehold.it/500?text=PICTURE"}), 
+            React.createElement(Thumb, {title: "Nicholas Brown", filename: "http://placehold.it/500?text=PICTURE", notifycount: "6"}), 
+            React.createElement(Thumb, {title: "Harry Hill", filename: "http://placehold.it/500?text=PICTURE", notifycount: "14"}), 
+            React.createElement(Thumb, {title: "Jesse Smith", filename: "http://placehold.it/500?text=PICTURE"}), 
+            React.createElement(Thumb, {title: "Howard Foster", filename: "http://placehold.it/500?text=PICTURE"})
           ), 
-          React.createElement("div", {className: "option compose fa fa-pencil"}), 
-          React.createElement("div", {className: "option status available fa fa-circle"})
+          React.createElement("div", {className: "offline"}, 
+            React.createElement(Thumb, {title: "Jason Craig", filename: "http://placehold.it/500?text=PICTURE", notifycount: "9"}), 
+            React.createElement(Thumb, {title: "Terrell Carpenter", filename: "http://placehold.it/500?text=PICTURE", notifycount: "17"}), 
+            React.createElement(Thumb, {title: "Caleb Freeman", filename: "http://placehold.it/500?text=PICTURE"}), 
+            React.createElement(Thumb, {title: "Norma Shelton", filename: "http://placehold.it/500?text=PICTURE", notifycount: "4"}), 
+            React.createElement(Thumb, {title: "Wesley Harris", filename: "http://placehold.it/500?text=PICTURE"}), 
+            React.createElement(Thumb, {title: "Lena Murray", filename: "http://placehold.it/500?text=PICTURE", notifycount: "1"}), 
+            React.createElement(Thumb, {title: "Mack Wong", filename: "http://placehold.it/500?text=PICTURE", notifycount: "9"}), 
+            React.createElement(Thumb, {title: "Alvin Swanson", filename: "http://placehold.it/500?text=PICTURE"}), 
+            React.createElement(Thumb, {title: "Barry Clarke", filename: "http://placehold.it/500?text=PICTURE", notifycount: "6"})
+          ), 
+          React.createElement("div", {className: "interact"}, 
+            React.createElement("div", {className: "search"}, 
+              React.createElement("input", {className: "form-text", placeholder: "Search members", type: "text"})
+            ), 
+            React.createElement("div", {className: "option compose fa fa-pencil"}), 
+            React.createElement("div", {className: "option status available fa fa-circle"})
+          )
         )
       )
     );
@@ -19058,389 +19060,62 @@ var ChatBar = React.createClass({displayName: "ChatBar",
 
 module.exports = ChatBar;
 
-},{"./../shared/thumb.jsx":162,"react":158}],160:[function(require,module,exports){
+},{"./../shared/thumb.jsx":200,"react":158}],160:[function(require,module,exports){
 var React = require('react');
+var Thumb = require('./../shared/thumb.jsx');
+
+var ChatBox = React.createClass({displayName: "ChatBox",
+  render: function () {
+    var chatBoxStatus = 'chatBox ' + this.props.status + ' ' + this.props.fold;
+    return (
+      React.createElement("div", {className: chatBoxStatus}, 
+        React.createElement("div", {className: "header"}, 
+          React.createElement("div", {className: "title"}, this.props.who), 
+          React.createElement("div", {className: "close fa fa-close"}), 
+          React.createElement("div", {className: "add-member fa fa-user-plus"})
+        ), 
+        React.createElement("div", {className: "thread"}, 
+          React.createElement("div", {className: "message"}, 
+            React.createElement(Thumb, {title: "Lorem ipsum dolor sit amet.", filename: "http://placehold.it/500?text=PICTURE"})
+          ), 
+          React.createElement("div", {className: "message"}, 
+            React.createElement(Thumb, {title: "Ut enim ad minim veniam.", filename: "http://placehold.it/500?text=PICTURE"})
+          ), 
+          React.createElement("div", {className: "message own lifted"}, 
+            React.createElement(Thumb, {title: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", filename: "http://placehold.it/500?text=PICTURE"})
+          )
+        ), 
+        React.createElement("div", {className: "interact"}, 
+          React.createElement("input", {className: "form-text", placeholder: "Type a message", type: "text"}), 
+          React.createElement("span", {className: "add-file fa fa-picture-o"})
+        )
+      )
+    );
+  }
+});
+
+module.exports = ChatBox;
+
+},{"./../shared/thumb.jsx":200,"react":158}],161:[function(require,module,exports){
+var React = require('react');
+var MainHeader = require('./../main/main_header.jsx');
+var ChatBox = require('./../chatbar/chatbox.jsx');
+var CalendarMonth = require('./../shared/calendar_month.jsx');
+var CalendarWeek= require('./../shared/calendar_week.jsx');
+var CalendarWeek= require('./../shared/calendar_week.jsx');
+var ProfileUser = require('./../main/profile_user.jsx');
 
 var Main = React.createClass({displayName: "Main",
   render: function () {
     return (
       React.createElement("div", {className: "Main"}, 
-        React.createElement("div", {className: "main-header"}, 
-          React.createElement("h1", {className: "title"}, "Charles Gaudreau Jackson"), 
-          React.createElement("h2", {className: "subtitle"}, "November 2015")
+        React.createElement("div", {className: "chat-boxes"}, 
+          React.createElement(ChatBox, {who: "Jonathan Brown", status: "online", fold: "folded"}), 
+          React.createElement(ChatBox, {who: "Howard Foster", status: "online", fold: "folded"}), 
+          React.createElement(ChatBox, {who: "Barry Clarke", status: "offline", fold: "folded"})
         ), 
         React.createElement("div", {className: "main-view"}, 
-            React.createElement("div", {className: "calendar-month"}, 
-              React.createElement("div", {className: "calendar-labels"}, 
-                React.createElement("div", {className: "label"}, "Sunday"), 
-                React.createElement("div", {className: "label"}, "Monday"), 
-                React.createElement("div", {className: "label"}, "Tuesday"), 
-                React.createElement("div", {className: "label"}, "Wednesday"), 
-                React.createElement("div", {className: "label"}, "Thursday"), 
-                React.createElement("div", {className: "label"}, "Friday"), 
-                React.createElement("div", {className: "label"}, "Saturday")
-              ), 
-              React.createElement("div", {className: "calendar-blocks"}, 
-                React.createElement("div", {className: "week"}, 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "1"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "2"), 
-                      React.createElement("span", {className: "weather fa fa-sun-o"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "3"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "4"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "5"), 
-                      React.createElement("span", {className: "weather fa fa-sun-o"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "6"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "7"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  )
-                ), 
-                React.createElement("div", {className: "week"}, 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "8"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "9"), 
-                      React.createElement("span", {className: "weather fa fa-sun-o"})
-                    ), 
-                    React.createElement("div", {className: "block-events"}, 
-                      React.createElement("div", {className: "block-event"}, 
-                        React.createElement("span", {className: "title"}, "Patrick's birthday party"), 
-                        React.createElement("span", {className: "time"}, "3pm")
-                      ), 
-                      React.createElement("div", {className: "block-event"}, 
-                        React.createElement("span", {className: "title"}, "TFS launch party"), 
-                        React.createElement("span", {className: "time"}, "5pm")
-                      )
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "10"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "11"), 
-                      React.createElement("span", {className: "weather fa fa-sun-o"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "12"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "13"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    ), 
-                    React.createElement("div", {className: "block-events"}, 
-                      React.createElement("div", {className: "block-event"}, 
-                        React.createElement("span", {className: "title"}, "Scatman celebration"), 
-                        React.createElement("span", {className: "time"}, "3pm")
-                      )
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "14"), 
-                      React.createElement("span", {className: "weather fa fa-sun-o"})
-                    )
-                  )
-                ), 
-                React.createElement("div", {className: "week"}, 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "15"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "16"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "17"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "18"), 
-                      React.createElement("span", {className: "weather fa fa-sun-o"})
-                    ), 
-                    React.createElement("div", {className: "block-events"}, 
-                      React.createElement("div", {className: "block-event"}, 
-                        React.createElement("span", {className: "title"}, "Development team meeting"), 
-                        React.createElement("span", {className: "time"}, "3pm")
-                      )
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "19"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "20"), 
-                      React.createElement("span", {className: "weather fa fa-sun-o"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "21"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  )
-                ), 
-                React.createElement("div", {className: "week"}, 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "22"), 
-                      React.createElement("span", {className: "weather fa fa-sun-o"})
-                    ), 
-                    React.createElement("div", {className: "block-events"}, 
-                      React.createElement("div", {className: "block-event"}, 
-                        React.createElement("span", {className: "title"}, "Isabel's exposition at"), 
-                        React.createElement("span", {className: "time"}, "9pm")
-                      )
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "23"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "24"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "25"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "26"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "27"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    ), 
-                    React.createElement("div", {className: "block-events"}, 
-                      React.createElement("div", {className: "block-event"}, 
-                        React.createElement("span", {className: "title"}, "Watch Django with Dexter"), 
-                        React.createElement("span", {className: "time"}, "3pm")
-                      ), 
-                      React.createElement("div", {className: "block-event"}, 
-                        React.createElement("span", {className: "title"}, "Meeting for Internet Culture related subjects"), 
-                        React.createElement("span", {className: "time"}, "5pm")
-                      )
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("div", {className: "date"}, "28"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  )
-                ), 
-                React.createElement("div", {className: "week"}, 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "29"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "30"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "1"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    ), 
-                    React.createElement("div", {className: "block-events"}, 
-                      React.createElement("div", {className: "block-event"}, 
-                        React.createElement("span", {className: "title"}, "Cursuum explanatory meeting"), 
-                        React.createElement("span", {className: "time"}, "11am")
-                      )
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "2"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "3"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "4"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "5"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  )
-                ), 
-                React.createElement("div", {className: "week"}, 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "6"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    ), 
-                    React.createElement("div", {className: "block-events"}, 
-                      React.createElement("div", {className: "block-event"}, 
-                        React.createElement("span", {className: "title"}, "Dota lan party with Jon"), 
-                        React.createElement("span", {className: "time"}, "2pm")
-                      )
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "7"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "8"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "9"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "10"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "11"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "12"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  )
-                ), 
-                React.createElement("div", {className: "week"}, 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "13"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "14"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "15"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "16"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "17"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "18"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  ), 
-                  React.createElement("div", {className: "block offset"}, 
-                    React.createElement("div", {className: "block-header"}, 
-                      React.createElement("span", {className: "date"}, "19"), 
-                      React.createElement("span", {className: "weather fa fa-cloud"})
-                    )
-                  )
-                )
-              )
-            )
+          React.createElement(ProfileUser, null)
         )
       )
     );
@@ -19449,14 +19124,460 @@ var Main = React.createClass({displayName: "Main",
 
 module.exports = Main;
 
-},{"react":158}],161:[function(require,module,exports){
+},{"./../chatbar/chatbox.jsx":160,"./../main/main_header.jsx":162,"./../main/profile_user.jsx":170,"./../shared/calendar_month.jsx":181,"./../shared/calendar_week.jsx":182,"react":158}],162:[function(require,module,exports){
+var React = require('react');
+
+var MainHeader = React.createClass({displayName: "MainHeader",
+  render: function () {
+    return (
+      React.createElement("div", {className: "main-header"}, 
+        React.createElement("h1", {className: "title"}, this.props.title), 
+        React.createElement("h2", {className: "subtitle"}, this.props.subtitle)
+      )
+    );
+  }
+});
+
+module.exports = MainHeader;
+
+},{"react":158}],163:[function(require,module,exports){
+var React = require('react');
+var ProfileListItem = require('./../main/profile_list_item.jsx');
+var PostReplyList = require('./../shared/post_reply_list.jsx');
+var PostReplyEntry = require('./../shared/post_reply_entry.jsx');
+
+var ProfileFeedPost = React.createClass({displayName: "ProfileFeedPost",
+  render: function () {
+    return (
+      React.createElement("div", {className: "profile-feed-post"}, 
+        React.createElement(ProfileListItem, {title: this.props.author, location: this.props.where, time: this.props.when}), 
+        React.createElement("div", {className: "feed-post-content"}, 
+          React.createElement("div", {className: "post-text"}, this.props.body)
+        ), 
+        React.createElement("div", {className: "feed-post-interact"}, 
+          React.createElement("a", {className: "interact-unfold post-thumb-up"}, 
+            React.createElement("span", {className: "unfold-comments"}, "8 Comments"), 
+            React.createElement("span", {className: "unfold-likes"}, "12 Likes")
+          ), 
+          React.createElement("a", {className: "interact-option post-thumb-up"}, 
+            React.createElement("span", {className: "option-icon fa fa-thumbs-up"}), 
+            React.createElement("span", {className: "option-title"}, "Like")
+          ), 
+          React.createElement("a", {className: "interact-option post-bubble"}, 
+            React.createElement("span", {className: "option-icon fa fa-comment"}), 
+            React.createElement("span", {className: "option-title"}, "Comment")
+          ), 
+          React.createElement("a", {className: "interact-option post-share"}, 
+            React.createElement("span", {className: "option-icon fa fa-share"}), 
+            React.createElement("span", {className: "option-title"}, "Share")
+          )
+        ), 
+        React.createElement("div", {className: "feed-post-replies"}, 
+          React.createElement(PostReplyList, null), 
+          React.createElement(PostReplyEntry, null)
+        )
+      )
+    );
+  }
+});
+
+module.exports = ProfileFeedPost;
+
+},{"./../main/profile_list_item.jsx":167,"./../shared/post_reply_entry.jsx":197,"./../shared/post_reply_list.jsx":198,"react":158}],164:[function(require,module,exports){
+var React = require('react');
+
+var ProfileHero = React.createClass({displayName: "ProfileHero",
+  render: function () {
+    return (
+      React.createElement("div", {className: "user-hero"}, 
+        React.createElement("div", {className: "profile-picture"}, 
+          React.createElement("div", {className: "picture-wrap"})
+        ), 
+        React.createElement("div", {className: "identify-user"}, 
+          React.createElement("div", {className: "user-name"}, React.createElement("span", {className: "name-wrap"}, "Charles Gaudreau Jackson"), React.createElement("div", {className: "user-status"}, React.createElement("span", {className: "status-wrap fa fa-check-circle"}))), 
+          React.createElement("div", {className: "user-network"}, "Concordia University"), 
+          React.createElement("div", {className: "user-interact"}, 
+            React.createElement("div", {className: "button add-friend"}, "ADD FRIEND"), 
+            React.createElement("div", {className: "button message-user"}, "MESSAGE")
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = ProfileHero;
+
+},{"react":158}],165:[function(require,module,exports){
+var React = require('react');
+var PanePrivacySettings = require('./../shared/pane_privacy_settings.jsx');
+
+var ProfileListItemAdd = React.createClass({displayName: "ProfileListItemAdd",
+  render: function () {
+    return (
+      React.createElement("div", {className: "profile-list-add-item"}, 
+        React.createElement("div", {className: "item-details"}, 
+          React.createElement("div", {className: "item-detail"}, 
+            React.createElement("div", {className: "detail-label"}, "Company"), 
+            React.createElement("div", {className: "detail-value"}, 
+              React.createElement("input", {type: "text", placeholder: "Where have you worked?", className: "form-text"}), 
+              React.createElement("div", {className: "suggested-results hide"}, 
+                React.createElement("div", {className: "map"}), 
+                React.createElement("div", {className: "result"}, "Sharethebus"), 
+                React.createElement("div", {className: "result"}, "Thirdshelf"), 
+                React.createElement("div", {className: "result"}, "Heroku"), 
+                React.createElement("div", {className: "result"}, "Lightspeed"), 
+                React.createElement("div", {className: "result"}, "Cursuum")
+              )
+            )
+          ), 
+          React.createElement("div", {className: "item-detail"}, 
+            React.createElement("div", {className: "detail-label"}, "Position"), 
+            React.createElement("div", {className: "detail-value"}, React.createElement("input", {type: "text", placeholder: "What is your job title?", className: "form-text"}))
+          ), 
+          React.createElement("div", {className: "item-detail"}, 
+            React.createElement("div", {className: "detail-label"}, "City/Town"), 
+            React.createElement("div", {className: "detail-value"}, React.createElement("input", {type: "text", placeholder: "", className: "form-text"}))
+          ), 
+          React.createElement("div", {className: "item-detail"}, 
+            React.createElement("div", {className: "detail-label"}, "Description"), 
+            React.createElement("div", {className: "detail-value"}, React.createElement("textarea", {type: "text", placeholder: "", className: "form-text description"}))
+          )
+        ), 
+        React.createElement("div", {className: "details-footer"}, 
+          React.createElement(PanePrivacySettings, null), 
+          React.createElement("a", {href: "#", className: "button save"}, "Save Changes"), 
+          React.createElement("a", {href: "#", className: "button cancel"}, "Cancel")
+        )
+      )
+    );
+  }
+});
+
+module.exports = ProfileListItemAdd;
+
+},{"./../shared/pane_privacy_settings.jsx":195,"react":158}],166:[function(require,module,exports){
+var React = require('react');
+var ConnectionAdd = require('./../shared/connection_add.jsx');
+var ConnectionOptions = require('./../shared/connection_options.jsx');
+
+var ProfileListFriend = React.createClass ({displayName: "ProfileListFriend",
+  render: function () {
+    var connectionTrigger = React.createElement(ConnectionAdd, null);
+    if (this.props.connected) {
+      var connectionTrigger = React.createElement(ConnectionOptions, {connected: this.props.connected});
+    }
+    return (
+      React.createElement("div", {className: "profile-list-friend"}, 
+        React.createElement("div", {className: "friend-picture"}), 
+        React.createElement("div", {className: "friend-details"}, 
+          React.createElement("div", {className: "details-row"}, 
+            React.createElement("div", {className: "detail friend-title"}, this.props.title)
+          ), 
+          React.createElement("div", {className: "details-row"}, 
+            React.createElement("div", {className: "detail mutual-friends"}, this.props.mutual)
+          ), 
+          React.createElement("div", {className: "details-row"}, 
+            connectionTrigger
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = ProfileListFriend;
+
+},{"./../shared/connection_add.jsx":185,"./../shared/connection_options.jsx":186,"react":158}],167:[function(require,module,exports){
+var React = require('react');
+
+var ProfileListItem = React.createClass({displayName: "ProfileListItem",
+  render: function () {
+    var headerClass = "profile-list-item";
+    if (this.props.type) {
+      var itemType = this.props.type;
+      if (itemType == "family") {
+        var headerClass = "profile-list-item family-item";
+      }
+      if (itemType == "relationship") {
+        var headerClass = "profile-list-item relationship";
+      }
+    }
+    if (this.props.since) {
+      var itemSince = React.createElement("div", {className: "item-detail item-since"}, "since ", this.props.since);
+    }
+    if (this.props.time) {
+      var itemTime = React.createElement("div", {className: "item-detail item-time link"}, this.props.time);
+    }
+    if (this.props.subtitle) {
+      var itemSubtitle = React.createElement("div", {className: "item-detail item-subtitle link"}, React.createElement("div", {className: "dot"}, "·"), this.props.subtitle);
+    }
+    if (this.props.location) {
+      var itemLocation = React.createElement("div", {className: "item-detail item-location link"}, React.createElement("div", {className: "dot"}, "·"), this.props.location);
+    }
+    return (
+      React.createElement("div", {className: headerClass}, 
+        React.createElement("div", {className: "item-picture"}), 
+        React.createElement("div", {className: "item-details"}, 
+          React.createElement("div", {className: "details-row"}, 
+            React.createElement("div", {className: "item-detail item-title link"}, this.props.title)
+          ), 
+          React.createElement("div", {className: "details-row"}, 
+            itemTime, 
+            itemSubtitle, 
+            itemLocation, 
+            itemSince
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = ProfileListItem;
+
+},{"react":158}],168:[function(require,module,exports){
+var React = require('react');
+
+var ProfileNavigationTab = React.createClass({displayName: "ProfileNavigationTab",
+  render: function () {
+    var tabClass = "profile-navigation-tab";
+    if (this.props.active) {
+      var tabClass = "profile-navigation-tab active";
+    }
+    return (
+      React.createElement("div", {className: tabClass}, this.props.title)
+    );
+  }
+});
+
+module.exports = ProfileNavigationTab;
+
+},{"react":158}],169:[function(require,module,exports){
+var React = require('react');
+
+var ProfileTabs = React.createClass({displayName: "ProfileTabs",
+  render: function () {
+    return (
+      React.createElement("div", {className: "profile-tabs"}, 
+        React.createElement("div", {className: "tab section-feed"}, "Feed"), 
+        React.createElement("div", {className: "tab section-about"}, "About"), 
+        React.createElement("div", {className: "tab section-friends active"}, "Friends"), 
+        React.createElement("div", {className: "tab section-schedule"}, "Schedule"), 
+        React.createElement("div", {className: "tab sections-more"}, "More", React.createElement("span", {className: "caret fa fa-caret-down"}))
+      )
+    );
+  }
+});
+
+module.exports = ProfileTabs;
+
+},{"react":158}],170:[function(require,module,exports){
+var React = require('react');
+var ProfileHero = require('./../main/profile_hero.jsx');
+var ProfileTabs = require('./../main/profile_tabs.jsx');
+var ProfileUserAbout = require('./../main/profile_user_about.jsx');
+var ProfileUserFriends = require('./../main/profile_user_friends.jsx');
+var ProfileUserFeed = require('./../main/profile_user_feed.jsx');
+
+var ProfileUser = React.createClass({displayName: "ProfileUser",
+  render: function () {
+    return (
+        React.createElement("div", {className: "profile-user"}, 
+          React.createElement(ProfileHero, null), 
+          React.createElement(ProfileTabs, null), 
+          React.createElement(ProfileUserFeed, null)
+        )
+    );
+  }
+});
+
+module.exports = ProfileUser;
+
+},{"./../main/profile_hero.jsx":164,"./../main/profile_tabs.jsx":169,"./../main/profile_user_about.jsx":171,"./../main/profile_user_feed.jsx":172,"./../main/profile_user_friends.jsx":173,"react":158}],171:[function(require,module,exports){
+var React = require('react');
+var ProfileListItem = require('./../main/profile_list_item.jsx');
+var ProfileListItemAdd = require('./../main/profile_list_add_item.jsx');
+var ProfileNavigationTab = require('./../main/profile_navigation_tab.jsx');
+
+var ProfileUserAbout = React.createClass({displayName: "ProfileUserAbout",
+  render: function () {
+    return (
+      React.createElement("div", {className: "profile-core profile-user-about"}, 
+        React.createElement("div", {className: "core-navigation"}, 
+          React.createElement(ProfileNavigationTab, {title: "Overview", active: true}), 
+          React.createElement(ProfileNavigationTab, {title: "Education and work"}), 
+          React.createElement(ProfileNavigationTab, {title: "Achievements and goals"}), 
+          React.createElement(ProfileNavigationTab, {title: "Places you've lived"}), 
+          React.createElement(ProfileNavigationTab, {title: "Places you've been"}), 
+          React.createElement(ProfileNavigationTab, {title: "Family and relationships"}), 
+          React.createElement(ProfileNavigationTab, {title: "Contact and basic info"}), 
+          React.createElement(ProfileNavigationTab, {title: "Details about you"})
+        ), 
+        React.createElement("div", {className: "core-content"}, 
+          React.createElement("div", {className: "content-group work"}, 
+            React.createElement("div", {className: "group-body"}, 
+              React.createElement(ProfileListItem, {title: "Cursuum", subtitle: "Developer", since: "2012"})
+            ), 
+            React.createElement("div", {className: "group-divider"}, React.createElement("div", {className: "divider-wrap"}))
+          ), 
+          React.createElement("div", {className: "content-group education"}, 
+            React.createElement("div", {className: "group-body"}, 
+              React.createElement(ProfileListItem, {title: "Concordia University", subtitle: "Economics", location: "Montreal, Quebec", time: "Class of 2013"}), 
+              React.createElement(ProfileListItem, {title: "College Jean-de-Brebeuf", subtitle: "Social studies", location: "Montreal, Quebec", time: "Class of 2008"})
+            ), 
+            React.createElement("div", {className: "group-divider"}, React.createElement("div", {className: "divider-wrap"}))
+          ), 
+          React.createElement("div", {className: "content-group family-members"}, 
+            React.createElement("div", {className: "group-body"}, 
+              React.createElement(ProfileListItem, {title: "Marlene Gaudreau", subtitle: "Cousin", type: "family"}), 
+              React.createElement(ProfileListItem, {title: "Laurence Gaudreau", subtitle: "Cousin", type: "family"}), 
+              React.createElement(ProfileListItem, {title: "Isabelle Gaudreau", subtitle: "Cousin", type: "family"})
+            ), 
+            React.createElement("div", {className: "group-divider"}, React.createElement("div", {className: "divider-wrap"}))
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = ProfileUserAbout;
+
+},{"./../main/profile_list_add_item.jsx":165,"./../main/profile_list_item.jsx":167,"./../main/profile_navigation_tab.jsx":168,"react":158}],172:[function(require,module,exports){
+var React = require('react');
+var PrivacyOptions = require('./../shared/privacy_options.jsx');
+var ProfileFeedPost = require('./../main/profile_feed_post.jsx');
+var PostEntry = require('./../shared/post_entry.jsx');
+
+var ProfileUserFeed = React.createClass({displayName: "ProfileUserFeed",
+  render: function () {
+    return (
+      React.createElement("div", {className: "profile-core profile-user-feed"}, 
+        React.createElement("div", {className: "profile-feed"}, 
+          React.createElement(PostEntry, null), 
+          React.createElement("div", {className: "feed-posts"}, 
+            React.createElement(ProfileFeedPost, {author: "Julian Dennis", when: "7 hours ago", where: "Montreal", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum, metus vel blandit fringilla, est risus ultrices leo, sit amet luctus ante tortor nec quam. Maecenas venenatis laoreet purus, ac faucibus."}), 
+            React.createElement(ProfileFeedPost, {author: "Charles Gaudreau Jackson", when: "9 hours ago", where: "Montreal", body: "Integer feugiat maximus ligula, et vehicula nunc. Etiam fringilla nulla nec odio consequat sollicitudin. Phasellus placerat eget nulla ut ultricies."}), 
+            React.createElement(ProfileFeedPost, {author: "Wesley Harris", when: "13 hours ago", where: "Montreal", body: "Suspendisse pellentesque tincidunt lorem cursus egestas. Morbi vel dui iaculis, tempor ante sit amet, facilisis urna. Maecenas ut orci mauris."}), 
+            React.createElement(ProfileFeedPost, {author: "Christie Duncan", when: "2 days ago", where: "Montreal", body: "Quisque condimentum scelerisque arcu, ut tristique augue imperdiet eu. Etiam ultrices ullamcorper odio, in imperdiet orci varius vitae. Maecenas elementum metus eu massa tempus, vel volutpat lacus congue interdum arcu."})
+          )
+        ), 
+        React.createElement("div", {className: "profile-assets"}, 
+          React.createElement("div", {className: "assets-group"}, 
+            React.createElement("div", {className: "group-header"}, 
+              React.createElement("div", {className: "header-title"}, "Friends"), 
+              React.createElement("div", {className: "header-count"}, "256"), 
+              React.createElement("div", {className: "header-mutual"}, "27 mutual")
+            ), 
+            React.createElement("div", {className: "group-list"}, 
+              React.createElement("div", {className: "list-item"}, 
+                React.createElement("div", {className: "item-title"}, "Howard Foster")
+              ), 
+              React.createElement("div", {className: "list-item"}, 
+                React.createElement("div", {className: "item-title"}, "Norma Shelton")
+              ), 
+              React.createElement("div", {className: "list-item"}, 
+                React.createElement("div", {className: "item-title"}, "Christie Duncan")
+              ), 
+              React.createElement("div", {className: "list-item"}, 
+                React.createElement("div", {className: "item-title"}, "Welsey Harris")
+              ), 
+              React.createElement("div", {className: "list-item"}, 
+                React.createElement("div", {className: "item-title"}, "Alvin Swanson")
+              ), 
+              React.createElement("div", {className: "list-item"}, 
+                React.createElement("div", {className: "item-title"}, "Julian Dennis")
+              ), 
+              React.createElement("div", {className: "list-item"}, 
+                React.createElement("div", {className: "item-title"}, "Lenna Murray")
+              ), 
+              React.createElement("div", {className: "list-item"}, 
+                React.createElement("div", {className: "item-title"}, "Jesse Smith")
+              )
+            )
+          ), 
+          React.createElement("div", {className: "assets-group"}, 
+            React.createElement("div", {className: "group-header"}, 
+              React.createElement("div", {className: "header-title"}, "Photos"), 
+              React.createElement("div", {className: "header-count"}, "74")
+            ), 
+            React.createElement("div", {className: "group-list"}, 
+              React.createElement("div", {className: "list-item"}), 
+              React.createElement("div", {className: "list-item"}), 
+              React.createElement("div", {className: "list-item"}), 
+              React.createElement("div", {className: "list-item"}), 
+              React.createElement("div", {className: "list-item"}), 
+              React.createElement("div", {className: "list-item"}), 
+              React.createElement("div", {className: "list-item"}), 
+              React.createElement("div", {className: "list-item"})
+            )
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = ProfileUserFeed;
+
+},{"./../main/profile_feed_post.jsx":163,"./../shared/post_entry.jsx":196,"./../shared/privacy_options.jsx":199,"react":158}],173:[function(require,module,exports){
+var React = require('react');
+var ProfileListItem = require('./../main/profile_list_item.jsx');
+var ProfileNavigationTab = require('./../main/profile_navigation_tab.jsx');
+var ProfileListFriend = require('./../main/profile_list_friend.jsx');
+
+var ProfileUserFriends = React.createClass({displayName: "ProfileUserFriends",
+  render: function () {
+    return (
+      React.createElement("div", {className: "profile-core profile-user-friends"}, 
+        React.createElement("div", {className: "core-navigation"}, 
+          React.createElement(ProfileNavigationTab, {title: "All friends", active: true}), 
+          React.createElement(ProfileNavigationTab, {title: "Mutual Friends"}), 
+          React.createElement(ProfileNavigationTab, {title: "Recently Added"}), 
+          React.createElement(ProfileNavigationTab, {title: "Around me"}), 
+          React.createElement(ProfileNavigationTab, {title: "University"}), 
+          React.createElement(ProfileNavigationTab, {title: "High School"}), 
+          React.createElement(ProfileNavigationTab, {title: "Acquantainces"})
+        ), 
+        React.createElement("div", {className: "core-content"}, 
+          React.createElement("div", {className: "friends-col"}, 
+            React.createElement(ProfileListFriend, {title: "Deborah Miller", mutual: "31 mutual friends", connected: "close friend"}), 
+            React.createElement(ProfileListFriend, {title: "Caleb Freeman", mutual: "12 mutual friends", connected: "friend"}), 
+            React.createElement(ProfileListFriend, {title: "Nicholas Brown", mutual: "46 mutual friends", connected: "friend"}), 
+            React.createElement(ProfileListFriend, {title: "Harry Hill", mutual: "28 mutual friends", connected: "friend"}), 
+            React.createElement(ProfileListFriend, {title: "Julian Dennis", mutual: "13 mutual friends"})
+          ), 
+          React.createElement("div", {className: "friends-col"}, 
+            React.createElement(ProfileListFriend, {title: "Angelo Foster", mutual: "63 mutual friends", connected: "close friend"}), 
+            React.createElement(ProfileListFriend, {title: "Norma Shelton", mutual: "3 mutual friends", connected: "friend"}), 
+            React.createElement(ProfileListFriend, {title: "Christie Duncan", mutual: "17 mutual friends", connected: "friend"}), 
+            React.createElement(ProfileListFriend, {title: "Terrel Carpenter", mutual: "54 mutual friends", connected: "friend"}), 
+            React.createElement(ProfileListFriend, {title: "Mack Wong", mutual: "12 mutual friends"})
+        ), 
+          React.createElement("div", {className: "friends-col"}, 
+            React.createElement(ProfileListFriend, {title: "Alvin Swanson", mutual: "28 mutual friends", connected: "friend"}), 
+            React.createElement(ProfileListFriend, {title: "Jean Klein", mutual: "18 mutual friends", connected: "friend"}), 
+            React.createElement(ProfileListFriend, {title: "Wesley Harris", mutual: "33 mutual friends", connected: "friend"}), 
+            React.createElement(ProfileListFriend, {title: "Nathan Holt", mutual: "47 mutual friends", connected: "friend"}), 
+            React.createElement(ProfileListFriend, {title: "Lena Murray", mutual: "21 mutual friends"})
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = ProfileUserFriends;
+
+},{"./../main/profile_list_friend.jsx":166,"./../main/profile_list_item.jsx":167,"./../main/profile_navigation_tab.jsx":168,"react":158}],174:[function(require,module,exports){
 // Root components of UI
 var React = require('react');
 var TopBar = require('./topbar/topbar.jsx');
 var ChatBar = require('./chatbar/chatbar.jsx');
 var SideBar = require('./sidebar/sidebar.jsx');
 var Main = require('./main/main.jsx');
-
+var CreateEvent = require('./shared/create_event.jsx');
 
 var Root = React.createClass({displayName: 'Root',
 	render: function() {
@@ -19464,29 +19585,2321 @@ var Root = React.createClass({displayName: 'Root',
 			React.createElement(TopBar, null), 
 			React.createElement(SideBar, null), 
 			React.createElement(Main, null), 
-			React.createElement(ChatBar, null)
+			React.createElement(ChatBar, null), 
+			React.createElement(CreateEvent, {mode: "absolute"})
 		);
 	}
 });
 
 module.exports = Root;
 
-},{"./chatbar/chatbar.jsx":159,"./main/main.jsx":160,"./sidebar/sidebar.jsx":163,"./topbar/topbar.jsx":164,"react":158}],162:[function(require,module,exports){
+},{"./chatbar/chatbar.jsx":159,"./main/main.jsx":161,"./shared/create_event.jsx":187,"./sidebar/sidebar.jsx":203,"./topbar/topbar.jsx":204,"react":158}],175:[function(require,module,exports){
+var React = require('react');
+var CalendarAgileWeek = require('./../shared/calendar_agile_week.jsx');
+var CalendarAgileMonth = require('./../shared/calendar_agile_month.jsx');
+
+var CalendarAgile = React.createClass({displayName: "CalendarAgile",
+  render: function () {
+    if (this.props.mode) {
+      if (this.props.mode = "month") {
+        var CalendarAgileView = React.createElement(CalendarAgileMonth, null)
+      }
+      else if (this.props.mode = "week")  {
+        var CalendarAgileView = React.createElement(CalendarAgileWeek, null)
+      }
+    }
+    else {
+      var CalendarAgileView = React.createElement(CalendarAgileWeek, null)
+    }
+    return (
+      React.createElement("div", {className: "calendar-agile"}, 
+        CalendarAgileView
+      )
+    );
+  }
+});
+
+module.exports = CalendarAgile;
+
+},{"./../shared/calendar_agile_month.jsx":176,"./../shared/calendar_agile_week.jsx":178,"react":158}],176:[function(require,module,exports){
+var React = require('react');
+var CalendarAgileMonthBlock = require('./../shared/calendar_agile_month_block.jsx');
+
+var CalendarAgileMonth = React.createClass({displayName: "CalendarAgileMonth",
+  render: function () {
+    return (
+        React.createElement("div", {className: "calendar-agile-month demonstrate-heat"}, 
+          React.createElement("div", {className: "calendar-current"}, 
+            React.createElement("div", {className: "value"}, "November 2015"), 
+            React.createElement("div", {className: "switches"}, 
+              React.createElement("span", {className: "switch back fa fa-chevron-left"}), 
+              React.createElement("span", {className: "switch next fa fa-chevron-right"})
+            )
+          ), 
+          React.createElement("div", {className: "calendar-labels"}, 
+            React.createElement("div", {className: "label"}, "Sun"), 
+            React.createElement("div", {className: "label"}, "Mon"), 
+            React.createElement("div", {className: "label"}, "Tue"), 
+            React.createElement("div", {className: "label"}, "Wed"), 
+            React.createElement("div", {className: "label"}, "Thu"), 
+            React.createElement("div", {className: "label"}, "Fri"), 
+            React.createElement("div", {className: "label"}, "Sat")
+          ), 
+          React.createElement("div", {className: "calendar-grid"}, 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "29", heat: "1", offset: "previous"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "30", heat: "1", offset: "previous"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "Nov 1", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "2", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "3", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "4", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "5", heat: "1"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "5", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "6", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "7", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "8", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "9", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "10", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "11", heat: "1"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "12", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "13", heat: "1", status: "today"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "14", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "15", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "16", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "17", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "18", heat: "1"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "19", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "20", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "21", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "22", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "23", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "24", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "25", heat: "1"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "26", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "27", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "28", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "29", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "30", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "31", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "Dec 1", heat: "1", offset: "next"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "2", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "3", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "4", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "5", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "6", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "7", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "8", heat: "1", offset: "next"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "9", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "10", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "11", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "12", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "13", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "14", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "15", heat: "1", offset: "next"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "16", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "17", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "18", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "19", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "20", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "21", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "22", heat: "1", offset: "next"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "23", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "24", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "25", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "26", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "27", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "28", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "29", heat: "1", offset: "next"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "30", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "31", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "Jan 1", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "2", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "3", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "4", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "5", heat: "1", offset: "next"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "6", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "7", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "8", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "9", heat: "1", offset: "next"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "10", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "11", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "12", heat: "1"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "13", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "14", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "15", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "16", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "17", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "18", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "19", heat: "1"})
+            ), 
+            React.createElement("div", {className: "grid-week"}, 
+              React.createElement(CalendarAgileMonthBlock, {date: "20", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "21", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "22", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "23", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "24", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "25", heat: "1"}), 
+              React.createElement(CalendarAgileMonthBlock, {date: "26", heat: "1"})
+            )
+          ), 
+          React.createElement("div", {className: "calendar-heat"}, 
+            React.createElement("div", {className: "heat-distribution"}, 
+              React.createElement("div", {className: "heat-spot heat-9"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+              React.createElement("div", {className: "heat-spot heat-9"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+              React.createElement("div", {className: "heat-spot heat-9"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+
+                React.createElement("div", {className: "heat-spot heat-6"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+                React.createElement("div", {className: "heat-spot heat-6"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+                React.createElement("div", {className: "heat-spot heat-6"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+
+                React.createElement("div", {className: "heat-spot heat-3"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+                React.createElement("div", {className: "heat-spot heat-3"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+                React.createElement("div", {className: "heat-spot heat-3"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+                React.createElement("div", {className: "heat-spot heat-3"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"}))
+            )
+          )
+        )
+    );
+  }
+});
+
+module.exports = CalendarAgileMonth;
+
+},{"./../shared/calendar_agile_month_block.jsx":177,"react":158}],177:[function(require,module,exports){
+var React = require('react');
+
+var CalendarAgileMonthBlock = React.createClass({displayName: "CalendarAgileMonthBlock",
+  render: function () {
+    var headerClass = "calendar-agile-month-block";
+    if (this.props.offset) {
+      if (this.props.offset = "previous") {
+        var headerClass = "calendar-agile-month-block offset previous";
+      }
+      if (this.props.offset = "next") {
+        var headerClass = "calendar-agile-month-block offset next";
+      }
+    }
+    if (this.props.status) {
+      if (this.props.status = "today") {
+        var headerClass = headerClass + " today";
+      }
+    }
+    return (
+      React.createElement("div", {className: headerClass}, 
+        React.createElement("span", {className: "date"}, this.props.date)
+      )
+    );
+  }
+});
+
+module.exports = CalendarAgileMonthBlock;
+
+},{"react":158}],178:[function(require,module,exports){
+var React = require('react');
+var CalendarWeekDay = require('./../shared/calendar_week_day.jsx');
+var CalendarAgileWeekEvent= require('./../shared/calendar_agile_week_event.jsx');
+
+var CalendarAgileWeek = React.createClass({displayName: "CalendarAgileWeek",
+  render: function () {
+    return (
+        React.createElement("div", {className: "calendar-agile-week"}, 
+          React.createElement("div", {className: "calendar-current"}, 
+            React.createElement("div", {className: "value"}, "November 6", React.createElement("span", {class: "value-dash"}, "-"), "12 2015"), 
+            React.createElement("div", {className: "switches"}, 
+              React.createElement("span", {className: "switch back fa fa-chevron-left"}), 
+              React.createElement("span", {className: "switch next fa fa-chevron-right"})
+            )
+          ), 
+          React.createElement("div", {className: "calendar-labels"}, 
+            React.createElement("div", {className: "label"}, "Sun"), 
+            React.createElement("div", {className: "label"}, "Mon"), 
+            React.createElement("div", {className: "label"}, "Tue"), 
+            React.createElement("div", {className: "label"}, "Wed"), 
+            React.createElement("div", {className: "label"}, "Thu"), 
+            React.createElement("div", {className: "label"}, "Fri"), 
+            React.createElement("div", {className: "label"}, "Sat")
+          ), 
+          React.createElement("div", {className: "calendar-grid"}, 
+            React.createElement("div", {className: "grid-hours"}, 
+              React.createElement("div", {className: "hour"}), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "1 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "2 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "3 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "4 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "5 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "6 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "7 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "8 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "9 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "10 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "11 AM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "12 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "1 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "2 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "3 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "4 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "5 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "6 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "7 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "8 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "9 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "10 PM")), 
+              React.createElement("div", {className: "hour"}, React.createElement("div", {className: "value"}, "11 PM"))
+            ), 
+            React.createElement("div", {className: "grid-days"}, 
+              React.createElement("div", {className: "grid-day"}, 
+                React.createElement("div", {className: "day-hours"}, 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"}))
+                ), 
+                React.createElement("div", {className: "day-events"}, 
+                  React.createElement("div", {className: "events-wrap"}, 
+                    React.createElement(CalendarAgileWeekEvent, {push: "20", duration: "80"}), 
+                    React.createElement(CalendarAgileWeekEvent, {push: "140", duration: "80"}), 
+                    React.createElement(CalendarAgileWeekEvent, {push: "280", duration: "150"})
+                  )
+                )
+              ), 
+              React.createElement("div", {className: "grid-day"}, 
+                React.createElement("div", {className: "day-hours"}, 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"}))
+                ), 
+                React.createElement("div", {className: "day-events"}
+
+                )
+              ), 
+              React.createElement("div", {className: "grid-day active"}, 
+                React.createElement("div", {className: "day-hours"}, 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"}))
+                ), 
+                React.createElement("div", {className: "day-events"}, 
+                  React.createElement("div", {className: "events-wrap"}, 
+                    React.createElement(CalendarAgileWeekEvent, {push: "60", duration: "160"}), 
+                    React.createElement(CalendarAgileWeekEvent, {push: "280", duration: "40"}), 
+                    React.createElement(CalendarAgileWeekEvent, {push: "340", duration: "80"})
+                  )
+                )
+              ), 
+              React.createElement("div", {className: "grid-day"}, 
+                React.createElement("div", {className: "day-hours"}, 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"}))
+                ), 
+                React.createElement("div", {className: "day-events"})
+              ), 
+              React.createElement("div", {className: "grid-day"}, 
+                React.createElement("div", {className: "day-hours"}, 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"}))
+                ), 
+                React.createElement("div", {className: "day-events"}, 
+                  React.createElement("div", {className: "events-wrap"}, 
+                    React.createElement(CalendarAgileWeekEvent, {push: "83", duration: "100"}), 
+                    React.createElement(CalendarAgileWeekEvent, {push: "220", duration: "120"})
+                  )
+                )
+              ), 
+              React.createElement("div", {className: "grid-day"}, 
+                React.createElement("div", {className: "day-hours"}, 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"}))
+                ), 
+                React.createElement("div", {className: "day-events"}, 
+                  React.createElement("div", {className: "events-wrap"}, 
+                    React.createElement(CalendarAgileWeekEvent, {push: "23", duration: "40"})
+                  )
+                )
+              ), 
+              React.createElement("div", {className: "grid-day"}, 
+                React.createElement("div", {className: "day-hours"}, 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"})), 
+                  React.createElement("div", {className: "hour"}, React.createElement("div", {className: "half-hour"}))
+                ), 
+                React.createElement("div", {className: "day-events"}, 
+                  React.createElement("div", {className: "events-wrap"}, 
+                    React.createElement(CalendarAgileWeekEvent, {push: "93", duration: "150"}), 
+                    React.createElement(CalendarAgileWeekEvent, {push: "310", duration: "210"})
+                  )
+                )
+              )
+            )
+          ), 
+          React.createElement("div", {className: "calendar-heat"}, 
+            React.createElement("div", {className: "heat-distribution"}, 
+              React.createElement("div", {className: "heat-spot heat-9"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+              React.createElement("div", {className: "heat-spot heat-9"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+              React.createElement("div", {className: "heat-spot heat-9"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+
+              React.createElement("div", {className: "heat-spot heat-6"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+              React.createElement("div", {className: "heat-spot heat-6"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+              React.createElement("div", {className: "heat-spot heat-6"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+
+              React.createElement("div", {className: "heat-spot heat-3"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+              React.createElement("div", {className: "heat-spot heat-3"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+              React.createElement("div", {className: "heat-spot heat-3"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"})), 
+              React.createElement("div", {className: "heat-spot heat-3"}, React.createElement("img", {src: "http://placehold.it/500?text=PICTURE"}))
+            )
+          )
+        )
+    );
+  }
+});
+
+module.exports = CalendarAgileWeek;
+
+},{"./../shared/calendar_agile_week_event.jsx":179,"./../shared/calendar_week_day.jsx":183,"react":158}],179:[function(require,module,exports){
+var React = require('react');
+
+var CalendarAgileWeekEvent = React.createClass({displayName: "CalendarAgileWeekEvent",
+  render: function () {
+    var eventStyle = {
+      height: this.props.duration,
+      top: this.props.push
+    };
+    return (
+      React.createElement("div", {className: "calendar-agile-week-event", style: eventStyle}
+
+      )
+    );
+  }
+});
+
+module.exports = CalendarAgileWeekEvent;
+
+},{"react":158}],180:[function(require,module,exports){
+var React = require('react');
+
+var CalendarWeekHours = React.createClass({displayName: "CalendarWeekHours",
+  render: function () {
+    return (
+      React.createElement("div", {className: "day-hours"}, 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "1 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "2 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "3 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "4 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "5 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "6 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "7 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "8 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "9 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "10 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "11 AM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "12 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "1 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "2 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "3 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "4 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "5 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "6 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "7 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "8 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "9 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "10 PM")), 
+        React.createElement("div", {className: "day-hour"}, React.createElement("span", {className: "hour-value"}, "11 PM"))
+      )
+    );
+  }
+});
+
+module.exports = CalendarWeekHours;
+
+},{"react":158}],181:[function(require,module,exports){
+var React = require('react');
+
+var CalendarMonth = React.createClass({displayName: "CalendarMonth",
+  render: function () {
+    return (
+      React.createElement("div", {className: "calendar-month"}, 
+        React.createElement("div", {className: "calendar-labels"}, 
+          React.createElement("div", {className: "label"}, "Sunday"), 
+          React.createElement("div", {className: "label"}, "Monday"), 
+          React.createElement("div", {className: "label"}, "Tuesday"), 
+          React.createElement("div", {className: "label"}, "Wednesday"), 
+          React.createElement("div", {className: "label"}, "Thursday"), 
+          React.createElement("div", {className: "label"}, "Friday"), 
+          React.createElement("div", {className: "label"}, "Saturday")
+        ), 
+        React.createElement("div", {className: "calendar-grid"}, 
+          React.createElement("div", {className: "week"}, 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "1"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "2"), 
+                React.createElement("span", {className: "weather fa fa-sun-o"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "3"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "4"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "5"), 
+                React.createElement("span", {className: "weather fa fa-sun-o"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "6"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "7"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            )
+          ), 
+          React.createElement("div", {className: "week"}, 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "8"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "9"), 
+                React.createElement("span", {className: "weather fa fa-sun-o"})
+              ), 
+              React.createElement("div", {className: "block-events"}, 
+                React.createElement("div", {className: "block-event"}, 
+                  React.createElement("span", {className: "title"}, "Patrick's birthday party"), 
+                  React.createElement("span", {className: "time"}, "3pm")
+                ), 
+                React.createElement("div", {className: "block-event"}, 
+                  React.createElement("span", {className: "title"}, "TFS launch party"), 
+                  React.createElement("span", {className: "time"}, "5pm")
+                )
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "10"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "11"), 
+                React.createElement("span", {className: "weather fa fa-sun-o"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "12"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "13"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              ), 
+              React.createElement("div", {className: "block-events"}, 
+                React.createElement("div", {className: "block-event"}, 
+                  React.createElement("span", {className: "title"}, "Scatman celebration"), 
+                  React.createElement("span", {className: "time"}, "3pm")
+                )
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "14"), 
+                React.createElement("span", {className: "weather fa fa-sun-o"})
+              )
+            )
+          ), 
+          React.createElement("div", {className: "week"}, 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "15"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "16"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "17"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "18"), 
+                React.createElement("span", {className: "weather fa fa-sun-o"})
+              ), 
+              React.createElement("div", {className: "block-events"}, 
+                React.createElement("div", {className: "block-event"}, 
+                  React.createElement("span", {className: "title"}, "Development team meeting"), 
+                  React.createElement("span", {className: "time"}, "3pm")
+                )
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "19"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "20"), 
+                React.createElement("span", {className: "weather fa fa-sun-o"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "21"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            )
+          ), 
+          React.createElement("div", {className: "week"}, 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "22"), 
+                React.createElement("span", {className: "weather fa fa-sun-o"})
+              ), 
+              React.createElement("div", {className: "block-events"}, 
+                React.createElement("div", {className: "block-event"}, 
+                  React.createElement("span", {className: "title"}, "Isabel's exposition at"), 
+                  React.createElement("span", {className: "time"}, "9pm")
+                )
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "23"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "24"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "25"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "26"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "27"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              ), 
+              React.createElement("div", {className: "block-events"}, 
+                React.createElement("div", {className: "block-event"}, 
+                  React.createElement("span", {className: "title"}, "Watch Django with Dexter"), 
+                  React.createElement("span", {className: "time"}, "3pm")
+                ), 
+                React.createElement("div", {className: "block-event"}, 
+                  React.createElement("span", {className: "title"}, "Meeting for Internet Culture related subjects"), 
+                  React.createElement("span", {className: "time"}, "5pm")
+                )
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("div", {className: "date"}, "28"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            )
+          ), 
+          React.createElement("div", {className: "week"}, 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "29"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "30"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "1"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              ), 
+              React.createElement("div", {className: "block-events"}, 
+                React.createElement("div", {className: "block-event"}, 
+                  React.createElement("span", {className: "title"}, "Cursuum explanatory meeting"), 
+                  React.createElement("span", {className: "time"}, "11am")
+                )
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "2"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "3"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "4"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "5"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            )
+          ), 
+          React.createElement("div", {className: "week"}, 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "6"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              ), 
+              React.createElement("div", {className: "block-events"}, 
+                React.createElement("div", {className: "block-event"}, 
+                  React.createElement("span", {className: "title"}, "Dota lan party with Jon"), 
+                  React.createElement("span", {className: "time"}, "2pm")
+                )
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "7"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "8"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "9"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "10"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "11"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "12"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            )
+          ), 
+          React.createElement("div", {className: "week"}, 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "13"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "14"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "15"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "16"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "17"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "18"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            ), 
+            React.createElement("div", {className: "month-day offset"}, 
+              React.createElement("div", {className: "block-header"}, 
+                React.createElement("span", {className: "date"}, "19"), 
+                React.createElement("span", {className: "weather fa fa-cloud"})
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = CalendarMonth;
+
+},{"react":158}],182:[function(require,module,exports){
+var React = require('react');
+var PaneItem = require('./../shared/pane_item.jsx');
+var CalendarWeekDay = require('./../shared/calendar_week_day.jsx');
+var CalendarWeekEvent = require('./../shared/calendar_week_event.jsx');
+
+var CalendarWeek = React.createClass({displayName: "CalendarWeek",
+  render: function () {
+    return (
+      React.createElement("div", {className: "calendar-week"}, 
+        React.createElement("div", {className: "calendar-labels"}, 
+          React.createElement("div", {className: "label"}, "Sunday 12"), 
+          React.createElement("div", {className: "label"}, "Monday 13"), 
+          React.createElement("div", {className: "label"}, "Tuesday 14"), 
+          React.createElement("div", {className: "label"}, "Wednesday 15"), 
+          React.createElement("div", {className: "label"}, "Thursday 16"), 
+          React.createElement("div", {className: "label"}, "Friday 17"), 
+          React.createElement("div", {className: "label"}, "Saturday 18")
+        ), 
+        React.createElement("div", {className: "calendar-grid"}, 
+          React.createElement("div", {className: "grid-wrap"}, 
+            React.createElement("div", {className: "all-day"}, 
+              React.createElement("div", {className: "settings"}), 
+              React.createElement("div", {className: "week-days"}, 
+                React.createElement("div", {className: "week-day"}), 
+                React.createElement("div", {className: "week-day"}), 
+                React.createElement("div", {className: "week-day"}), 
+                React.createElement("div", {className: "week-day"}), 
+                React.createElement("div", {className: "week-day"}), 
+                React.createElement("div", {className: "week-day"}), 
+                React.createElement("div", {className: "week-day"})
+              )
+            ), 
+            React.createElement("div", {className: "grid-rest"}, 
+              React.createElement("div", {className: "hours"}, 
+                React.createElement("div", {className: "hour"}), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "1 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "2 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "3 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "4 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "5 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "6 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "7 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "8 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "9 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "10 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "11 AM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "12 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "1 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "2 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "3 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "4 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "5 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "6 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "7 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "8 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "9 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "10 PM")), 
+                React.createElement("div", {className: "hour"}, React.createElement("span", {className: "value"}, "11 PM"))
+              ), 
+              React.createElement("div", {className: "week-days"}, 
+                React.createElement("div", {className: "week-day"}, 
+                  React.createElement("div", {className: "hour-blocks"}, 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "event-blocks"}
+
+                  )
+                ), 
+                React.createElement("div", {className: "week-day"}, 
+                  React.createElement("div", {className: "hour-blocks"}, 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "event-blocks"}, 
+                    React.createElement("div", {className: "events-wrap"}, 
+                      React.createElement(CalendarWeekEvent, {title: "Clarinette rehearsal", time: "1:45 AM", top: "320"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week-day"}, 
+                  React.createElement("div", {className: "hour-blocks"}, 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "event-blocks"}, 
+                    React.createElement("div", {className: "events-wrap"}, 
+                      React.createElement(CalendarWeekEvent, {title: "Math tutoring", time: "1:45 AM", top: "192"}), 
+                      React.createElement(CalendarWeekEvent, {title: "Patrick's birthday party", time: "1:45 AM", top: "512"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week-day"}, 
+                  React.createElement("div", {className: "hour-blocks"}, 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "event-blocks"}, 
+                    React.createElement("div", {className: "events-wrap"}, 
+                      React.createElement(CalendarWeekEvent, {title: "Tech meeting at Notman House", time: "1:45 AM", top: "384"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week-day"}, 
+                  React.createElement("div", {className: "hour-blocks"}, 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "event-blocks"}, 
+                    React.createElement("div", {className: "events-wrap"}, 
+                      React.createElement(CalendarWeekEvent, {title: "Clarinette rehearsal", time: "1:45 AM", top: "256"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week-day"}, 
+                  React.createElement("div", {className: "hour-blocks"}, 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "event-blocks"}, 
+                    React.createElement("div", {className: "events-wrap"}, 
+                      React.createElement(CalendarWeekEvent, {title: "U2 World Tour concert", time: "1:45 AM", top: "448"})
+                    )
+                  )
+                ), 
+                React.createElement("div", {className: "week-day"}, 
+                  React.createElement("div", {className: "hour-blocks"}, 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    ), 
+                    React.createElement("div", {className: "hour-block"}, 
+                      React.createElement("div", {className: "half-hour"})
+                    )
+                  ), 
+                  React.createElement("div", {className: "event-blocks"})
+                )
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = CalendarWeek;
+
+},{"./../shared/calendar_week_day.jsx":183,"./../shared/calendar_week_event.jsx":184,"./../shared/pane_item.jsx":194,"react":158}],183:[function(require,module,exports){
+var React = require('react');
+var CalendarDayHours = require('./../shared/calendar_day_hours.jsx');
+
+var CalendarWeekDay = React.createClass({displayName: "CalendarWeekDay",
+  render: function () {
+    if (this.props.hours) {
+      var dayHours = React.createElement(CalendarDayHours, null);
+    }
+    return (
+      React.createElement("div", {className: "week-day"}, 
+        dayHours, 
+        React.createElement("div", {className: "events"}
+
+        ), 
+        React.createElement("div", {className: "hours"}, 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"})), 
+          React.createElement("div", {className: "hour"}, React.createElement("span", {className: "half"}), React.createElement("span", {className: "half"}))
+        )
+      )
+    );
+  }
+});
+
+module.exports = CalendarWeekDay;
+
+},{"./../shared/calendar_day_hours.jsx":180,"react":158}],184:[function(require,module,exports){
+var React = require('react');
+
+var CalendarWeekEvent = React.createClass({displayName: "CalendarWeekEvent",
+  render: function () {
+    return (
+      React.createElement("div", {className: "week-event", style: {top:this.props.top + "px"}}, 
+        React.createElement("div", {className: "row"}, 
+          React.createElement("span", {className: "event-title"}, this.props.title)
+        ), 
+        React.createElement("div", {className: "row"}, 
+          React.createElement("span", {className: "event-time"}, this.props.time)
+        ), 
+        React.createElement("div", {className: "row"}, 
+          React.createElement("div", {className: "event-members"}, 
+            React.createElement("div", {className: "event-member"}, 
+              React.createElement("div", {className: "picture"})
+            ), 
+            React.createElement("div", {className: "event-member"}, 
+              React.createElement("div", {className: "picture"})
+            ), 
+            React.createElement("div", {className: "event-member"}, 
+              React.createElement("div", {className: "picture"})
+            ), 
+            React.createElement("div", {className: "event-member"}, 
+              React.createElement("div", {className: "picture"})
+            )
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = CalendarWeekEvent;
+
+},{"react":158}],185:[function(require,module,exports){
+var React = require('react');
+
+var ConnectionAdd = React.createClass({displayName: "ConnectionAdd",
+  render: function () {
+    return (
+      React.createElement("div", {className: "button add-friend"}, "ADD FRIEND")
+    );
+  }
+});
+
+module.exports = ConnectionAdd;
+
+},{"react":158}],186:[function(require,module,exports){
+var React = require('react');
+
+var ConnectionOptions = React.createClass({displayName: "ConnectionOptions",
+  render: function () {
+    return (
+      React.createElement("div", {className: "dropdown connection-options"}, 
+        React.createElement("div", {className: "dropdown-trigger"}, 
+          React.createElement("span", {className: "trigger-icon fa fa-check"}), React.createElement("span", {className: "trigger-label"}, this.props.connected), React.createElement("span", {className: "trigger-caret fa fa-caret-down"})
+        ), 
+        React.createElement("div", {className: "dropdown-content"}, 
+          React.createElement("div", {className: "options-row"}, 
+            React.createElement("div", {className: "options-divider"}, React.createElement("div", {className: "divider-wrap"})), 
+            React.createElement("div", {className: "content-option"}, "Get notifications")
+          ), 
+          React.createElement("div", {className: "options-row"}, 
+            React.createElement("div", {className: "options-divider"}, React.createElement("div", {className: "divider-wrap"})), 
+            React.createElement("div", {className: "content-option active"}, "Close friends"), 
+            React.createElement("div", {className: "content-option"}, "Acquaintances"), 
+            React.createElement("div", {className: "content-option"}, "Add a new list")
+          ), 
+          React.createElement("div", {className: "options-row"}, 
+            React.createElement("div", {className: "options-divider"}, React.createElement("div", {className: "divider-wrap"})), 
+            React.createElement("div", {className: "content-option disconnect"}, "Suggest friends")
+          ), 
+          React.createElement("div", {className: "options-row"}, 
+            React.createElement("div", {className: "options-divider"}, React.createElement("div", {className: "divider-wrap"})), 
+            React.createElement("div", {className: "content-option disconnect"}, "Unfriend")
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = ConnectionOptions;
+
+},{"react":158}],187:[function(require,module,exports){
+var React = require('react');
+var Thumb = require('./../shared/thumb.jsx');
+var CalendarAgileMonth = require('./../shared/calendar_agile_month.jsx');
+var CalendarAgileWeek = require('./../shared/calendar_agile_week.jsx');
+var CalendarAgile = require('./../shared/calendar_agile.jsx');
+var EventList = require('./../shared/event_list.jsx');
+var DropArea = require('./../shared/drop_area.jsx');
+
+var CreateEvent = React.createClass({displayName: "CreateEvent",
+  render: function () {
+    var headerClass = "createEvent modal-frame fixed";
+    return (
+      React.createElement("div", {className: headerClass}, 
+        React.createElement("div", {className: "modal-wrap"}, 
+          React.createElement("div", {className: "side-center"}, 
+            React.createElement("div", {className: "body"}, 
+              React.createElement("div", {className: "event-title"}, 
+                React.createElement("input", {className: "value-input form-text", type: "text", placeholder: "Enter a title for your event", autoComplete: "off", autoCorrect: "off", autoCapitalize: "off", spellCheck: "false"})
+              ), 
+              React.createElement("div", {className: "event-details"}, 
+                React.createElement("textarea", {className: "value-input form-text", type: "text", placeholder: "Details to describe your event", autoComplete: "off", autoCorrect: "off", autoCapitalize: "off", spellCheck: "false"}), 
+                React.createElement("div", {className: "options"}, 
+                  React.createElement("div", {className: "option"}, "TAGS"), 
+                  React.createElement("div", {className: "option"}, "FILES"), 
+                  React.createElement("div", {className: "option"}, "PRICE")
+                )
+              ), 
+              React.createElement("div", {className: "context-left"}, 
+                React.createElement("div", {className: "event-members"}, 
+                  React.createElement("div", {className: "search"}, 
+                    React.createElement("input", {className: "form-text", type: "text", placeholder: "Invite members", autoComplete: "off", autoCorrect: "off", autoCapitalize: "off", spellCheck: "false"}), 
+                    React.createElement("div", {className: "suggested-results"}, 
+                      React.createElement("div", {className: "result-wrap"}, 
+                        React.createElement(Thumb, {title: "Jonathan Brown", filename: "http://placehold.it/500?text=PICTURE"}), 
+                        React.createElement(Thumb, {title: "Angelo Foster", filename: "http://placehold.it/500?text=PICTURE"}), 
+                        React.createElement(Thumb, {title: "Christie Duncan", filename: "http://placehold.it/500?text=PICTURE"}), 
+                        React.createElement(Thumb, {title: "Harry Hill", filename: "http://placehold.it/500?text=PICTURE"})
+                      )
+                    )
+                  ), 
+                  React.createElement("div", {className: "picked"}, 
+                    React.createElement(Thumb, {title: "Wesley Harris", filename: "http://placehold.it/500?text=PICTURE", remove: "true"}), 
+                    React.createElement(Thumb, {title: "Norma Shelton", filename: "http://placehold.it/500?text=PICTURE", remove: "true"}), 
+                    React.createElement(Thumb, {title: "Jonathan Brown", filename: "http://placehold.it/500?text=PICTURE", remove: "true"}), 
+                    React.createElement(Thumb, {title: "Christie Duncan", filename: "http://placehold.it/500?text=PICTURE", remove: "true"}), 
+                    React.createElement(Thumb, {title: "Angelo Foster", filename: "http://placehold.it/500?text=PICTURE", remove: "true"}), 
+                    React.createElement(Thumb, {title: "Jesse Smith", filename: "http://placehold.it/500?text=PICTURE", remove: "true"}), 
+                    React.createElement(Thumb, {title: "Alexandre Grand", filename: "http://placehold.it/500?text=PICTURE", remove: "true"})
+                  )
+                ), 
+                React.createElement("div", {className: "event-location"}, 
+                  React.createElement("div", {className: "search"}, 
+                    React.createElement("div", {className: "map"}, 
+                      React.createElement("div", {className: "empty-message"}, React.createElement("span", {className: "value"}, "SELECT A LOCATION"))
+                    ), 
+                    React.createElement("input", {className: "form-text", type: "text", placeholder: "Select a location", autoComplete: "off", autoCorrect: "off", autoCapitalize: "off", spellCheck: "false"}), 
+                      React.createElement("div", {className: "suggested-results"}, 
+                        React.createElement("div", {className: "result-wrap"}, 
+                          React.createElement(Thumb, {title: "Jonathan Brown", filename: "http://placehold.it/500?text=PICTURE"}), 
+                          React.createElement(Thumb, {title: "Angelo Foster", filename: "http://placehold.it/500?text=PICTURE"}), 
+                          React.createElement(Thumb, {title: "Christie Duncan", filename: "http://placehold.it/500?text=PICTURE"}), 
+                          React.createElement(Thumb, {title: "Harry Hill", filename: "http://placehold.it/500?text=PICTURE"})
+                        )
+                      )
+                  )
+                )
+              ), 
+              React.createElement("div", {className: "context-right"}, 
+                React.createElement("div", {className: "event-calendar"}, 
+                  React.createElement(CalendarAgileMonth, null)
+                )
+              )
+            ), 
+            React.createElement("div", {className: "footer"}, 
+              React.createElement("a", {className: "more-settings", href: "#"}, "More settings"), 
+              React.createElement("a", {className: "button create-event", href: "#"}, "CREATE EVENT")
+            )
+          ), 
+          React.createElement("div", {className: "side-right"}, 
+            React.createElement("div", {className: "side-wrap"}, 
+              React.createElement("div", {className: "groups"}, 
+                React.createElement("div", {className: "group"}, 
+                  React.createElement("div", {className: "header"}, 
+                    React.createElement("div", {className: "trigger"}, "Select a category", React.createElement("span", {className: "caret fa fa-caret-down"})), 
+                    React.createElement("div", {className: "suggested-results"}, 
+                      React.createElement("div", {className: "results-header"}, 
+                        React.createElement("div", {className: "search"}, 
+                          React.createElement("input", {type: "text", placeholder: "Search categories", className: "form-text"})
+                        )
+                      ), 
+                      React.createElement("div", {className: "results-body"}, 
+                        React.createElement("div", {className: "result"}, "School"), 
+                        React.createElement("div", {className: "result"}, "Work"), 
+                        React.createElement("div", {className: "result"}, "Social"), 
+                        React.createElement("div", {className: "result"}, "Family")
+                      ), 
+                      React.createElement("div", {className: "results-footer"}, 
+                        React.createElement("a", {href: "#", className: "new-category-trigger"}, React.createElement("span", {className: "icon fa fa-plus"}), "New category")
+                      )
+                    )
+                  ), 
+                  React.createElement("div", {className: "events"}, 
+                    React.createElement(EventList, null)
+                  )
+                )
+              ), 
+              React.createElement("div", {className: "footer"}, 
+                React.createElement("div", {className: "add-category"}, 
+                  React.createElement("div", {className: "label"}, "Add category")
+                ), 
+                React.createElement("div", {className: "new-event fa fa-plus"})
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = CreateEvent;
+
+},{"./../shared/calendar_agile.jsx":175,"./../shared/calendar_agile_month.jsx":176,"./../shared/calendar_agile_week.jsx":178,"./../shared/drop_area.jsx":188,"./../shared/event_list.jsx":189,"./../shared/thumb.jsx":200,"react":158}],188:[function(require,module,exports){
+var React = require('react');
+
+var DropArea = React.createClass({displayName: "DropArea",
+  render: function () {
+    return (
+      React.createElement("div", {className: "drop-area"}, 
+        React.createElement("div", {className: "area-wrap"}, 
+          React.createElement("div", {className: "center"}, 
+            React.createElement("div", {className: "drop-title"}, this.props.title), 
+            React.createElement("div", {className: "drop-statement"}, this.props.statement)
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = DropArea;
+
+},{"react":158}],189:[function(require,module,exports){
+var React = require('react');
+var ThumbTag = require('./../shared/thumb_tag.jsx');
+var ThumbFile = require('./../shared/thumb_file.jsx');
+var EventListDate = require('./../shared/event_list_date.jsx');
+var EventListPrice = require('./../shared/event_list_price.jsx');
+
+var EventList = React.createClass({displayName: "EventList",
+  render: function () {
+    return (
+      React.createElement("div", {className: "event-list"}, 
+        React.createElement("div", {className: "row primary"}, 
+          React.createElement("div", {className: "remove-event"}, "REMOVE"), 
+          React.createElement("div", {className: "row"}, 
+            React.createElement("div", {className: "title"}, "Study session")
+          ), 
+          React.createElement("div", {className: "row"}, 
+            React.createElement("div", {className: "location"}, "3525 Trenholme")
+          )
+        ), 
+        React.createElement("div", {className: "row secondary"}, 
+          React.createElement("div", {className: "row dates"}, 
+            React.createElement(EventListDate, null)
+          ), 
+          React.createElement("div", {className: "row members"}, 
+            React.createElement("div", {className: "member"}, React.createElement("img", {src: "http://placehold.it/500"})), 
+            React.createElement("div", {className: "member"}, React.createElement("img", {src: "http://placehold.it/500"})), 
+            React.createElement("div", {className: "member"}, React.createElement("img", {src: "http://placehold.it/500"})), 
+            React.createElement("div", {className: "member"}, React.createElement("img", {src: "http://placehold.it/500"})), 
+            React.createElement("div", {className: "member"}, React.createElement("img", {src: "http://placehold.it/500"}))
+          )
+        ), 
+        React.createElement("div", {className: "row assets"}, 
+          React.createElement("div", {className: "tabs"}, 
+            React.createElement("div", {className: "asset tags"}, 
+              React.createElement("div", {className: "merge-line"}), 
+              React.createElement("div", {className: "asset-wrap"}, 
+                React.createElement("span", {className: "icon fa fa-tag"}), React.createElement("span", {className: "label"}, "8 Tags")
+              )
+            ), 
+            React.createElement("div", {className: "asset files"}, 
+              React.createElement("div", {className: "merge-line"}), 
+              React.createElement("div", {className: "asset-wrap"}, 
+                React.createElement("span", {className: "icon fa fa-file"}), React.createElement("span", {className: "label"}, "2 Files")
+              )
+            ), 
+            React.createElement("div", {className: "asset price"}, 
+              React.createElement("div", {className: "merge-line"}), 
+              React.createElement("div", {className: "asset-wrap"}, 
+                React.createElement("span", {className: "icon fa fa-dollar"}), React.createElement("span", {className: "label"}, "25")
+              )
+            ), 
+            React.createElement("div", {className: "asset members"}, 
+              React.createElement("div", {className: "merge-line"}), 
+              React.createElement("div", {className: "asset-wrap"}, 
+                React.createElement("span", {className: "icon fa fa-user"}), React.createElement("span", {className: "label"}, "8")
+              )
+            )
+          ), 
+          React.createElement("div", {className: "content hide"}, 
+            React.createElement("div", {className: "content-body"}, 
+              React.createElement("div", {className: "date-set"}, 
+                React.createElement(ThumbFile, {title: "Class notes for exam #1", progress: "40"}), 
+                React.createElement(ThumbFile, {title: "List of choices", progress: "70"}), 
+                React.createElement(ThumbFile, {title: "Math class syllabus", progress: "30"})
+              )
+            ), 
+            React.createElement("div", {className: "content-footer"}, 
+              React.createElement("div", {className: "add-tags"}, "Add tags", React.createElement("div", {className: "merge-line"})), 
+              React.createElement("div", {className: "add-files"}, "Add files"), 
+              React.createElement("div", {className: "link-date"}, 
+                React.createElement("div", {className: "icon fa fa-calendar-o"}), 
+                React.createElement("div", {className: "title"}, "Link date"), 
+                React.createElement("div", {className: "merge-line"})
+              )
+            ), 
+            React.createElement("div", {className: "content-extensions"}, 
+              React.createElement("div", {className: "extension-tags"}, 
+                React.createElement("div", {className: "tags-search"}, 
+                  React.createElement("input", {type: "text", placeholder: "Search for tags", className: "form-text"})
+                ), 
+                React.createElement(ThumbTag, {title: "Education", count: "104"})
+              ), 
+              React.createElement("div", {className: "extension-dates"}, 
+                React.createElement("div", {className: "extension-date"}, 
+                  React.createElement(EventListDate, null)
+                )
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = EventList;
+
+},{"./../shared/event_list_date.jsx":190,"./../shared/event_list_price.jsx":191,"./../shared/thumb_file.jsx":201,"./../shared/thumb_tag.jsx":202,"react":158}],190:[function(require,module,exports){
+var React = require('react');
+
+var EventListDate = React.createClass({displayName: "EventListDate",
+  render: function () {
+    return (
+      React.createElement("div", {className: "event-list-date folded"}, 
+        React.createElement("div", {className: "primary"}, 
+          React.createElement("span", {className: "month-day"}, "November 5"), React.createElement("span", {className: "year"}, " 2015"), 
+          React.createElement("div", {className: "date-interact"}, 
+            React.createElement("div", {className: "options-current"}, 
+              React.createElement("div", {className: "option fa fa-user"}), 
+              React.createElement("div", {className: "option fa fa-tag"})
+            ), 
+            React.createElement("div", {className: "options-trigger fa fa-caret-down"})
+          )
+        ), 
+        React.createElement("div", {className: "secondary"}, 
+          React.createElement("div", {className: "hour"}, "8:00 AM"), " to ", React.createElement("div", {className: "hour"}, "10:20 AM"), 
+          React.createElement("div", {className: "price"}, React.createElement("span", {className: "icon fa fa-dollar"}), "25")
+        )
+      )
+    );
+  }
+});
+
+module.exports = EventListDate;
+
+},{"react":158}],191:[function(require,module,exports){
+var React = require('react');
+
+var EventListPrice = React.createClass({displayName: "EventListPrice",
+  render: function () {
+    return (
+      React.createElement("div", {className: "event-list-price folded"}, 
+        React.createElement("div", {className: "primary"}, 
+          React.createElement("div", {className: "price-currency"}, "$"), 
+          React.createElement("div", {className: "price-value"}, 
+            React.createElement("input", {type: "text", placeholder: "0", className: "form-text"})
+          ), 
+          React.createElement("div", {className: "price-code"}, "CAD")
+        ), 
+        React.createElement("div", {className: "select-currrency"}), 
+        React.createElement("div", {className: "select-code"})
+      )
+    );
+  }
+});
+
+module.exports = EventListPrice;
+
+},{"react":158}],192:[function(require,module,exports){
+var React = require('react');
+
+var NotifyCount = React.createClass({displayName: "NotifyCount",
+  render: function () {
+    return (
+        React.createElement("div", {className: "notify-count"}, this.props.count)
+    );
+  }
+});
+
+module.exports = NotifyCount;
+
+},{"react":158}],193:[function(require,module,exports){
+var React = require('react');
+var PaneItem = require('./../shared/pane_item.jsx');
+
+var Pane = React.createClass({displayName: "Pane",
+  render: function () {
+    if (this.props.pointer) {
+      if (this.props.pointer == "top") {
+        var pointer = React.createElement("div", {className: "pane-pointer top"});
+      }
+    }
+    if (this.props.tabs) {
+      if (this.props.tabs == 3) {
+        var tabs =
+        React.createElement("div", {className: "pane-tabs three"}, 
+          React.createElement("a", {className: "pane-tab"}, this.props.tab1), 
+          React.createElement("a", {className: "pane-tab"}, this.props.tab2), 
+          React.createElement("a", {className: "pane-tab"}, this.props.tab3)
+        );
+      }
+      if (this.props.tabs == 2) {
+        var tabs =
+        React.createElement("div", {className: "pane-tabs two"}, 
+          React.createElement("a", {className: "pane-tab"}, this.props.tab1), 
+          React.createElement("a", {className: "pane-tab"}, this.props.tab2)
+        );
+      }
+    }
+    return (
+    React.createElement("div", {className: "pane"}, 
+      pointer, 
+      tabs, 
+      React.createElement("div", {className: "shown"}, 
+        React.createElement("div", {className: "pane-header"}, 
+          React.createElement("span", null, "People")
+        ), 
+        React.createElement("div", {className: "pane-list"}, 
+          React.createElement(PaneItem, {title: "Charles Gaudreau Jackson", subTitle: "Concordia University", context: "request"}), 
+          React.createElement(PaneItem, {title: "Olivier Maltais", subTitle: "University of Montreal", context: "request"}), 
+          React.createElement(PaneItem, {title: "Geoffroy Bergeron", subTitle: "University of Montreal", context: "request"}), 
+          React.createElement(PaneItem, {title: "Harris Robin Kalash", subTitle: "Thirdshelf", context: "request"})
+        )
+      ), 
+      React.createElement("div", {className: "more"}, "See more")
+    )
+    );
+  }
+});
+
+module.exports = Pane;
+
+},{"./../shared/pane_item.jsx":194,"react":158}],194:[function(require,module,exports){
+var React = require('react');
+
+var PaneItem = React.createClass({displayName: "PaneItem",
+  render: function () {
+    if (this.props.timeStamp) {
+      var when = React.createElement("div", {className: "when"}, this.props.timeStamp);
+    }
+    if (this.props.context) {
+      if (this.props.context == "request") {
+        var headerClass = "pane-item request";
+        var options =
+        React.createElement("div", {className: "item-options"}, 
+          React.createElement("a", {href: "#", className: "item-option button save"}, "Accept"), 
+          React.createElement("a", {href: "#", className: "item-option button cancel"}, "Decline")
+        );
+      }
+      if (this.props.context == "message") {
+        var headerClass = "pane-item message";
+        if (this.props.status == "read") {
+          var status = React.createElement("div", {className: "status"});
+          var checkBox = React.createElement("div", {className: "check checked fa fa-circle-o"})
+        }
+        if (this.props.status == "new") {
+          var status = React.createElement("div", {className: "status"});
+          var checkBox = React.createElement("div", {className: "check not-checked fa fa-circle-o"})
+
+        }
+      }
+    }
+    return (
+    React.createElement("div", {className: headerClass}, 
+      React.createElement("div", {className: "pane-picture"}), 
+      React.createElement("div", {className: "pane-infos"}, 
+        React.createElement("div", {className: "row"}, 
+          React.createElement("div", {className: "title"}, this.props.title), checkBox
+        ), 
+        React.createElement("div", {className: "row"}, 
+          status, React.createElement("div", {className: "subtitle"}, this.props.subTitle), when
+        )
+      ), 
+      options
+    )
+    );
+  }
+});
+
+module.exports = PaneItem;
+
+},{"react":158}],195:[function(require,module,exports){
+var React = require('react');
+
+var PanePrivacySettings = React.createClass({displayName: "PanePrivacySettings",
+  render: function () {
+    return (
+      React.createElement("div", {className: "pane-privacy-settings"}, 
+        React.createElement("a", {href: "#", className: "dropdown-trigger option"}, 
+          React.createElement("span", {className: "trigger-icon fa fa-globe"}), 
+          React.createElement("span", {className: "trigger-label"}, "Public")
+        ), 
+        React.createElement("div", {className: "other-options"}, 
+          React.createElement("a", {href: "#", className: "dropdown-trigger option"}, 
+            React.createElement("span", {className: "trigger-icon fa fa-user"}), 
+            React.createElement("span", {className: "trigger-label"}, "Friends")
+          ), 
+          React.createElement("a", {href: "#", className: "dropdown-trigger option"}, 
+            React.createElement("span", {className: "trigger-icon fa fa-lock"}), 
+            React.createElement("span", {className: "trigger-label"}, "Only me")
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = PanePrivacySettings;
+
+},{"react":158}],196:[function(require,module,exports){
+var React = require('react');
+var PrivacyOptions = require('./../shared/privacy_options.jsx');
+var ProfileFeedPost = require('./../main/profile_feed_post.jsx');
+
+var ProfileUserFeed = React.createClass({displayName: "ProfileUserFeed",
+  render: function () {
+    return (
+      React.createElement("div", {className: "post-entry"}, 
+        React.createElement("div", {className: "input-row entry-value"}, 
+          React.createElement("div", {className: "entry-submit"}, 
+            React.createElement("textarea", {className: "input-field", placeholder: "What's on your mind?"})
+          )
+        ), 
+        React.createElement("div", {className: "input-row entry-interact"}, 
+          React.createElement("div", {className: "entry-asset"}, 
+            React.createElement("div", {className: "asset-icon fa fa-camera"})
+          ), 
+          React.createElement("div", {className: "entry-asset scale-down"}, 
+            React.createElement("div", {className: "asset-icon fa fa-file"})
+          ), 
+          React.createElement("div", {className: "entry-asset"}, 
+            React.createElement("div", {className: "asset-icon fa fa-map-marker"})
+          ), 
+          React.createElement("div", {className: "entry-asset"}, 
+            React.createElement("div", {className: "asset-icon fa fa-user"})
+          ), 
+          React.createElement("div", {className: "entry-asset"}, 
+            React.createElement("div", {className: "asset-icon fa fa-microphone"})
+          ), 
+          React.createElement("div", {className: "entry-submit"}, "POST"), 
+          React.createElement(PrivacyOptions, {title: "Friends"})
+        )
+      )
+    );
+  }
+});
+
+module.exports = ProfileUserFeed;
+
+},{"./../main/profile_feed_post.jsx":163,"./../shared/privacy_options.jsx":199,"react":158}],197:[function(require,module,exports){
+var React = require('react');
+var PostEntry = require('./../shared/post_entry.jsx');
+
+var PostReplyEntry = React.createClass({displayName: "PostReplyEntry",
+  render: function () {
+    return (
+      React.createElement("div", {className: "post-reply-entry hide"}, 
+        React.createElement("div", {className: "author-picture"}), 
+        React.createElement("div", {className: "reply-details"}, 
+          React.createElement(PostEntry, null)
+        )
+      )
+    );
+  }
+});
+
+module.exports = PostReplyEntry;
+
+},{"./../shared/post_entry.jsx":196,"react":158}],198:[function(require,module,exports){
+var React = require('react');
+
+var PostReplyList = React.createClass({displayName: "PostReplyList",
+  render: function () {
+    return (
+      React.createElement("div", {className: "post-reply-list"}, 
+        React.createElement("div", {className: "author-picture"}), 
+        React.createElement("div", {className: "reply-details"}, 
+          React.createElement("div", {className: "author-name"}, "Deborah Miller"), 
+          React.createElement("div", {className: "reply-body"}, "Maecenas elementum metus eu massa tempus, vel volutpat lacus congue. Morbi interdum, arcu vel egestas suscipit."), 
+          React.createElement("div", {className: "reply-interact"}, 
+            React.createElement("a", {className: "interact-like", href: "#"}, "Like"), 
+            React.createElement("a", {className: "interact-comment", href: "#"}, "Comment")
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = PostReplyList;
+
+},{"react":158}],199:[function(require,module,exports){
+var React = require('react');
+
+var PrivacyOptions = React.createClass({displayName: "PrivacyOptions",
+  render: function () {
+    return (
+      React.createElement("div", {className: "dropdown privacy-options"}, 
+        React.createElement("div", {className: "dropdown-trigger"}, 
+          React.createElement("span", {className: "trigger-icon fa fa-globe"}), React.createElement("span", {className: "trigger-label"}, this.props.title), React.createElement("span", {className: "trigger-caret fa fa-caret-down"})
+        ), 
+        React.createElement("div", {className: "dropdown-content"}, 
+          React.createElement("div", {className: "options-row"}, 
+            React.createElement("div", {className: "options-divider"}, React.createElement("div", {className: "divider-wrap"})), 
+            React.createElement("div", {className: "content-option"}, "Friends"), 
+            React.createElement("div", {className: "content-option active"}, "Close friends"), 
+            React.createElement("div", {className: "content-option"}, "School", React.createElement("span", {className: "option-dash"}, "/"), "Work"), 
+            React.createElement("div", {className: "content-option"}, "Add a new list")
+          ), 
+          React.createElement("div", {className: "options-row"}, 
+            React.createElement("div", {className: "options-divider"}, React.createElement("div", {className: "divider-wrap"})), 
+            React.createElement("div", {className: "content-option"}, "Privacy Settings")
+          )
+        )
+      )
+    );
+  }
+});
+
+module.exports = PrivacyOptions;
+
+},{"react":158}],200:[function(require,module,exports){
 var React = require('react');
 
 var Thumb = React.createClass({displayName: "Thumb",
+
+  setImage: function() {
+    return (
+      React.createElement("div", {className: "image"}, 
+        React.createElement("img", {src: this.props.filename})
+      )
+    );
+  },
   render: function () {
-    if (this.props.filename) {
-      var image = React.createElement("div", {className: "image"}, React.createElement("img", {src: this.props.filename}));
-    }
+    var image = (this.props.filename) ? this.setImage() : null;
+
     if (this.props.iconname) {
       var icon = React.createElement("span", {className: 'icon fa fa' + this.props.iconname});
     }
     if (this.props.notifycount) {
       var capsule = React.createElement("span", {className: "capsule"}, this.props.notifycount);
     }
-    if (this.props.canRemove) {
-      var canRemove = React.createElement("span", {className: "close"}, "-");
+    if (this.props.remove) {
+      var remove = React.createElement("span", {className: "remove"}, "Remove");
     }
     return (
         React.createElement("div", {className: "thumb"}, 
@@ -19494,7 +21907,7 @@ var Thumb = React.createClass({displayName: "Thumb",
           icon, 
           React.createElement("span", {className: "title"}, this.props.title), 
           capsule, 
-          canRemove
+          remove
         )
     );
   }
@@ -19502,7 +21915,49 @@ var Thumb = React.createClass({displayName: "Thumb",
 
 module.exports = Thumb;
 
-},{"react":158}],163:[function(require,module,exports){
+},{"react":158}],201:[function(require,module,exports){
+var React = require('react');
+
+var ThumbFile = React.createClass({displayName: "ThumbFile",
+  render: function () {
+    var currentProgress = this.props.progress + "%";
+    return (
+      React.createElement("div", {className: "thumbFile"}, 
+        React.createElement("div", {className: "file-caption"}, 
+          React.createElement("div", {className: "caption-wrap"}, 
+            React.createElement("img", {src: "http://placehold.it/500x380?text=PICTURE"})
+          )
+        ), 
+        React.createElement("div", {className: "file-title"}, this.props.title), 
+        React.createElement("div", {className: "file-progress"}, 
+          React.createElement("div", {className: "current-progress", style: {width:currentProgress}})
+        ), 
+        React.createElement("div", {className: "file-remove"}, "REMOVE")
+      )
+    );
+  }
+});
+
+module.exports = ThumbFile;
+
+},{"react":158}],202:[function(require,module,exports){
+var React = require('react');
+
+var ThumbTag = React.createClass({displayName: "ThumbTag",
+  render: function () {
+    return (
+      React.createElement("div", {className: "thumbTag"}, 
+        React.createElement("div", {className: "tag-title"}, this.props.title), 
+        React.createElement("div", {className: "tag-count"}, this.props.count), 
+        React.createElement("div", {className: "tag-remove"}, "REMOVE")
+      )
+    );
+  }
+});
+
+module.exports = ThumbTag;
+
+},{"react":158}],203:[function(require,module,exports){
 var React = require('react');
 var Thumb = require('./../shared/thumb.jsx');
 
@@ -19511,20 +21966,26 @@ var SideBar = React.createClass({displayName: "SideBar",
     return (
         React.createElement("div", {className: "sideBar"}, 
           React.createElement("div", {className: "access-module"}, 
-            React.createElement("div", {className: "access-header"}, "Suggested"), 
+            React.createElement("div", {className: "access-header"}, 
+              "Suggested", React.createElement("span", {className: "list-all fa fa-caret-down"})
+            ), 
             React.createElement(Thumb, {title: "Events", iconname: "calendar", notifycount: "1", capsule: "True"}), 
             React.createElement(Thumb, {title: "People", iconname: "bubble", notifycount: "3", capsule: "True"}), 
             React.createElement(Thumb, {title: "Groups", iconname: "team", notifycount: "2", capsule: "True"})
           ), 
           React.createElement("div", {className: "access-module"}, 
-            React.createElement("div", {className: "access-header"}, "Groups"), 
+            React.createElement("div", {className: "access-header"}, 
+              "Groups", React.createElement("span", {className: "list-all fa fa-caret-down"})
+            ), 
             React.createElement(Thumb, {title: "McGill University Association", iconname: "calendar", notifycount: "2"}), 
             React.createElement(Thumb, {title: "Code Jams", iconname: "calendar"}), 
             React.createElement(Thumb, {title: "2600 The Hacker Quartely", iconname: "calendar", notifycount: "1"}), 
             React.createElement(Thumb, {title: "Web Cats Community", iconname: "calendar", notifycount: "7"})
           ), 
           React.createElement("div", {className: "manage-filters"}, 
-            React.createElement("div", {className: "access-header"}, "Filters"), 
+            React.createElement("div", {className: "access-header"}, 
+              "Filters", React.createElement("span", {className: "list-all fa fa-caret-down"})
+            ), 
             React.createElement(Thumb, {title: "Charles Gaudreau Jackson", canRemove: true}), 
             React.createElement(Thumb, {title: "Technology", canRemove: true}), 
             React.createElement(Thumb, {title: "Rainy weather", canRemove: true})
@@ -19607,9 +22068,11 @@ var SideBar = React.createClass({displayName: "SideBar",
 
 module.exports = SideBar;
 
-},{"./../shared/thumb.jsx":162,"react":158}],164:[function(require,module,exports){
+},{"./../shared/thumb.jsx":200,"react":158}],204:[function(require,module,exports){
 var React = require('react');
 var Thumb = require('./../shared/thumb.jsx');
+var Pane = require('./../shared/pane.jsx');
+var NotifyCount = require('./../shared/notify_count.jsx');
 
 var TopBar = React.createClass({displayName: "TopBar",
   render: function () {
@@ -19625,65 +22088,13 @@ var TopBar = React.createClass({displayName: "TopBar",
             React.createElement("div", {className: "title"}, "Charles Gaudreau Jackson")
           )
         ), 
-        React.createElement("div", {className: "search active"}, 
+        React.createElement("div", {className: "search"}, 
           React.createElement("input", {className: "form-text", placeholder: "Search for people, schedules, events and more", type: "text"}), 
-          React.createElement("div", {className: "pane"}, 
-            React.createElement("ul", {className: "shown"}, 
-              React.createElement("div", {className: "pane-header"}, 
-                React.createElement("span", null, "People")
-              ), 
-              React.createElement("div", {className: "pane-list"}, 
-                React.createElement("div", {className: "pane-item"}, 
-                  React.createElement("div", {className: "pane-picture"}), 
-                  React.createElement("div", {className: "pane-infos"}, 
-                    React.createElement("div", {className: "row"}, 
-                      React.createElement("div", {className: "title"}, "Charles Gaudreau Jackson")
-                    ), 
-                    React.createElement("div", {className: "row"}, 
-                      React.createElement("div", {className: "subtitle"}, "Concordia University")
-                    )
-                  )
-                ), 
-                React.createElement("div", {className: "pane-item"}, 
-                  React.createElement("div", {className: "pane-picture"}), 
-                  React.createElement("div", {className: "pane-infos"}, 
-                    React.createElement("div", {className: "row"}, 
-                      React.createElement("div", {className: "title"}, "Geoffroy Bergeron")
-                    ), 
-                    React.createElement("div", {className: "row"}, 
-                      React.createElement("div", {className: "subtitle"}, "University of Montreal")
-                    )
-                  )
-                ), 
-                React.createElement("div", {className: "pane-item"}, 
-                  React.createElement("div", {className: "pane-picture"}), 
-                  React.createElement("div", {className: "pane-infos"}, 
-                    React.createElement("div", {className: "row"}, 
-                      React.createElement("div", {className: "title"}, "Harris Robin Kalash")
-                    ), 
-                    React.createElement("div", {className: "row"}, 
-                      React.createElement("div", {className: "subtitle"}, "Thirdshelf")
-                    )
-                  )
-                )
-              )
-            ), 
-            React.createElement("div", {className: "more"}, "See more")
-          )
+          React.createElement(Pane, null)
         ), 
         React.createElement("div", {className: "notify"}, 
-          React.createElement("a", {href: "#", className: "trigger fa fa-globe"}), 
-          React.createElement("div", {className: "pane"}, 
-            React.createElement("ul", {className: "tabs"}, 
-              React.createElement("li", {className: "tab"}, "Requests"), 
-              React.createElement("li", {className: "tab"}, "Feed"), 
-              React.createElement("li", {className: "tab"}, "Messages")
-            ), 
-            React.createElement("ul", {className: "shown"}
-
-            ), 
-            React.createElement("div", {className: "more"}, "See more")
-          )
+          React.createElement("a", {href: "#", className: "trigger fa fa-globe"}, React.createElement(NotifyCount, {count: "12"})), 
+          React.createElement(Pane, {pointer: "top", tabs: "3", tab1: "Requests", tab2: "Feed", tab3: "Messages"})
         )
       )
     );
@@ -19692,7 +22103,7 @@ var TopBar = React.createClass({displayName: "TopBar",
 
 module.exports = TopBar;
 
-},{"./../shared/thumb.jsx":162,"react":158}],165:[function(require,module,exports){
+},{"./../shared/notify_count.jsx":192,"./../shared/pane.jsx":193,"./../shared/thumb.jsx":200,"react":158}],205:[function(require,module,exports){
 var ReactDOM = require('react-dom');
 var React = require('react');
 
@@ -19702,4 +22113,4 @@ Root = require('./components/root.jsx');
 
 ReactDOM.render(React.createElement(Root, null), document.getElementById('cursuum'));
 
-},{"./components/root.jsx":161,"react":158,"react-dom":2}]},{},[165]);
+},{"./components/root.jsx":174,"react":158,"react-dom":2}]},{},[205]);

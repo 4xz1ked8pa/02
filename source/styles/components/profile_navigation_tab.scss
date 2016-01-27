@@ -1,0 +1,22 @@
+.profile-navigation-tab {
+  float:left;
+  width:100%;
+  color:darken(white,75%);
+  height:35px;
+  font-size:13px;
+  font-weight:500;
+  padding:12px 9px 9px 11px;
+  border-top:1px solid transparent;
+  &.active {
+    font-weight:600;
+  }
+  &:first-of-type {
+    height:auto;
+    padding-top:0;
+    border-top:none;
+  }
+  &:hover {
+    font-weight:600;
+    cursor: pointer;
+  }
+}

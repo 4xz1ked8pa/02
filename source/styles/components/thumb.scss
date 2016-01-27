@@ -1,4 +1,5 @@
 .thumb {
+  position: relative;
   .image {
     position: relative;
     width:27px;
@@ -25,7 +26,7 @@
   }
   .title {
     color:#333333;
-    font-size:13px;
+    font-size:$global-fontsize;
     font-weight:200;
     padding-top:8px;
     padding-bottom:6px;
@@ -39,6 +40,22 @@
     padding:3px 3px 2px 3px;
     margin-top:6px;
   }
+  .remove {
+    position: absolute;
+    top:8px; right:0;
+    background: darken(white,40%);
+    color:white;
+    font-size:9px;
+    font-weight:400;
+    line-height:1.4;
+    text-transform: uppercase;
+    padding: 1px 2px 0px 3px;
+    opacity:0;
+    &:hover {
+      background: darken(white,48%);
+      cursor: pointer;
+    }
+  }
   .image, .icon, .title {
     float:left;
   }
@@ -47,5 +64,10 @@
   }
   .capsule, .close {
     float:right;
+  }
+  &:hover {
+    .remove {
+      opacity:1;
+    }
   }
 }

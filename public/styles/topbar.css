@@ -1,19 +1,113 @@
 .topBar {
-  pos: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 45px;
-  bgc: #354F37;
-  z-index: 3; }
+  background: #344F35;
+  padding-left: 6px;
+  padding-right: 6px;
+  z-index: 3;
+  height: 40px;
+  width: 100%; }
+  .topBar .search {
+    position: relative;
+    width: 430px; }
+    .topBar .search .pane, .topBar .search input {
+      width: 100%; }
+    .topBar .search .pane {
+      position: absolute;
+      top: 27px;
+      left: 0;
+      border-top: none; }
+    .topBar .search.active .pane {
+      display: block; }
+    .topBar .search.active input {
+      background: #fcfcfc;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: none;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; }
+      .topBar .search.active input:hover, .topBar .search.active input:focus {
+        background: #fcfcfc; }
+    .topBar .search input {
+      background: #fcfcfc;
+      font-size: 13px;
+      font-weight: 400;
+      border-radius: 1px;
+      -webkit-transition: 0.12s all ease-in-out;
+      -moz-transition: 0.12s all ease-in-out;
+      transition: 0.12s all ease-in-out; }
+      .topBar .search input::-webkit-input-placeholder {
+        color: #666666;
+        font-weight: 300; }
+      .topBar .search input::-moz-placeholder {
+        color: #666666;
+        font-weight: 300; }
+      .topBar .search input:-moz-placeholder {
+        color: #666666;
+        font-weight: 300; }
+      .topBar .search input:-ms-input-placeholder {
+        color: #666666;
+        font-weight: 300; }
+      .topBar .search input:hover, .topBar .search input:focus {
+        background: white; }
+        .topBar .search input:hover::-webkit-input-placeholder, .topBar .search input:focus::-webkit-input-placeholder {
+          color: #3b3b3b; }
+        .topBar .search input:hover::-moz-placeholder, .topBar .search input:focus::-moz-placeholder {
+          color: #3b3b3b; }
+        .topBar .search input:hover:-moz-placeholder, .topBar .search input:focus:-moz-placeholder {
+          color: #3b3b3b; }
+        .topBar .search input:hover:-ms-input-placeholder, .topBar .search input:focus:-ms-input-placeholder {
+          color: #3b3b3b; }
+  .topBar .notify {
+    position: relative;
+    height: 100%;
+    margin-right: 12px; }
+    .topBar .notify.active .pane {
+      position: absolute;
+      top: 47px;
+      left: -184px;
+      width: 395px;
+      display: block; }
+      .topBar .notify.active .pane .pane-header {
+        display: none; }
+    .topBar .notify .trigger {
+      position: relative;
+      height: 100%;
+      color: #162116;
+      font-size: 17px;
+      padding-top: 13px;
+      padding-left: 8px;
+      padding-right: 8px; }
+      .topBar .notify .trigger .notify-count {
+        position: absolute;
+        top: 23px;
+        left: 18px; }
+      .topBar .notify .trigger:hover {
+        background: rgba(0, 0, 0, 0.11); }
+  .topBar .identify {
+    padding-right: 7px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px; }
+    .topBar .identify:hover {
+      background: #385539;
+      cursor: pointer; }
+    .topBar .identify .title {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 13px;
+      font-weight: 300; }
+  .topBar .logo {
+    background: #2a402b;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+    padding: 6px 6px 7px 7px;
+    border-radius: 1px;
+    margin-top: 7px;
+    margin-right: 15px; }
+    .topBar .logo:hover {
+      cursor: default; }
   .topBar .logo, .topBar .identify {
-    float: left;
-    margin-top: 8px; }
+    float: left; }
   .topBar .notify, .topBar .search {
     float: right; }
-  .topBar .logo {
-    bgc: rgba(0, 0, 0, 0.2);
-    color: rgba(255, 255, 255, 0.4);
-    padding: 6px 8px;
-    margin-right: 15px;
-    br: 1px; }
+  .topBar .identify, .topBar .search {
+    margin-top: 7px; }

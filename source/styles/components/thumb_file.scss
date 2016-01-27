@@ -1,0 +1,77 @@
+.thumbFile {
+  //display: none;
+  float:left;
+  width:100%;
+  height:$thumb-file-height;
+  .file-caption {
+    position: relative;
+    float:left;
+    width:25px;
+    height:25px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-right:5px;
+    .caption-wrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width:90%;
+      height:auto;
+      max-width:90%;
+      max-height:100%;
+      text-align:center;
+      img {
+        display: inline-block;
+        max-width:100%;
+        margin-bottom:0;
+      }
+    }
+  }
+  .file-title {
+    float:left;
+    color:$thumb-file-title-color;
+    font-size:$thumb-file-title-fontsize;
+    padding-top:$thumb-file-title-paddingtop;
+    padding-bottom:$thumb-file-title-paddingbottom;
+    @include ellipsis(60%);
+  }
+  .file-remove {
+    display: none;
+    float:right;
+    background: $remove-background;
+    color:$remove-color;
+    font-size:$remove-fontsize;
+    font-weight:$remove-fontweight;
+    line-height:$remove-lineheight;
+    padding:$remove-padding;
+    margin-top:$thumb-file-remove-margintop;
+    &:hover {
+      background-color: $remove-background-mouseover;
+      cursor: pointer;
+    }
+  }
+  .file-progress {
+    float:right;
+    width:40px;
+    height:5px;
+    background: lighten(#6B766B,20%);
+    margin-top:11px;
+    box-shadow:0 1px 0 rgba($primary-color,.1);
+    .current-progress {
+      float:left;
+      height:100%;
+      background: #6B766B;
+    }
+  }
+  &:hover {
+    background: darken(white,3.4%);
+    cursor:default;
+    .file-remove {
+      display: block;
+    }
+    .file-progress {
+      display:none;
+    }
+  }
+}

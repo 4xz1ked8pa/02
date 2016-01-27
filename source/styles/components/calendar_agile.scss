@@ -1,0 +1,244 @@
+.calendar-agile-week, .calendar-agile-month {
+  .calendar-current, .calendar-labels, .calendar-grid, .calendar-heat {
+    float:left;
+    width:100%;
+    height:auto;
+  }
+  .calendar-heat {
+    margin-top:13px;
+    .heat-distribution {
+      display: none;
+      float:left;
+      width:auto;
+      .heat-spot {
+        float:left;
+        width:30px;
+        padding:3px 3px;
+        margin-left:4px;
+        img {
+          float:left;
+          width:100%;
+        }
+        &:first-of-type {
+          margin-left:0;
+        }
+      }
+    }
+  }
+  .calendar-current {
+    position: relative;;
+    margin-bottom:10px;
+    .value {
+      float:left;
+      color:darken(white,65%);
+      font-size:14px;
+      font-weight:500;
+    }
+    .switches {
+      position: absolute;
+      top: 0; right: 0;
+      border:1px solid darken(white,26%);
+      box-shadow: 0 1px 0 rgba(black,.06);
+      opacity:.75;
+      &:hover {
+        opacity:1;
+      }
+      .switch {
+        float:left;
+        background: darken(white,2%);
+        color:darken(white,50%);
+        font-size:10px;
+        font-weight:300;
+        padding:3px 5px 1px 5px;
+        &:hover {
+          background: darken(white,8%);
+          cursor:pointer;
+        }
+        &:first-of-type {
+          border-right:none;
+        }
+      }
+    }
+  }
+  .calendar-labels {
+    margin-bottom:4px;
+    .label {
+      float:left;
+      width:percentage(1/7);
+      color:darken(white,60%);
+      font-size:12px;
+      font-weight:500;
+      text-align: center;
+      &:first-of-type {
+        text-align: left;
+      }
+    }
+  }
+  .calendar-grid {
+    //height:337px;
+    height:385px;
+    border:$global-gray-border-pale;
+    box-shadow: 0 1px 0 rgba(black,.025);
+    overflow-y: auto;
+  }
+}
+.calendar-agile-week {
+  .calendar-labels, .calendar-grid {
+    padding-left:$calendar-agile-week-hours-width;
+  }
+  .calendar-grid {
+    position: relative;
+    .grid-hours {
+      position: absolute;
+      top:0; left:0;
+      width:$calendar-agile-week-hours-width;
+      height:$calendar-agile-week-hour-height * 24;
+      background: $calendar-agile-week-hours-background;
+      border-right:$global-gray-border-pale;
+      .hour {
+        float:left;
+        width:100%;
+        height:$calendar-agile-week-hour-height;
+        .value {
+          float:left;
+          width:100%;
+          color:darken(white,70%);
+          font-size:10px;
+          font-weight:200;
+          text-align:right;
+          padding-right:4px;
+          margin-top:-5px;
+        }
+      }
+    }
+    .grid-days {
+      float:left;
+      width:100%;
+      height:auto;
+      .grid-day {
+        position: relative;
+        float:left;
+        width:percentage(1/7);
+        height:auto;
+        border-left:$global-gray-border-pale;
+        .day-hours, .day-events {
+          width:100%;
+        }
+        .day-hours {
+          float:left;
+          width:100%;
+          height:auto;
+          .hour {
+            float:left;
+            width:100%;
+            height:$calendar-agile-week-hour-height;
+            border-top:$global-gray-border-pale;
+            .half-hour {
+              float:left;
+              width:100%;
+              height:50%;
+              border-bottom:1px dotted darken(white,10%);
+            }
+            &:first-of-type {
+              border-top:none;
+            }
+          }
+        }
+        .day-events {
+          display: none;
+          position: absolute;
+          top:0; left:0;
+          height:100%;
+          .events-wrap {
+            position: relative;
+            width:100%;
+            height:100%;
+            .calendar-agile-week-event {
+              position: absolute;
+              left:0;
+              width:100%;
+              height:180px;
+              background: rgba(black,.08);
+              border:1px solid rgba(black,.17);
+              &:hover {
+                background: rgba(black,.17);
+                border:1px solid rgba(black,.25);
+                z-index:9000;
+              }
+            }
+          }
+        }
+        &:first-of-type {
+          border-left:none;
+        }
+        &.active {
+          background: darken(white,2%);
+        }
+      }
+    }
+  }
+}
+.calendar-agile-month {
+  .grid-week {
+    float:left;
+    width:100%;
+    height:auto;
+    border-top:$global-gray-border-pale;
+    .calendar-agile-month-block {
+      position: relative;
+      float:left;
+      width:percentage(1/7);
+      height:47px;
+      background: darken(white,.85%);
+      border-left:$global-gray-border-pale;
+      .date {
+        position: absolute;
+        top:4px; right:4px;
+        color:darken(white,70%);
+        font-size:10px;
+        font-weight:200;
+      }
+      &:first-of-type {
+        border-left:none;
+      }
+    }
+    &:first-of-type {
+      border-top:none;
+    }
+  }
+  &.demonstrate-heat {
+    $heat-red-1:rgba(red,.02);
+    $heat-red-2:rgba(red,.03);
+    $heat-red-3:rgba(red,.04);
+
+    $heat-green-1:rgba($primary-color,.05);
+    $heat-green-2:rgba($primary-color,.1);
+    $heat-green-3:rgba($primary-color,.15);
+    .grid-week {
+      &:nth-child(1) {
+        .calendar-agile-month-block {
+          &:nth-child(1) {
+            .heat-count {
+              background: $heat-red-1;
+            }
+          }
+          &:nth-child(2) {
+            .heat-count {
+              background: $heat-green-1;
+            }
+          }
+          &:nth-child(3) {
+            .heat-count {
+              background: $heat-green-2;
+            }
+          }
+          &:nth-child(4) {
+            .heat-count {
+              background: $heat-green-2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

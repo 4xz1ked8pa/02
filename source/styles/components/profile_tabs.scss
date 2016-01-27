@@ -1,0 +1,25 @@
+.profile-tabs {
+  float:left;
+  width:100%;
+  padding-left:153px;
+  .tab {
+    position: relative;
+    float:left;
+    color:$profile-tab-color;
+    font-size:$profile-tab-fontsize;
+    font-weight:$profile-tab-fontweight;
+    padding:$profile-tab-padding;
+    z-index:5;
+    &.sections-more {
+      .caret {
+        font-size:11px;
+        line-height:.3;
+        margin-left:7px;
+      }
+    }
+    &:hover {
+      color:darken($profile-tab-color,25%);
+      cursor: pointer;
+    }
+  }
+}

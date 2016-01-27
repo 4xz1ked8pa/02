@@ -1,0 +1,186 @@
+.profile-core {
+  &.profile-user-feed {
+    padding-left:0;
+    .profile-feed {
+      float:right;
+      width:57%;
+      padding-right:12px;
+      .feed-posts {
+        float:left;
+        width:100%;
+        margin-top:35px;
+        .profile-feed-post {
+          position: relative;
+          float:left;
+          width:100%;
+          padding-top:0px;
+          padding-bottom:20px;
+          .feed-post-replies {
+            display: none;
+            float:left;
+            width:100%;
+          }
+          .feed-post-interact {
+            float:right;
+            width:auto;
+            padding-right:8px;
+            margin-top:-3px;
+            clear:both;
+            @include transition(.05s all ease-in-out);
+            .interact-unfold {
+              float:right;
+
+              .unfold-likes {
+
+              }
+              .unfold-comments {
+
+              }
+              .unfold-likes, .unfold-comments {
+                float:left;
+                color:darken(white,60%);
+                font-size:12px;
+                font-weight:400;
+                padding:5px 4px 5px 5px;
+                margin-left:7px;
+                .option-icon {
+                  display:none;
+                }
+                &:hover {
+                  color:darken(white,80%);
+                  text-decoration: underline;
+                  cursor: pointer;
+                }
+              }
+            }
+            .interact-option {
+              display: none;
+              float:left;
+              color:darken(white,60%);
+              font-size:12px;
+              font-weight:400;
+              padding:5px 4px 5px 5px;
+              margin-left:7px;
+              .option-icon {
+                display:none;
+              }
+              &:hover {
+                background: darken(white,3.5%);
+                color:darken(white,80%);
+                cursor: pointer;
+              }
+            }
+          }
+          .feed-post-content {
+            float:left;
+            width:100%;
+            margin-top:12px;
+            .post-text {
+              float:left;
+              width:100%;
+              color:darken(white,80%);
+              font-size:13px;
+              font-weight:300;
+              line-height:1.7;
+            }
+          }
+          &:first-of-type {
+            padding-top:0;
+          }
+          &:hover {
+            .feed-post-interact {
+              display: block;
+            }
+          }
+          /* remove this for production */
+          &:nth-child(1) {
+            .feed-post-replies {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .profile-assets {
+      float:left;
+      width:43%;
+      height:100px;
+      padding-left:11px;
+      padding-right:10px;
+      .assets-group {
+        float:left;
+        width:100%;
+        margin-top:33px;
+        .group-list {
+          float:left;
+          width:100%;
+          .list-item {
+            position: relative;
+            float:left;
+            width:90px;
+            height:90px;
+            background: #999999;
+            margin-bottom:8px;
+            margin-right:8px;
+            .item-title {
+              position: absolute;
+              bottom:0; left:0;
+              width:100%;
+              color:rgba(white,.9);
+              font-size:11px;
+              font-weight:100;
+              text-shadow:.6px .6px 0 rgba(black,.12);
+              padding-bottom:3px;
+              padding-left:3px;
+              @include ellipsis(96%);
+            }
+            &:nth-child(4n) {
+              margin-right:0;
+            }
+            &:nth-child(4n+1) {
+              clear:both;
+            }
+            &:hover {
+              color:rgba(white,1);
+              text-shadow:.6px .6px 0 rgba(black,.6);
+              cursor:pointer;
+            }
+          }
+        }
+        .group-header {
+          float:left;
+          width:100%;
+          margin-bottom:12px;
+          .header-count {
+            color:darken(white,70%);
+            font-size:16px;
+            margin-left:7px;
+          }
+          .header-title {
+            color:darken(white,77%);
+            font-size:16px;
+            font-weight:600;
+          }
+          .header-mutual {
+            color:darken(white,50%);
+            font-size:14px;
+            font-weight:200;
+            margin-top:2px;
+            margin-left:10px;
+            &:hover {
+              color:darken(white,77%);
+              text-decoration: underline;
+              cursor:pointer;
+            }
+          }
+          .header-title, .header-count, .header-mutual {
+            float:left;
+          }
+        }
+        &:first-of-type {
+          margin-top:0;
+        }
+      }
+    }
+  }
+}

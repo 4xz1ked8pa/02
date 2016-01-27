@@ -1,0 +1,121 @@
+$local-gutter:7px;
+
+.profile-list-add-item {
+  float:left;
+  width:415px;
+  background-color: darken(#F8F8F8,3%);
+  clear:both;
+  .item-details, .details-footer {
+    float:left;
+    width:100%;
+    height:auto;
+    padding-left:$local-gutter;
+    padding-right:$local-gutter;
+  }
+  .details-footer {
+    padding-top:4px;
+    padding-bottom:$local-gutter;
+    .pane-privacy-settings {
+      float:left;
+      padding-top:10px;
+    }
+    .button {
+      float:left;
+      margin-left:$local-gutter;
+      &.save, &.cancel {
+        float:right
+      }
+    }
+  }
+  .item-details {
+    padding-top:$local-gutter + 1px;
+    padding-bottom:$local-gutter + 1px;
+    padding-left:$local-gutter;
+    padding-right:$local-gutter;
+    .item-detail {
+      position: relative;
+      float:left;
+      width:100%;
+      padding-left:78px;
+      margin-top:$local-gutter;
+      .detail-label {
+        position: absolute;
+        top:8px; left:0;
+        color:darken(white,75%);
+        font-size:$global-fontsize;
+        font-weight:300;
+        padding-left:2px;
+      }
+      .detail-value {
+        position: relative;
+        float:left;
+        width:100%;
+        .suggested-results {
+          position: absolute;
+          top:115%; right:0;
+          width:82%;
+          height:auto;
+          background: white;
+          border:1px solid darken(white,27%);
+          box-shadow:0 1px 0 darken(white,10%);
+          z-index:2;
+          .map, .result {
+            float:left;
+            width:100%;
+          }
+          .map {
+            display: none;
+            height:80px;
+            background: darken(white,2.5%);
+          }
+          .result {
+            background: white;
+            color:darken(white,77%);
+            font-size:$global-fontsize;
+            font-weight:300;
+            padding:9px 5px 7px 5px;
+            border-bottom:1px solid darken(white,10%);
+            &:hover {
+              background: darken(white,1.1%);
+              color:black;
+              cursor:pointer;
+            }
+            &:last-child {
+              border-bottom:none;
+            }
+          }
+        }
+        .form-text {
+          float:left;
+          width:100%;
+          background: rgba(white,.84);
+          font-size:12px;
+          padding:6px 5px 5px 5px;
+          border:1px solid rgba(black,.19);
+          @include placeholder {
+            color:darken(white,55%);
+            color:transparent;
+          }
+          &.description {
+            height:85px;
+          }
+          &:hover {
+            background: rgba(white,.9);
+            border:1px solid rgba(black,.22);
+          }
+          &:focus {
+            background: rgba(white,1);
+          }
+        }
+      }
+      &.active {
+        .form-text {
+
+        }
+      }
+      &:first-of-type {
+        margin-top:0;
+      }
+    }
+  }
+}

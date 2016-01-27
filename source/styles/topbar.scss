@@ -1,133 +1,88 @@
 .topBar {
-  position:absolute;
+  position:fixed;
   top:0; left:0;
   background:$primary-color;
-  padding-left:$global-gutter;
+  padding-left:$sidebar-gutter - 1px;
   padding-right:$global-gutter;
-  @include size(100% $topbar-height);
   z-index:3;
+  @include size(100% $topbar-height);
   .search {
+    position: relative;
     width:430px;
+    .pane, input {
+      width:100%;
+    }
+    .pane {
+      position:absolute;
+      top:27px; left:0;
+      border-top:none;
+    }
     &.active {
-      .pane, input {
-        border:1px solid darken(white,12%);
+      .pane {
+        display:block;
       }
       input {
+        background:$pane-background;
+        border:$pane-border;
         border-bottom:none;
-      }
-    }
-    /* place this in its own file */
-    .pane {
-      float:left;
-      width:100%;
-      background: darken(white,1%);
-      border-top:none;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
-      margin-top:-1px;
-      box-shadow:0 1px 0 rgba(black,.04);
-      z-index:3;
-      .shown, .more {
-        float:left;
-        width:100%
-      }
-      .shown {
-        padding-top:2px;
-        .pane-header, .pane-list {
-          float:left;
-          width:100%;
-          height:auto;
-        }
-        .pane-header {
-          color:darken(#444444,0%);
-          font-size:14px;
-          font-weight:400;
-          padding-top:5px;
-          padding-bottom:6px;
-          padding-left:$global-gutter;
-          padding-right:$global-gutter;
-          border-bottom:$global-gray-border-pale;
-        }
-        .pane-list {
-          padding-top:$global-gutter;
-          padding-bottom:$global-gutter;
-          .pane-item {
-            position: relative;
-            float:left;
-            width:100%;
-            height:auto;
-            padding-left:$global-gutter;
-            margin-top:$global-gutter;
-            &:first-child {
-              margin-top:0;
-            }
-            &:hover {
-              background:darken(white,3%);
-              cursor:pointer;
-            }
-            .pane-picture, .pane-infos {
-              float:left;
-            }
-            .pane-picture {
-              width:40px;
-              height:40px;
-              background: darken(white,25%);
-            }
-            .pane-infos {
-              float:left;
-              width:372px;
-              padding-top:4px;
-              padding-left:$global-gutter;
-              .title, .subtitle {
-                font-size:$global-fontsize;
-              }
-              .title {
-                color:darken(#444444,0%);
-                font-weight:400;
-              }
-              .subtitle {
-                color:darken(white,50%);
-                font-weight:100;
-                margin-top:7px;
-              }
-            }
-          }
-        }
-      }
-      .more {
-        background: $global-gray-background;
-        color:darken(white,65%);
-        font-size:$global-fontsize;
-        font-weight:400;
-        text-align:center;
-        padding-top:9px;
-        padding-bottom:7px;
-        border-top:$global-gray-border-pale;
-        &:hover {
-          background: darken($global-gray-background,1%);
-          cursor:pointer;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        &:hover, &:focus {
+          background:$pane-background;
         }
       }
     }
     input {
-      width:100%;
       background: darken(white,1%);
+      font-size:13px;
+      font-weight:400;
       border-radius:$global-radius;
       @include transition(.12s all ease-in-out);
+      @include placeholder {
+        color:darken(white,60%);
+        font-weight:300;
+      }
       &:hover, &:focus {
         background: white;
+        @include placeholder {
+          color:darken(white,77%);
+        }
       }
     }
   }
   .notify {
-    margin-right:15px;
+    position: relative;
+    height:100%;
+    margin-right:12px;
+    &.active {
+      .pane {
+        position:absolute;
+        top:47px; left:-184px;
+        width:395px;
+        display:block;
+        .pane-header {
+          display:none;
+        }
+      }
+    }
     .trigger {
+      position: relative;
+      height:100%;
       color:darken($primary-color,15%);
       font-size:17px;
-      padding-top:14px;
+      padding-top:13px;
+      padding-left:8px;
+      padding-right:8px;
+      .notify-count {
+        position: absolute;
+        top:23px; left:18px;
+      }
+      &:hover {
+        background:rgba(black,.11);
+      }
     }
     .pane {
-      display: none;
+
     }
   }
   .identify {
@@ -140,6 +95,8 @@
     }
     .title {
       color:rgba(white,.9);
+      font-size:13px;
+      font-weight:300;
     }
   }
   .logo {
@@ -148,7 +105,7 @@
     font-weight:400;
     padding:6px 6px 7px 7px;
     border-radius:$global-radius;
-    margin-top:8px;
+    margin-top:7px;
     margin-right:15px;
     &:hover {
       cursor: default;
@@ -161,6 +118,6 @@
     float:right;
   }
   .identify, .search {
-    margin-top:8px;
+    margin-top:7px;
   }
 }
