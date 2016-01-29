@@ -707,6 +707,7 @@ body {
       height: 30px;
       background: #527d54;
       border: 1px solid rgba(42, 64, 43, 0.13);
+      border-bottom: none;
       border-top-left-radius: 1px;
       border-top-right-radius: 1px; }
       .chat-boxes .chatBox .header .add-member, .chat-boxes .chatBox .header .close {
@@ -804,7 +805,8 @@ body {
       box-shadow: none; }
       .chat-boxes .chatBox.offline .header {
         background: #ededed;
-        border: 1px solid #c4c4c4; }
+        border: 1px solid #c4c4c4;
+        border-bottom: none; }
         .chat-boxes .chatBox.offline .header:hover {
           background: #d9d9d9;
           border: 1px solid #b8b8b8; }
@@ -1112,7 +1114,7 @@ body {
     float: left;
     width: 100%; }
     .post-entry .input-row.entry-interact {
-      height: 28.44px;
+      height: 25.44px;
       border-bottom: 1px solid #b3b3b3;
       border-left: 1px solid #c2c2c2;
       border-right: 1px solid #c2c2c2;
@@ -1123,7 +1125,7 @@ body {
         margin-right: 3px; }
         .post-entry .input-row.entry-interact .dropdown.privacy-options .dropdown-trigger {
           background: transparent;
-          padding-top: 8.45px;
+          padding-top: 7px;
           padding-bottom: 7px;
           border: none;
           box-shadow: none; }
@@ -1137,7 +1139,7 @@ body {
         color: #404040;
         font-size: 13px;
         font-weight: 400;
-        padding: 8px 7px 5px 9px;
+        padding: 6.5px 5px 5px 9px;
         border: none;
         border-radius: 0;
         box-shadow: none; }
@@ -1147,22 +1149,21 @@ body {
         float: left;
         height: 100%;
         color: #5e5e5e;
-        font-size: 12px;
-        padding: 8px 8px 7px 13px; }
+        font-size: 11px;
+        padding: 7px 8px 0 13px; }
         .post-entry .input-row.entry-interact .entry-asset .asset-title {
           display: none;
           font-weight: 400; }
         .post-entry .input-row.entry-interact .entry-asset .asset-icon {
           font-size: 11px;
-          margin-top: 1px;
           margin-right: 4px; }
         .post-entry .input-row.entry-interact .entry-asset .asset-icon, .post-entry .input-row.entry-interact .entry-asset .asset-title {
           float: left; }
         .post-entry .input-row.entry-interact .entry-asset.scale-down {
-          padding-top: 8px;
+          padding-top: 8.55px;
           padding-bottom: 8px; }
           .post-entry .input-row.entry-interact .entry-asset.scale-down .asset-icon {
-            font-size: 9.5px; }
+            font-size: 9.4px; }
         .post-entry .input-row.entry-interact .entry-asset:first-of-type {
           margin-left: 0; }
         .post-entry .input-row.entry-interact .entry-asset:hover {
@@ -1186,7 +1187,7 @@ body {
     .post-entry .input-row.entry-value .input-field {
       float: left;
       width: 100%;
-      height: 70px;
+      height: 55px;
       background: #fcfcfc;
       font-size: 13px;
       padding: 6px 7px 7px 7px;
@@ -1213,18 +1214,6 @@ body {
   .post-entry.entry-reply .input-row.entry-interact {
     display: none;
     height: 25px; }
-    .post-entry.entry-reply .input-row.entry-interact .entry-asset {
-      padding-top: 7px;
-      padding-bottom: 6px;
-      padding-left: 9px;
-      padding-right: 9px; }
-      .post-entry.entry-reply .input-row.entry-interact .entry-asset .asset-icon {
-        font-size: 10px; }
-      .post-entry.entry-reply .input-row.entry-interact .entry-asset.scale-down {
-        padding-top: 6.3px;
-        padding-bottom: 6px; }
-        .post-entry.entry-reply .input-row.entry-interact .entry-asset.scale-down .asset-icon {
-          font-size: 9px; }
   .post-entry.entry-reply .input-row.entry-value .entry-submit .post-emoji {
     display: block; }
   .post-entry.entry-reply .input-row.entry-value .entry-submit .input-field {
@@ -2862,6 +2851,7 @@ body {
       .profile-core.profile-user-feed .profile-assets .assets-group .group-header {
         float: left;
         width: 100%;
+        margin-top: -2px;
         margin-bottom: 12px; }
         .profile-core.profile-user-feed .profile-assets .assets-group .group-header .header-count {
           color: #4d4d4d;

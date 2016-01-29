@@ -7,7 +7,7 @@
     float:left;
     width:100%;
     &.entry-interact {
-      height:28.44px;
+      height:25.44px;
       border-bottom:1px solid darken(white,30%);
       border-left:1px solid darken(white,24%);
       border-right:1px solid darken(white,24%);
@@ -19,7 +19,7 @@
         &.privacy-options {
           .dropdown-trigger {
             background: transparent;
-            padding-top:8.45px;
+            padding-top:7px;
             padding-bottom:7px;
             border:none;
             box-shadow: none;
@@ -27,12 +27,7 @@
               padding-top:0;
             }
             .trigger-caret {
-              //display: none;
               margin-left:5px;
-            }
-            &:hover {
-              //border-left-color:lighten(#D6D6D6,5%);
-              //border-right-color:lighten(#D6D6D6,5%);
             }
           }
         }
@@ -43,7 +38,7 @@
         color:darken(white,75%);
         font-size:13px;
         font-weight:400;
-        padding:8px 7px 5px 9px;
+        padding:6.5px 5px 5px 9px;
         border:none;
         border-radius:0;
         box-shadow: none;
@@ -55,25 +50,24 @@
         float:left;
         height:100%;
         color:darken(white,63%);
-        font-size:12px;
-        padding:8px 8px 7px 13px;
+        font-size:11px;
+        padding:7px 8px 0 13px;
         .asset-title {
           display: none;
           font-weight:400;
         }
         .asset-icon {
           font-size:11px;
-          margin-top:1px;
           margin-right:4px;
         }
         .asset-icon, .asset-title {
           float: left;
         }
         &.scale-down {
-          padding-top:8px;
+          padding-top:8.55px;
           padding-bottom:8px;
           .asset-icon {
-            font-size:9.5px;
+            font-size:9.4px;
           }
         }
         &:first-of-type {
@@ -104,7 +98,7 @@
       .input-field {
         float:left;
         width:100%;
-        height:70px;
+        height:55px;
         background: darken(white,1%);
         font-size:13px;
         padding:6px 7px 7px 7px;
@@ -128,22 +122,6 @@
       &.entry-interact {
         display: none;
         height:25px;
-        .entry-asset {
-          padding-top:7px;
-          padding-bottom:6px;
-          padding-left:9px;
-          padding-right:9px;
-          .asset-icon {
-            font-size:10px;
-          }
-          &.scale-down {
-            padding-top:6.3px;
-            padding-bottom:6px;
-            .asset-icon {
-              font-size:9px;
-            }
-          }
-        }
       }
       &.entry-value {
         .entry-submit {

@@ -23,6 +23,7 @@
         height:30px;
         background: lighten($primary-color,15%);
         border:1px solid rgba(darken($primary-color,5%),.13);
+        border-bottom:none;
         border-top-left-radius:$global-radius;
         border-top-right-radius:$global-radius;
         .add-member, .close {
@@ -152,6 +153,7 @@
         .header {
           background: darken(white,7%);
           border:1px solid darken(white,23%);
+          border-bottom:none;
           &:hover {
             background:darken(white,15%);
             border:1px solid darken(white,28%);
