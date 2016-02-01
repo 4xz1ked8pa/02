@@ -8,6 +8,7 @@
     width:$profile-list-friend-picture-width;
     height:$profile-list-friend-picture-width;
     background: #999999;
+    margin-top:2px;
     margin-right:8px;
   }
   .friend-details {
@@ -21,6 +22,7 @@
           color:$profile-list-item-title-color;
           font-size:$profile-list-item-title-fontsize;
           font-weight:$profile-list-item-title-fontweight;
+          margin-left:-1px;
         }
         &.mutual-friends {
           font-size:$global-fontsize;

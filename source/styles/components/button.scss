@@ -43,6 +43,10 @@
     border-right:$button-cancel-borderright;
     box-shadow:$button-cancel-boxshadow;
     @include linear-gradient($button-cancel-background-bottom 85%,$button-cancel-background-top);
+    &:hover {
+      @include linear-gradient(darken($button-cancel-background-bottom,3%) 85%,darken($button-cancel-background-top,3%));
+      box-shadow:0 1px 0 rgba(black,.1);
+    }
   }
   &.save {
     width:auto;

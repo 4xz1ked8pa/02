@@ -81,14 +81,14 @@ $button-save-borderright:$button-save-borderleft;
 $button-save-boxshadow:0 1px 0 rgba(black,.14);
 
 // Button Cancel
-$button-cancel-background-top:darken(white, 33%);
-$button-cancel-background-bottom:darken(white,30%);
+$button-cancel-background-top:darken(white, 25%);
+$button-cancel-background-bottom:darken(white,23%);
 $button-cancel-color:rgba(white,1);
 $button-cancel-fontweight:400;
 $button-cancel-padding:$button-save-padding;
-$button-cancel-bordertop:1px solid darken(white,33%);
-$button-cancel-borderbottom:1px solid darken(white,42%);
-$button-cancel-borderleft:1px solid darken(white,35%);
+$button-cancel-bordertop:1px solid darken(white,25%);
+$button-cancel-borderbottom:1px solid darken(white,38%);
+$button-cancel-borderleft:1px solid darken(white,27%);
 $button-cancel-borderright:$button-cancel-borderleft;
 $button-cancel-boxshadow:0 1px 0 rgba(black,.065);
 
@@ -128,7 +128,7 @@ $profile-tab-color:darken(white,70%);
 $profile-tab-fontsize:14px;
 $profile-tab-fontweight:400;
 $profile-tab-height:40px;
-$profile-tab-padding:12px 12px 12px 11px;
+$profile-tab-padding:12px 12px 12px 12px;
 $profile-tab-border:1px solid darken(white,10%);
 
 // Profile Navigation
@@ -153,7 +153,7 @@ $profile-list-item-subtitle-fontsize:13px;
 $profile-list-item-subtitle-fontweight:300;
 
 // Profile List Friend
-$profile-list-friend-picture-width:69px;
+$profile-list-friend-picture-width:66px;
 
 // Create Event
 $create-event-width:868px;

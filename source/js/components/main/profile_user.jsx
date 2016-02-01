@@ -11,7 +11,7 @@ var ProfileUser = React.createClass({
         <div className="profile-user">
           <ProfileHero />
           <ProfileTabs />
-          <ProfileUserFeed />
+          <ProfileUserFriends />
         </div>
     );
   }

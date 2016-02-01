@@ -33,10 +33,12 @@
       }
     }
     input {
+      height:26px;
       background: darken(white,1%);
       font-size:13px;
       font-weight:400;
       border-radius:$global-radius;
+      border:1px solid transparent;
       @include transition(.12s all ease-in-out);
       @include placeholder {
         color:darken(white,60%);

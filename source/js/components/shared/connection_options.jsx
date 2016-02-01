@@ -1,10 +1,28 @@
 var React = require('react');
+var classnames = require('classnames');
+var _ = require('lodash');
 
 var ConnectionOptions = React.createClass({
+
+  getInitialState: function() {
+    return { active: false , value: ''};
+  },
+  handleClick: function() {
+    this.setState({active: true});
+  },
+  handleBlur: function() {
+    this.setState({active: false});
+  },
+
   render: function () {
+    var dropdownClasses = classnames('dropdown', 'connection-options',{active: this.state.active});
+    var value = this.state.value;
+
     return (
-      <div className="dropdown connection-options">
-        <div className="dropdown-trigger">
+      <div className={dropdownClasses}>
+        <div className="dropdown-trigger"
+             onClick={this.handleClick}
+             onBlur={this.handleBlur}>
           <span className="trigger-icon fa fa-check"></span><span className="trigger-label">{this.props.connected}</span><span className="trigger-caret fa fa-caret-down"></span>
         </div>
         <div className="dropdown-content">
