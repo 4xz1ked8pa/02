@@ -2,6 +2,7 @@
   float:left;
   width:100%;
   height:auto;
+  padding-left:$profile-navigation-width + $profile-user-paddingleft;
   .friends-col {
     float:left;
     width:percentage(1/3);

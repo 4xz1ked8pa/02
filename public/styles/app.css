@@ -2590,7 +2590,6 @@ body {
     position: relative;
     float: left;
     width: 100%;
-    padding-left: 204px;
     border-bottom: none;
     margin-top: 30px;
     margin-bottom: 80px; }
@@ -2644,6 +2643,8 @@ body {
           clear: none; }
           .profile-user .profile-core .core-content .content-group.family-members .family-item:first-child {
             margin-left: 0; }
+    .profile-user .profile-core.profile-user-about {
+      padding-left: 199px; }
   .profile-user .user-hero {
     position: relative;
     float: left;
@@ -2723,7 +2724,8 @@ body {
 .profile-user-friends {
   float: left;
   width: 100%;
-  height: auto; }
+  height: auto;
+  padding-left: 204px; }
   .profile-user-friends .friends-col {
     float: left;
     width: 33.33333%;
@@ -2881,6 +2883,34 @@ body {
           float: left; }
       .profile-core.profile-user-feed .profile-assets .assets-group:first-of-type {
         margin-top: 0; }
+
+.profile-schedule {
+  padding-left: 0; }
+  .profile-schedule .schedule-grid .grid-week {
+    float: left;
+    width: 100%; }
+    .profile-schedule .schedule-grid .grid-week .week-day {
+      float: left;
+      width: 14.28571%;
+      height: 100px;
+      background: gray; }
+      .profile-schedule .schedule-grid .grid-week .week-day .day-header {
+        float: left;
+        width: 100%; }
+        .profile-schedule .schedule-grid .grid-week .week-day .day-header .day-date {
+          float: right;
+          color: #333333;
+          font-size: 12px;
+          font-weight: 500; }
+  .profile-schedule .schedule-header .schedule-labels {
+    float: left;
+    width: 14.28571%; }
+  .profile-schedule .schedule-header .schedule-current, .profile-schedule .schedule-header .schedule-labels {
+    float: left;
+    width: 100%; }
+  .profile-schedule .schedule-interact, .profile-schedule .schedule-header, .profile-schedule .schedule-grid {
+    float: left;
+    width: 100%; }
 
 .profile-list-friend {
   float: left;

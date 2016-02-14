@@ -1,0 +1,45 @@
+.profile-schedule {
+  padding-left:0;
+  .schedule-grid {
+    .grid-week {
+      float:left;
+      width:100%;
+      .week-day {
+        float:left;
+        width:percentage(1/7);
+        height:100px;
+        background: gray;
+        .day-header {
+          float:left;
+          width:100%;
+          .day-date {
+            float:right;
+            color:darken(white,80%);
+            font-size:12px;
+            font-weight:500;
+          }
+        }
+      }
+    }
+  }
+  .schedule-header {
+    .schedule-labels {
+      float:left;
+      width:percentage(1/7);
+    }
+    .schedule-current {
+
+    }
+    .schedule-current, .schedule-labels {
+      float:left;
+      width:100%;
+    }
+  }
+  .schedule-interact {
+
+  }
+  .schedule-interact, .schedule-header, .schedule-grid {
+    float:left;
+    width:100%;
+  }
+}

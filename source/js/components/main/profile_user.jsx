@@ -1,9 +1,10 @@
 var React = require('react');
 var ProfileHero = require('./../main/profile_hero.jsx');
 var ProfileTabs = require('./../main/profile_tabs.jsx');
-var ProfileUserAbout = require('./../main/profile_user_about.jsx');
-var ProfileUserFriends = require('./../main/profile_user_friends.jsx');
-var ProfileUserFeed = require('./../main/profile_user_feed.jsx');
+var ProfileAbout = require('./../main/profile_about.jsx');
+var ProfileMembers = require('./../main/profile_members.jsx');
+var ProfileFeed = require('./../main/profile_feed.jsx');
+var ProfileSchedule = require('./../main/profile_schedule.jsx');
 
 var ProfileUser = React.createClass({
   render: function () {
@@ -11,7 +12,7 @@ var ProfileUser = React.createClass({
         <div className="profile-user">
           <ProfileHero />
           <ProfileTabs />
-          <ProfileUserFriends />
+          <ProfileSchedule />
         </div>
     );
   }
